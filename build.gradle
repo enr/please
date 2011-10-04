@@ -1,4 +1,14 @@
 
+buildscript {
+  repositories {
+     flatDir name: 'localRepository', dirs: 'gradle/lib' 
+  }
+
+  dependencies {
+    classpath 'nl.javadude.gradle.plugins:license-gradle-plugin:0.3'
+  }
+}
+
 allprojects { project ->
 	version = '0.1-SNAPSHOT'
 	group = 'com.atoito.please'
@@ -22,6 +32,7 @@ subprojects {
 	if (project.path in javaModules) {
 		apply plugin: 'groovy'
         apply plugin: 'eclipse'
+        apply plugin: 'license'
 
 		configurations {
 			compile.transitive = true
