@@ -2,6 +2,7 @@ Please
 ======
 
 P.O.C. for an operation performer, usable for:
+
 * devops
 * common operations in your box (backup etc)
 
@@ -159,7 +160,8 @@ Directory `modules/acceptance-tests/src/test/ops` contains files used in tests.
 
 Utility methods:
 other than operations definitions, in ops file you can use some utility method such as:
-- `String date(String format)`: returns string using SimpleDateFormatter format (default: "yyyyMMddHHmm")
+
+* `String date(String format)`: returns string using SimpleDateFormatter format (default: "yyyyMMddHHmm")
 
 
 Sample operations
@@ -322,15 +324,17 @@ Please uses Gradle as build system;
 
 Tasks to know:
 
-	./gradlew eclipse
-
-To create Eclipse IDE files allowing you to import as "Existing Projects in Workspace" from directory modules/
-
 	./gradlew installApp      # will create please app in ./modules/cli/target/install/please/
 
 	./gradlew distZip		  # will create the distribution zip in ./modules/cli/target/distributions/
 
 	./gradlew uat			  # will build a local install and run user acceptance tests
+
+
+To create Eclipse IDE files allowing you to import as "Existing Projects in Workspace" from directory modules/:
+
+	./gradlew eclipse
+
 
 
 Special dirs for distribution:
