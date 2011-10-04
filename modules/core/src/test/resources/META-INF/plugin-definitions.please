@@ -1,0 +1,5 @@
+
+actions = [ 'plugin-action-01':'com.atoito.please.test.stub.StubAction']
+           
+operations = [ 'plugin-operation-01':'com.atoito.please.test.stub.StubOperation',
+               'plugin-operation-02':'com.atoito.please.test.stub.StubOperation' ]

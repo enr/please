@@ -1,0 +1,400 @@
+12:44:23.352 PLEASE WARN  com.atoito.please.core.util.M - directoryUnderTest=D:\export\please\modules\acceptance-tests\target\dir-01
+12:44:23.352 PLEASE WARN  com.atoito.please.core.util.M - directoryUnderTest=D:\export\please\modules\acceptance-tests\target\dir-01
+12:44:31.446 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:44:31.446 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:44:31.477 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+12:44:31.477 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+12:44:31.587 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+12:44:31.587 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+12:44:35.056 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+12:44:35.056 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+12:44:38.665 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+12:44:38.665 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+12:44:42.759 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:44:42.759 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:44:46.619 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:44:46.619 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:48:29.710 PLEASE WARN  com.atoito.please.core.util.M - directoryUnderTest=D:\export\please\modules\acceptance-tests\target\dir-01
+12:48:29.710 PLEASE WARN  com.atoito.please.core.util.M - directoryUnderTest=D:\export\please\modules\acceptance-tests\target\dir-01
+12:48:38.351 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:48:38.351 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:48:38.367 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+12:48:38.367 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+12:48:38.476 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+12:48:38.476 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+12:48:41.320 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+12:48:41.320 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+12:48:44.508 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+12:48:44.508 PLEASE WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+12:48:47.586 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:48:47.586 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:48:50.727 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+12:48:50.727 PLEASE WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:54:59.857 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:54:59.857 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:54:59.857 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:54:59.857 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:54:59.873 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            12:54:59.873 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            12:54:59.873 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            12:54:59.873 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            12:55:00.060 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            12:55:00.060 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            12:55:00.060 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            12:55:00.060 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            12:55:00.060 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            12:55:00.060 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            12:55:03.764 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            12:55:03.764 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            12:55:03.764 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            12:55:03.764 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            12:55:03.764 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            12:55:03.764 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            12:55:03.764 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            12:55:03.764 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:07.530 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:10.905 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            12:55:14.374 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:33.845 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:33.845 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:33.845 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:33.845 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:33.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            13:00:33.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            13:00:33.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            13:00:33.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            13:00:33.986 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:00:33.986 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:00:33.986 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:00:33.986 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:00:33.986 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:00:33.986 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:00:36.814 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:00:36.814 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:00:36.814 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:00:36.814 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:00:36.814 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:00:36.814 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:00:36.814 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:00:36.814 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:39.861 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:42.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:00:45.830 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:48.056 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:48.056 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:48.056 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:48.056 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:48.072 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            13:02:48.072 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            13:02:48.072 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            13:02:48.072 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: []
+PLEASE            13:02:48.212 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:02:48.212 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:02:48.212 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:02:48.212 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:02:48.212 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:02:48.212 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [no-such-operation]
+PLEASE            13:02:51.588 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:02:51.588 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:02:51.588 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:02:51.588 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:02:51.588 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:02:51.588 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:02:51.588 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:02:51.588 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [reports]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:55.025 WARN  com.atoito.please.core.util.M - basicFunctionsAreWorking: [empty-op]
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:02:58.510 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            13:03:01.932 WARN  com.atoito.please.core.util.M - uat tearDown clean()...
+PLEASE            14:40:08.064 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\001'
+PLEASE            14:40:08.064 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\001'
+PLEASE            14:40:08.127 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\002'
+PLEASE            14:40:08.127 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\002'
+PLEASE            14:40:08.127 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-201110041440'
+PLEASE            14:40:08.127 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-201110041440'
+PLEASE            14:40:08.127 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-2011'
+PLEASE            14:40:08.127 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-2011'
+PLEASE            14:40:10.815 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch'
+PLEASE            14:40:10.815 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch'
+PLEASE            14:40:10.830 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+PLEASE            14:40:10.830 INFO  please.reporter - creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+PLEASE            14:40:10.830 INFO  please.reporter - archive 'D:\export\please\modules\acceptance-tests\target\sequence-operation-data' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz'
+PLEASE            14:40:10.830 INFO  please.reporter - archive 'D:\export\please\modules\acceptance-tests\target\sequence-operation-data' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz'
+PLEASE            14:40:11.049 INFO  please.reporter - finished archive action
+PLEASE            14:40:11.049 INFO  please.reporter - finished archive action
+PLEASE            14:40:11.049 INFO  please.reporter - expand 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+PLEASE            14:40:11.049 INFO  please.reporter - expand 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+PLEASE            14:40:11.205 INFO  please.reporter - Please operation performer 0.1
+PLEASE            14:40:11.205 INFO  please.reporter - Please operation performer 0.1
+PLEASE            14:40:11.205 WARN  please.reporter - 
+PLEASE            14:40:11.205 WARN  please.reporter - 
+PLEASE            14:40:11.205 INFO  please.reporter - to perform an operation, run please <operation> ...
+PLEASE            14:40:11.205 INFO  please.reporter - to perform an operation, run please <operation> ...
+PLEASE            14:40:11.205 INFO  please.reporter - to see a list of available operations, run please reports
+PLEASE            14:40:11.205 INFO  please.reporter - to see a list of available operations, run please reports
+PLEASE            14:40:11.205 INFO  please.reporter - add --noop option to dry-run Please. Please's 'noop' (no-operation) mode shows you what would happen, but doesn't actually do it
+PLEASE            14:40:11.205 INFO  please.reporter - add --noop option to dry-run Please. Please's 'noop' (no-operation) mode shows you what would happen, but doesn't actually do it
+PLEASE            14:40:11.205 WARN  please.reporter - 
+PLEASE            14:40:11.205 WARN  please.reporter - 
+PLEASE            14:40:14.143 INFO  please.reporter - no operation or ops file found for 'no-such-operation'
+PLEASE            14:40:14.143 INFO  please.reporter - no operation or ops file found for 'no-such-operation'
+PLEASE            14:40:17.206 WARN  please.reporter - 
+PLEASE            14:40:17.206 WARN  please.reporter - 
+PLEASE            14:40:17.221 INFO  please.reporter - Paths
+-----
+PLEASE            14:40:17.221 INFO  please.reporter - Paths
+-----
+PLEASE            14:40:17.221 INFO  please.reporter - Please home : D:\export\please\modules\cli\target\install\please
+PLEASE            14:40:17.221 INFO  please.reporter - Please home : D:\export\please\modules\cli\target\install\please
+PLEASE            14:40:17.221 INFO  please.reporter - User ops dir path: C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+PLEASE            14:40:17.221 INFO  please.reporter - User ops dir path: C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+PLEASE            14:40:17.221 INFO  please.reporter - System ops dir path: c:/please/0.1\ops.d
+PLEASE            14:40:17.221 INFO  please.reporter - System ops dir path: c:/please/0.1\ops.d
+PLEASE            14:40:17.221 INFO  please.reporter - Installation ops dir path: D:\export\please\modules\cli\target\install\please\conf\ops.d
+PLEASE            14:40:17.221 INFO  please.reporter - Installation ops dir path: D:\export\please\modules\cli\target\install\please\conf\ops.d
+PLEASE            14:40:17.221 WARN  please.reporter - 
+PLEASE            14:40:17.221 WARN  please.reporter - 
+PLEASE            14:40:17.221 INFO  please.reporter - Loaded ops files
+----------------
+PLEASE            14:40:17.221 INFO  please.reporter - Loaded ops files
+----------------
+PLEASE            14:40:17.221 INFO  please.reporter - - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+PLEASE            14:40:17.221 INFO  please.reporter - - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+PLEASE            14:40:17.237 INFO  please.reporter - - file:/C:/Documents and Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+PLEASE            14:40:17.237 INFO  please.reporter - - file:/C:/Documents and Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+PLEASE            14:40:17.237 INFO  please.reporter - - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+PLEASE            14:40:17.237 INFO  please.reporter - - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+PLEASE            14:40:17.237 INFO  please.reporter - - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+PLEASE            14:40:17.237 INFO  please.reporter - - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+PLEASE            14:40:17.237 WARN  please.reporter - 
+PLEASE            14:40:17.237 WARN  please.reporter - 
+PLEASE            14:40:17.237 INFO  please.reporter - Operations list
+---------------
+PLEASE            14:40:17.237 INFO  please.reporter - Operations list
+---------------
+PLEASE            14:40:17.237 INFO  please.reporter -  - aaa-desc [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.237 INFO  please.reporter -  - aaa-desc [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.237 INFO  please.reporter -  - actions [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.237 INFO  please.reporter -  - actions [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.237 INFO  please.reporter -  - classpath [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.237 INFO  please.reporter -  - classpath [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.237 INFO  please.reporter -  - create-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+PLEASE            14:40:17.237 INFO  please.reporter -  - create-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - create-dir-tree-using-date [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - create-dir-tree-using-date [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - delete-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - delete-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - empty-op [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - empty-op [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - empty.operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - empty.operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - full-router [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - full-router [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - hello-download-bin [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - hello-download-bin [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - hello-download-txt [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - hello-download-txt [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - install-grails [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - install-grails [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - operations [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - operations [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - ops [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - ops [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - paths [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - paths [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - please:hello-world [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - please:hello-world [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - release [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - release [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - reports [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - reports [ com.atoito.please.core.operations.PleaseReportsOperation ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - seq [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - seq [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - sequence-operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - sequence-operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - share-to-parking [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - share-to-parking [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - taruntar [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.252 INFO  please.reporter -  - taruntar [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - var-setting [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - var-setting [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - vr2:deploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - vr2:deploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - vr3:hotdeploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - vr3:hotdeploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - zip-please [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - zip-please [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - zipunzip [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.268 INFO  please.reporter -  - zipunzip [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+PLEASE            14:40:17.268 WARN  please.reporter - 
+PLEASE            14:40:17.268 WARN  please.reporter - 
+PLEASE            14:40:17.268 INFO  please.reporter - Actions list
+------------
+PLEASE            14:40:17.268 INFO  please.reporter - Actions list
+------------
+PLEASE            14:40:17.268 INFO  please.reporter -  - copy [com.atoito.please.core.actions.CopyAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - copy [com.atoito.please.core.actions.CopyAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - delete [com.atoito.please.core.actions.DeleteAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - delete [com.atoito.please.core.actions.DeleteAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - download [com.atoito.please.core.actions.DownloadAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - download [com.atoito.please.core.actions.DownloadAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - exec [com.atoito.please.core.actions.ExecAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - exec [com.atoito.please.core.actions.ExecAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - mkdir [com.atoito.please.core.actions.MkdirAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - mkdir [com.atoito.please.core.actions.MkdirAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - setenv [com.atoito.please.core.actions.SetEnvVariableAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - setenv [com.atoito.please.core.actions.SetEnvVariableAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - targz [com.atoito.please.core.actions.TargzAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - targz [com.atoito.please.core.actions.TargzAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - untargz [com.atoito.please.core.actions.UntargzAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - untargz [com.atoito.please.core.actions.UntargzAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - unzip [com.atoito.please.core.actions.UnzipAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - unzip [com.atoito.please.core.actions.UnzipAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - zip [com.atoito.please.core.actions.ZipAction]
+PLEASE            14:40:17.268 INFO  please.reporter -  - zip [com.atoito.please.core.actions.ZipAction]
+PLEASE            14:40:17.268 WARN  please.reporter - 
+PLEASE            14:40:17.268 WARN  please.reporter - 
+PLEASE            14:40:17.268 INFO  please.reporter - Classpath
+----------
+PLEASE            14:40:17.268 INFO  please.reporter - Classpath
+----------
+PLEASE            14:40:17.268 INFO  please.reporter - Classloader 'java.net.URLClassLoader'
+PLEASE            14:40:17.268 INFO  please.reporter - Classloader 'java.net.URLClassLoader'
+PLEASE            14:40:17.268 INFO  please.reporter - Classpath entries:
+PLEASE            14:40:17.268 INFO  please.reporter - Classpath entries:
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-1.8.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-1.8.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-launcher-1.8.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-launcher-1.8.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/antlr-2.7.7.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/antlr-2.7.7.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-analysis-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-analysis-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-commons-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-commons-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-tree-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-tree-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-util-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-util-3.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/async-http-client-1.6.5.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/async-http-client-1.6.5.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/groovy-1.8.1.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/groovy-1.8.1.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/guava-10.0.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/guava-10.0.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/jsr305-1.3.9.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/jsr305-1.3.9.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-classic-0.9.29.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-classic-0.9.29.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-core-0.9.29.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-core-0.9.29.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/netty-3.2.5.Final.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/netty-3.2.5.Final.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/please-cli-0.1-SNAPSHOT.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/please-cli-0.1-SNAPSHOT.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/please-core-0.1-SNAPSHOT.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/please-core-0.1-SNAPSHOT.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/slf4j-api-1.6.2.jar
+PLEASE            14:40:17.284 INFO  please.reporter -  - file:/D:/export/please/modules/cli/target/install/please/lib/slf4j-api-1.6.2.jar
+PLEASE            14:40:17.299 WARN  please.reporter - 
+PLEASE            14:40:17.299 WARN  please.reporter - 

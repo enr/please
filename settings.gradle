@@ -1,0 +1,17 @@
+include 'modules:core',
+		'modules:cli',
+		'modules:acceptance-tests'
+        
+rootProject.name = 'please'
+
+def setBuildFile(project) {
+	project.buildFileName = "${project.name}.gradle"
+	project.children.each {
+		setBuildFile(it)
+	}
+}
+
+rootProject.children.each {
+	setBuildFile(it)
+}
+

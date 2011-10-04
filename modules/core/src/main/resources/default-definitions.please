@@ -1,0 +1,18 @@
+
+actions = [ 'copy':'com.atoito.please.core.actions.CopyAction',
+            'zip':'com.atoito.please.core.actions.ZipAction',
+            'unzip':'com.atoito.please.core.actions.UnzipAction',
+            'targz':'com.atoito.please.core.actions.TargzAction',
+            'untargz':'com.atoito.please.core.actions.UntargzAction',
+            'exec':'com.atoito.please.core.actions.ExecAction',
+            'mkdir':'com.atoito.please.core.actions.MkdirAction',
+            'download':'com.atoito.please.core.actions.DownloadAction',
+            'setenv':'com.atoito.please.core.actions.SetEnvVariableAction',
+            'delete':'com.atoito.please.core.actions.DeleteAction', ]
+           
+operations = [  'reports':'com.atoito.please.core.operations.PleaseReportsOperation',
+                'paths':'com.atoito.please.core.operations.PleaseReportsOperation',
+                'ops':'com.atoito.please.core.operations.PleaseReportsOperation',
+                'operations':'com.atoito.please.core.operations.PleaseReportsOperation',
+                'actions':'com.atoito.please.core.operations.PleaseReportsOperation',
+                'classpath':'com.atoito.please.core.operations.PleaseReportsOperation' ]

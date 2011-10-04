@@ -1,0 +1,370 @@
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\001'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\001'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\002'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\002'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-201110041447'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-201110041447'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-2011'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-2011'
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] I'll expand 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz'. don't know if it exists, but it's registered as output from a former action...
+[P] I'll expand 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz'. don't know if it exists, but it's registered as output from a former action...
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+[P] creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+[P] archive 'D:\export\please\modules\acceptance-tests\target\sequence-operation-data' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz'
+[P] archive 'D:\export\please\modules\acceptance-tests\target\sequence-operation-data' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz'
+[P] finished archive action
+[P] finished archive action
+[P] expand 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+[P] expand 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] Please operation performer 0.1
+[P] Please operation performer 0.1
+[P] 
+[P] 
+[P] to perform an operation, run please <operation> ...
+[P] to perform an operation, run please <operation> ...
+[P] to see a list of available operations, run please reports
+[P] to see a list of available operations, run please reports
+[P] add --noop option to dry-run Please. Please's 'noop' (no-operation) mode shows you what would happen, but doesn't actually do it
+[P] add --noop option to dry-run Please. Please's 'noop' (no-operation) mode shows you what would happen, but doesn't actually do it
+[P] 
+[P] 
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] no operation or ops file found for 'no-such-operation'
+[P] no operation or ops file found for 'no-such-operation'
+[P] operation 'no-such-operation' failure:
+Operation 'no-such-operation' not found
+[P] operation 'no-such-operation' failure:
+Operation 'no-such-operation' not found
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] 
+[P] 
+[P] Paths
+-----
+[P] Paths
+-----
+[P] Please home : D:\export\please\modules\cli\target\install\please
+[P] Please home : D:\export\please\modules\cli\target\install\please
+[P] User ops dir path: C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] User ops dir path: C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] System ops dir path: c:/please/0.1\ops.d
+[P] System ops dir path: c:/please/0.1\ops.d
+[P] Installation ops dir path: D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] Installation ops dir path: D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] 
+[P] 
+[P] Loaded ops files
+----------------
+[P] Loaded ops files
+----------------
+[P] - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] - file:/C:/Documents and Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] - file:/C:/Documents and Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] 
+[P] 
+[P] Operations list
+---------------
+[P] Operations list
+---------------
+[P]  - aaa-desc [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - aaa-desc [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - actions [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - actions [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - classpath [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - classpath [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - create-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+[P]  - create-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+[P]  - create-dir-tree-using-date [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - create-dir-tree-using-date [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - delete-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+[P]  - delete-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+[P]  - empty-op [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+[P]  - empty-op [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+[P]  - empty.operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - empty.operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - full-router [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - full-router [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - hello-download-bin [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - hello-download-bin [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - hello-download-txt [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - hello-download-txt [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - install-grails [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - install-grails [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - operations [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - operations [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - ops [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - ops [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - paths [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - paths [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - please:hello-world [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - please:hello-world [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - release [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+[P]  - release [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+[P]  - reports [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - reports [ com.atoito.please.core.operations.PleaseReportsOperation ]
+[P]  - seq [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - seq [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - sequence-operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+[P]  - sequence-operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+[P]  - share-to-parking [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - share-to-parking [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - taruntar [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - taruntar [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - var-setting [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - var-setting [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+[P]  - vr2:deploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+[P]  - vr2:deploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+[P]  - vr3:hotdeploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+[P]  - vr3:hotdeploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+[P]  - zip-please [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+[P]  - zip-please [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+[P]  - zipunzip [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P]  - zipunzip [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+[P] 
+[P] 
+[P] Actions list
+------------
+[P] Actions list
+------------
+[P]  - copy [com.atoito.please.core.actions.CopyAction]
+[P]  - copy [com.atoito.please.core.actions.CopyAction]
+[P]  - delete [com.atoito.please.core.actions.DeleteAction]
+[P]  - delete [com.atoito.please.core.actions.DeleteAction]
+[P]  - download [com.atoito.please.core.actions.DownloadAction]
+[P]  - download [com.atoito.please.core.actions.DownloadAction]
+[P]  - exec [com.atoito.please.core.actions.ExecAction]
+[P]  - exec [com.atoito.please.core.actions.ExecAction]
+[P]  - mkdir [com.atoito.please.core.actions.MkdirAction]
+[P]  - mkdir [com.atoito.please.core.actions.MkdirAction]
+[P]  - setenv [com.atoito.please.core.actions.SetEnvVariableAction]
+[P]  - setenv [com.atoito.please.core.actions.SetEnvVariableAction]
+[P]  - targz [com.atoito.please.core.actions.TargzAction]
+[P]  - targz [com.atoito.please.core.actions.TargzAction]
+[P]  - untargz [com.atoito.please.core.actions.UntargzAction]
+[P]  - untargz [com.atoito.please.core.actions.UntargzAction]
+[P]  - unzip [com.atoito.please.core.actions.UnzipAction]
+[P]  - unzip [com.atoito.please.core.actions.UnzipAction]
+[P]  - zip [com.atoito.please.core.actions.ZipAction]
+[P]  - zip [com.atoito.please.core.actions.ZipAction]
+[P] 
+[P] 
+[P] Classpath
+----------
+[P] Classpath
+----------
+[P] Classloader 'java.net.URLClassLoader'
+[P] Classloader 'java.net.URLClassLoader'
+[P] Classpath entries:
+[P] Classpath entries:
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-1.8.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-1.8.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-launcher-1.8.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-launcher-1.8.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/antlr-2.7.7.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/antlr-2.7.7.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-analysis-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-analysis-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-commons-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-commons-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-tree-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-tree-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-util-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-util-3.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/async-http-client-1.6.5.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/async-http-client-1.6.5.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/groovy-1.8.1.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/groovy-1.8.1.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/guava-10.0.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/guava-10.0.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/jsr305-1.3.9.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/jsr305-1.3.9.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-classic-0.9.29.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-classic-0.9.29.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-core-0.9.29.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-core-0.9.29.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/netty-3.2.5.Final.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/netty-3.2.5.Final.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/please-cli-0.1-SNAPSHOT.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/please-cli-0.1-SNAPSHOT.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/please-core-0.1-SNAPSHOT.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/please-core-0.1-SNAPSHOT.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/slf4j-api-1.6.2.jar
+[P]  - file:/D:/export/please/modules/cli/target/install/please/lib/slf4j-api-1.6.2.jar
+[P] 
+[P] 
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.https.proxySet' = 'true'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyPort' = '3128'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxyHost' = '192.168.1.201'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.http.proxySet' = 'true'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyPort' = '3128'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] setting property 'system.https.proxyHost' = '192.168.1.201'
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles c:\please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+[P] parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy

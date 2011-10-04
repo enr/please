@@ -1,0 +1,47 @@
+package com.atoito.please.uat;
+
+import static org.fest.assertions.Assertions.assertThat;
+
+import java.io.File;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.atoito.please.core.util.Directories;
+import com.atoito.please.core.util.M;
+
+public class CreateDeleteDirectoryUat extends BaseUat{
+	
+	File directoryUnderTest;
+	
+	@BeforeClass
+	public void init() throws Exception {
+		// setup
+		File buildDir = new File("target");
+		String basePath = "dir-01";
+		directoryUnderTest = new File(buildDir, basePath);
+		if (directoryUnderTest.exists()) {
+			Directories.delete(directoryUnderTest);
+		}
+		M.info("directoryUnderTest=%s", directoryUnderTest.getAbsolutePath());
+		assertThat(directoryUnderTest).as("directory").doesNotExist();
+	}
+
+	@Test(description="uat for operation 'create-dir'")
+	public void createDirectory() {
+		String[] args = new String[] {"create-dir"};
+		runApplicationWithArgs(args);
+
+		assertThat(directoryUnderTest).as("base dir").isDirectory().exists();
+		assertThat(new File(directoryUnderTest, "001")).as("001").isDirectory().exists();
+		assertThat(new File(directoryUnderTest, "002")).as("002").isDirectory().exists();
+	}
+	
+	@Test(dependsOnMethods = {"createDirectory"}, description="uat for operation 'delete-dir'")
+	public void deleteDirectory() {
+		String[] args = new String[] {"delete-dir"};
+		runApplicationWithArgs(args);
+
+		assertThat(directoryUnderTest).as("base dir").doesNotExist();
+	}
+}

@@ -1,0 +1,6 @@
+
+actions = [ 'action-01':'package.01.Action',
+            'action-02':'package.02.Action' ]
+           
+operations = [ 'operation-01':'com.atoito.please.test.stub.StubOperation',
+               'operation-02':'com.atoito.please.test.stub.StubOperation' ]

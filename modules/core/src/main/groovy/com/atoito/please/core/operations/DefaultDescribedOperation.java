@@ -1,0 +1,90 @@
+package com.atoito.please.core.operations;
+
+import java.io.File;
+import java.io.UnsupportedEncodingException;
+import java.net.URL;
+import java.net.URLDecoder;
+import java.util.List;
+
+import com.atoito.please.core.api.Action;
+import com.atoito.please.core.api.DescribedOperation;
+import com.atoito.please.core.api.IllegalOperationStateException;
+import com.atoito.please.core.api.OperationResult;
+import com.atoito.please.core.api.OutputsAwareAction;
+import com.atoito.please.core.util.DescriptionBuilder;
+import com.atoito.please.core.util.M;
+import com.atoito.please.core.util.Operations;
+import com.google.common.collect.Lists;
+
+public class DefaultDescribedOperation implements DescribedOperation {
+    
+    private final String id;
+    
+    private final URL url;
+    
+    private final String description;
+    
+    private List<Action> actions = Lists.newArrayList();
+
+    public DefaultDescribedOperation(URL url, String id, String description) {
+    	this.url = url;
+        this.id = id;
+        this.description = description;
+    }
+    
+    public OperationResult perform() {
+    	for (Action action : actions) {
+			action.execute();
+		}
+    	return Operations.successResult();
+    }
+
+    public String toHuman() {
+    	return new DescriptionBuilder().forOperation(id)
+    	.humanizedAs((description == null) ? toString() : description)
+    	.withActions(actions)
+    	.toString();
+    }
+
+    @Override
+    public String toString() {
+    	String decoded = "<malformed url>";
+    	try {
+			decoded = URLDecoder.decode(url.toString(), "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			M.debug("error decoding url in DefaultDescribedOperation");
+		}
+        return String.format("operation '%s' described in %s", id, decoded);
+    }
+
+	public URL getOpsUrl() {
+		return url;
+	}
+
+	public String getId() {
+		return this.id;
+	}
+
+    public void addAction(Action action) {
+        actions.add(action);
+    }
+
+	public void validate() throws IllegalOperationStateException {
+		List<File> outputs = Lists.newArrayList();
+		try {
+			for (Action action : actions) {
+				if (action instanceof OutputsAwareAction) {
+					((OutputsAwareAction) action).processOutputs(outputs);
+				}
+				action.initialize();
+			}
+		} catch (Throwable throwable) {
+			throw new IllegalOperationStateException("invalid operation state: error during actions initializing", throwable);
+		}
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+}

@@ -1,0 +1,200 @@
+2011-10-04 14:28:26,962 [INFO ] p.reporter.info:96 - directoryUnderTest=D:\export\please\modules\acceptance-tests\target\dir-01
+2011-10-04 14:28:27,024 [DEBUG] p.reporter.debug:88 - home not null (D:\export\please\modules\cli\target\install\please), I suppose we are in UAT phase...
+2011-10-04 14:28:27,337 [DEBUG] p.reporter.debug:88 - starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+2011-10-04 14:28:27,352 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxySet' = 'true'
+2011-10-04 14:28:27,352 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyPort' = '3128'
+2011-10-04 14:28:27,368 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:27,368 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxySet' = 'true'
+2011-10-04 14:28:27,368 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyPort' = '3128'
+2011-10-04 14:28:27,368 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:29,118 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+2011-10-04 14:28:29,134 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+2011-10-04 14:28:30,274 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+2011-10-04 14:28:31,071 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+2011-10-04 14:28:31,540 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles c:\please\0.1\ops.d
+2011-10-04 14:28:31,556 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+2011-10-04 14:28:31,556 [DEBUG] p.reporter.debug:88 - parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+2011-10-04 14:28:31,884 [INFO ] p.reporter.info:96 - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\001'
+2011-10-04 14:28:31,899 [INFO ] p.reporter.info:96 - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\002'
+2011-10-04 14:28:31,899 [INFO ] p.reporter.info:96 - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-201110041428'
+2011-10-04 14:28:31,899 [INFO ] p.reporter.info:96 - creating directory 'D:\export\please\modules\acceptance-tests\target\dir-01\003-2011'
+2011-10-04 14:28:31,915 [DEBUG] p.reporter.debug:88 - home not null (D:\export\please\modules\cli\target\install\please), I suppose we are in UAT phase...
+2011-10-04 14:28:32,165 [DEBUG] p.reporter.debug:88 - starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+2011-10-04 14:28:32,196 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxySet' = 'true'
+2011-10-04 14:28:32,196 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyPort' = '3128'
+2011-10-04 14:28:32,196 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:32,196 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxySet' = 'true'
+2011-10-04 14:28:32,196 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyPort' = '3128'
+2011-10-04 14:28:32,196 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:34,165 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+2011-10-04 14:28:34,165 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+2011-10-04 14:28:34,946 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+2011-10-04 14:28:35,478 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+2011-10-04 14:28:35,931 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles c:\please\0.1\ops.d
+2011-10-04 14:28:35,931 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+2011-10-04 14:28:35,946 [DEBUG] p.reporter.debug:88 - parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+2011-10-04 14:28:36,509 [DEBUG] p.reporter.debug:88 - I'll expand 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz'. don't know if it exists, but it's registered as output from a former action...
+2011-10-04 14:28:36,618 [INFO ] p.reporter.info:96 - creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch'
+2011-10-04 14:28:36,634 [INFO ] p.reporter.info:96 - creating directory 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+2011-10-04 14:28:36,634 [INFO ] p.reporter.info:96 - archive 'D:\export\please\modules\acceptance-tests\target\sequence-operation-data' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz'
+2011-10-04 14:28:36,728 [INFO ] p.reporter.info:92 - finished archive action
+2011-10-04 14:28:36,728 [INFO ] p.reporter.info:96 - expand 'D:\export\please\modules\acceptance-tests\target\sequence-operation-arch\sequence-operation-archive.tgz' to 'D:\export\please\modules\acceptance-tests\target\sequence-operation-exp'
+2011-10-04 14:28:36,775 [INFO ] p.reporter.info:92 - uat tearDown clean()...
+2011-10-04 14:28:36,790 [INFO ] p.reporter.info:96 - basicFunctionsAreWorking: []
+2011-10-04 14:28:36,790 [DEBUG] p.reporter.debug:88 - home not null (D:\export\please\modules\cli\target\install\please), I suppose we are in UAT phase...
+2011-10-04 14:28:37,056 [DEBUG] p.reporter.debug:88 - starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+2011-10-04 14:28:37,071 [INFO ] p.reporter.info:96 - Please operation performer 0.1
+2011-10-04 14:28:37,071 [WARN ] p.reporter.emptyLine:119 - 
+2011-10-04 14:28:37,071 [INFO ] p.reporter.info:92 - to perform an operation, run please <operation> ...
+2011-10-04 14:28:37,071 [INFO ] p.reporter.info:92 - to see a list of available operations, run please reports
+2011-10-04 14:28:37,071 [INFO ] p.reporter.info:92 - add --noop option to dry-run Please. Please's 'noop' (no-operation) mode shows you what would happen, but doesn't actually do it
+2011-10-04 14:28:37,071 [WARN ] p.reporter.emptyLine:119 - 
+2011-10-04 14:28:37,087 [INFO ] p.reporter.info:96 - basicFunctionsAreWorking: [no-such-operation]
+2011-10-04 14:28:37,087 [DEBUG] p.reporter.debug:88 - home not null (D:\export\please\modules\cli\target\install\please), I suppose we are in UAT phase...
+2011-10-04 14:28:37,337 [DEBUG] p.reporter.debug:88 - starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+2011-10-04 14:28:37,353 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxySet' = 'true'
+2011-10-04 14:28:37,353 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyPort' = '3128'
+2011-10-04 14:28:37,353 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:37,353 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxySet' = 'true'
+2011-10-04 14:28:37,353 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyPort' = '3128'
+2011-10-04 14:28:37,368 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:38,931 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+2011-10-04 14:28:38,931 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+2011-10-04 14:28:39,572 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+2011-10-04 14:28:40,103 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+2011-10-04 14:28:40,540 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles c:\please\0.1\ops.d
+2011-10-04 14:28:40,540 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+2011-10-04 14:28:40,556 [DEBUG] p.reporter.debug:88 - parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+2011-10-04 14:28:40,822 [INFO ] p.reporter.info:96 - no operation or ops file found for 'no-such-operation'
+2011-10-04 14:28:40,822 [DEBUG] p.reporter.debug:88 - operation 'no-such-operation' failure:
+Operation 'no-such-operation' not found
+2011-10-04 14:28:40,822 [INFO ] p.reporter.info:96 - basicFunctionsAreWorking: [reports]
+2011-10-04 14:28:40,837 [DEBUG] p.reporter.debug:88 - home not null (D:\export\please\modules\cli\target\install\please), I suppose we are in UAT phase...
+2011-10-04 14:28:41,150 [DEBUG] p.reporter.debug:88 - starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+2011-10-04 14:28:41,150 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxySet' = 'true'
+2011-10-04 14:28:41,165 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyPort' = '3128'
+2011-10-04 14:28:41,165 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:41,165 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxySet' = 'true'
+2011-10-04 14:28:41,165 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyPort' = '3128'
+2011-10-04 14:28:41,165 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:42,947 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+2011-10-04 14:28:42,962 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+2011-10-04 14:28:43,728 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+2011-10-04 14:28:44,291 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+2011-10-04 14:28:44,791 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles c:\please\0.1\ops.d
+2011-10-04 14:28:44,806 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+2011-10-04 14:28:44,806 [DEBUG] p.reporter.debug:88 - parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+2011-10-04 14:28:45,088 [WARN ] p.reporter.emptyLine:119 - 
+2011-10-04 14:28:45,088 [INFO ] p.reporter.info:92 - Paths
+-----
+2011-10-04 14:28:45,088 [INFO ] p.reporter.info:96 - Please home : D:\export\please\modules\cli\target\install\please
+2011-10-04 14:28:45,088 [INFO ] p.reporter.info:96 - User ops dir path: C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+2011-10-04 14:28:45,088 [INFO ] p.reporter.info:96 - System ops dir path: c:/please/0.1\ops.d
+2011-10-04 14:28:45,103 [INFO ] p.reporter.info:96 - Installation ops dir path: D:\export\please\modules\cli\target\install\please\conf\ops.d
+2011-10-04 14:28:45,103 [WARN ] p.reporter.emptyLine:119 - 
+2011-10-04 14:28:45,103 [INFO ] p.reporter.info:92 - Loaded ops files
+----------------
+2011-10-04 14:28:45,103 [INFO ] p.reporter.info:96 - - file:/C:/Documents and Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+2011-10-04 14:28:45,103 [INFO ] p.reporter.info:96 - - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+2011-10-04 14:28:45,103 [INFO ] p.reporter.info:96 - - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+2011-10-04 14:28:45,119 [INFO ] p.reporter.info:96 - - file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+2011-10-04 14:28:45,134 [WARN ] p.reporter.emptyLine:119 - 
+2011-10-04 14:28:45,134 [INFO ] p.reporter.info:92 - Operations list
+---------------
+2011-10-04 14:28:45,134 [INFO ] p.reporter.info:96 -  - aaa-desc [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+2011-10-04 14:28:45,134 [INFO ] p.reporter.info:96 -  - actions [ com.atoito.please.core.operations.PleaseReportsOperation ]
+2011-10-04 14:28:45,134 [INFO ] p.reporter.info:96 -  - classpath [ com.atoito.please.core.operations.PleaseReportsOperation ]
+2011-10-04 14:28:45,150 [INFO ] p.reporter.info:96 -  - create-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+2011-10-04 14:28:45,150 [INFO ] p.reporter.info:96 -  - create-dir-tree-using-date [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+2011-10-04 14:28:45,150 [INFO ] p.reporter.info:96 -  - delete-dir [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+2011-10-04 14:28:45,166 [INFO ] p.reporter.info:96 -  - empty-op [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+2011-10-04 14:28:45,166 [INFO ] p.reporter.info:96 -  - empty.operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+2011-10-04 14:28:45,166 [INFO ] p.reporter.info:96 -  - full-router [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+2011-10-04 14:28:45,166 [INFO ] p.reporter.info:96 -  - hello-download-bin [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+2011-10-04 14:28:45,181 [INFO ] p.reporter.info:96 -  - hello-download-txt [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+2011-10-04 14:28:45,228 [INFO ] p.reporter.info:96 -  - install-grails [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+2011-10-04 14:28:45,228 [INFO ] p.reporter.info:96 -  - operations [ com.atoito.please.core.operations.PleaseReportsOperation ]
+2011-10-04 14:28:45,228 [INFO ] p.reporter.info:96 -  - ops [ com.atoito.please.core.operations.PleaseReportsOperation ]
+2011-10-04 14:28:45,228 [INFO ] p.reporter.info:96 -  - paths [ com.atoito.please.core.operations.PleaseReportsOperation ]
+2011-10-04 14:28:45,244 [INFO ] p.reporter.info:96 -  - please:hello-world [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+2011-10-04 14:28:45,244 [INFO ] p.reporter.info:96 -  - release [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+2011-10-04 14:28:45,244 [INFO ] p.reporter.info:96 -  - reports [ com.atoito.please.core.operations.PleaseReportsOperation ]
+2011-10-04 14:28:45,244 [INFO ] p.reporter.info:96 -  - seq [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+2011-10-04 14:28:45,259 [INFO ] p.reporter.info:96 -  - sequence-operation [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy ]
+2011-10-04 14:28:45,259 [INFO ] p.reporter.info:96 -  - share-to-parking [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+2011-10-04 14:28:45,259 [INFO ] p.reporter.info:96 -  - taruntar [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+2011-10-04 14:28:45,259 [INFO ] p.reporter.info:96 -  - var-setting [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy ]
+2011-10-04 14:28:45,275 [INFO ] p.reporter.info:96 -  - vr2:deploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+2011-10-04 14:28:45,275 [INFO ] p.reporter.info:96 -  - vr3:hotdeploy [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+2011-10-04 14:28:45,275 [INFO ] p.reporter.info:96 -  - zip-please [ file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy ]
+2011-10-04 14:28:45,275 [INFO ] p.reporter.info:96 -  - zipunzip [ file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy ]
+2011-10-04 14:28:45,291 [WARN ] p.reporter.emptyLine:119 - 
+2011-10-04 14:28:45,291 [INFO ] p.reporter.info:92 - Actions list
+------------
+2011-10-04 14:28:45,291 [INFO ] p.reporter.info:96 -  - copy [com.atoito.please.core.actions.CopyAction]
+2011-10-04 14:28:45,291 [INFO ] p.reporter.info:96 -  - delete [com.atoito.please.core.actions.DeleteAction]
+2011-10-04 14:28:45,306 [INFO ] p.reporter.info:96 -  - download [com.atoito.please.core.actions.DownloadAction]
+2011-10-04 14:28:45,306 [INFO ] p.reporter.info:96 -  - exec [com.atoito.please.core.actions.ExecAction]
+2011-10-04 14:28:45,306 [INFO ] p.reporter.info:96 -  - mkdir [com.atoito.please.core.actions.MkdirAction]
+2011-10-04 14:28:45,306 [INFO ] p.reporter.info:96 -  - setenv [com.atoito.please.core.actions.SetEnvVariableAction]
+2011-10-04 14:28:45,306 [INFO ] p.reporter.info:96 -  - targz [com.atoito.please.core.actions.TargzAction]
+2011-10-04 14:28:45,306 [INFO ] p.reporter.info:96 -  - untargz [com.atoito.please.core.actions.UntargzAction]
+2011-10-04 14:28:45,306 [INFO ] p.reporter.info:96 -  - unzip [com.atoito.please.core.actions.UnzipAction]
+2011-10-04 14:28:45,322 [INFO ] p.reporter.info:96 -  - zip [com.atoito.please.core.actions.ZipAction]
+2011-10-04 14:28:45,322 [WARN ] p.reporter.emptyLine:119 - 
+2011-10-04 14:28:45,322 [INFO ] p.reporter.info:92 - Classpath
+----------
+2011-10-04 14:28:45,322 [INFO ] p.reporter.info:96 - Classloader 'java.net.URLClassLoader'
+2011-10-04 14:28:45,322 [INFO ] p.reporter.info:92 - Classpath entries:
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-1.8.2.jar
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/ant-launcher-1.8.2.jar
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/antlr-2.7.7.jar
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-3.2.jar
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-analysis-3.2.jar
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-commons-3.2.jar
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-tree-3.2.jar
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/asm-util-3.2.jar
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/async-http-client-1.6.5.jar
+2011-10-04 14:28:45,338 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/groovy-1.8.1.jar
+2011-10-04 14:28:45,353 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/guava-10.0.jar
+2011-10-04 14:28:45,353 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/jsr305-1.3.9.jar
+2011-10-04 14:28:45,353 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-classic-0.9.29.jar
+2011-10-04 14:28:45,353 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/logback-core-0.9.29.jar
+2011-10-04 14:28:45,353 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/netty-3.2.5.Final.jar
+2011-10-04 14:28:45,369 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/please-cli-0.1-SNAPSHOT.jar
+2011-10-04 14:28:45,369 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/please-core-0.1-SNAPSHOT.jar
+2011-10-04 14:28:45,369 [INFO ] p.reporter.info:92 -  - file:/D:/export/please/modules/cli/target/install/please/lib/slf4j-api-1.6.2.jar
+2011-10-04 14:28:45,369 [WARN ] p.reporter.emptyLine:119 - 
+2011-10-04 14:28:45,369 [INFO ] p.reporter.info:96 - basicFunctionsAreWorking: [empty-op]
+2011-10-04 14:28:45,369 [DEBUG] p.reporter.debug:88 - home not null (D:\export\please\modules\cli\target\install\please), I suppose we are in UAT phase...
+2011-10-04 14:28:45,619 [DEBUG] p.reporter.debug:88 - starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+2011-10-04 14:28:45,634 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxySet' = 'true'
+2011-10-04 14:28:45,634 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyPort' = '3128'
+2011-10-04 14:28:45,650 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:45,650 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxySet' = 'true'
+2011-10-04 14:28:45,650 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyPort' = '3128'
+2011-10-04 14:28:45,650 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:47,541 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+2011-10-04 14:28:47,556 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+2011-10-04 14:28:48,369 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+2011-10-04 14:28:48,885 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+2011-10-04 14:28:49,338 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles c:\please\0.1\ops.d
+2011-10-04 14:28:49,338 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+2011-10-04 14:28:49,338 [DEBUG] p.reporter.debug:88 - parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+2011-10-04 14:28:49,947 [INFO ] p.reporter.info:92 - uat tearDown clean()...
+2011-10-04 14:28:49,978 [DEBUG] p.reporter.debug:88 - home not null (D:\export\please\modules\cli\target\install\please), I suppose we are in UAT phase...
+2011-10-04 14:28:50,229 [DEBUG] p.reporter.debug:88 - starting Please with home = 'D:\export\please\modules\cli\target\install\please'
+2011-10-04 14:28:50,307 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxySet' = 'true'
+2011-10-04 14:28:50,307 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyPort' = '3128'
+2011-10-04 14:28:50,307 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:50,307 [DEBUG] p.reporter.debug:88 - setting property 'system.http.proxySet' = 'true'
+2011-10-04 14:28:50,307 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyPort' = '3128'
+2011-10-04 14:28:50,322 [DEBUG] p.reporter.debug:88 - setting property 'system.https.proxyHost' = '192.168.1.201'
+2011-10-04 14:28:51,697 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles D:\export\please\modules\cli\target\install\please\conf\ops.d
+2011-10-04 14:28:52,041 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/bpv.groovy
+2011-10-04 14:28:52,807 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/sample.groovy
+2011-10-04 14:28:53,354 [DEBUG] p.reporter.debug:88 - parsing file:/D:/export/please/modules/cli/target/install/please/conf/ops.d/uat-01.groovy
+2011-10-04 14:28:53,838 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles c:\please\0.1\ops.d
+2011-10-04 14:28:53,854 [DEBUG] p.reporter.debug:88 - loadDefaultOpsFiles C:\Documents and Settings\ecomiti\.please\0.1\ops.d
+2011-10-04 14:28:53,854 [DEBUG] p.reporter.debug:88 - parsing file:/C:/Documents%20and%20Settings/ecomiti/.please/0.1/ops.d/vm-jav-004.groovy
+2011-10-04 14:28:54,151 [INFO ] p.reporter.info:92 - uat tearDown clean()...

@@ -1,0 +1,4 @@
+
+actions = [ 'action-01':'com.atoito.please.test.stub.StubAction' ]
+           
+operations = [ 'reports':'com.atoito.please.core.operations.PleaseReportsOperation' ]
