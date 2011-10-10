@@ -21,15 +21,14 @@ package com.atoito.please.core.api;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.net.URLDecoder;
 import java.util.List;
 import java.util.Map;
 
 import com.atoito.please.core.dsl.OpsDslEngine;
 import com.atoito.please.core.util.M;
+import com.atoito.please.core.util.Urls;
 import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;
 import com.google.common.base.Throwables;
@@ -64,13 +63,7 @@ public class OpsFile {
 
     @Override
     public String toString() {
-    	String decoded = "<malformed url>";
-    	try {
-			decoded = URLDecoder.decode(url.toString(), "UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			M.debug("error decoding url in DefaultDescribedOperation");
-		}
-        return decoded;
+    	return Urls.decoded(url);
     }
 
     public List<Operation> getOperations() {

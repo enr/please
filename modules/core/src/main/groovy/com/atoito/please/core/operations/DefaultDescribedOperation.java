@@ -20,9 +20,7 @@
 package com.atoito.please.core.operations;
 
 import java.io.File;
-import java.io.UnsupportedEncodingException;
 import java.net.URL;
-import java.net.URLDecoder;
 import java.util.List;
 
 import com.atoito.please.core.api.Action;
@@ -31,8 +29,8 @@ import com.atoito.please.core.api.IllegalOperationStateException;
 import com.atoito.please.core.api.OperationResult;
 import com.atoito.please.core.api.OutputsAwareAction;
 import com.atoito.please.core.util.DescriptionBuilder;
-import com.atoito.please.core.util.M;
 import com.atoito.please.core.util.Operations;
+import com.atoito.please.core.util.Urls;
 import com.google.common.collect.Lists;
 
 public class DefaultDescribedOperation implements DescribedOperation {
@@ -67,12 +65,7 @@ public class DefaultDescribedOperation implements DescribedOperation {
 
     @Override
     public String toString() {
-    	String decoded = "<malformed url>";
-    	try {
-			decoded = URLDecoder.decode(url.toString(), "UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			M.debug("error decoding url in DefaultDescribedOperation");
-		}
+    	String decoded = Urls.decoded(url);
         return String.format("operation '%s' described in %s", id, decoded);
     }
 

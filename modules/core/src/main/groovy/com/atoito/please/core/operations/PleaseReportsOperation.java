@@ -21,7 +21,6 @@ package com.atoito.please.core.operations;
 
 import java.net.URL;
 import java.net.URLClassLoader;
-import java.net.URLDecoder;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -37,6 +36,7 @@ import com.atoito.please.core.api.RegistryFactory;
 import com.atoito.please.core.util.Environment;
 import com.atoito.please.core.util.M;
 import com.atoito.please.core.util.Operations;
+import com.atoito.please.core.util.Urls;
 
 public class PleaseReportsOperation extends AbstractProvidedOperation implements IdAwareOperation {
 
@@ -120,7 +120,7 @@ public class PleaseReportsOperation extends AbstractProvidedOperation implements
         try {
         for (int i = 0; i < urls.length; i++) {
             URL u = urls[i];
-            String decoded = URLDecoder.decode(u.toString(), "UTF-8");
+            String decoded = Urls.decoded(u);
             M.info(" - "+decoded);
         }
         } catch (Exception e) {
@@ -139,7 +139,7 @@ public class PleaseReportsOperation extends AbstractProvidedOperation implements
 		for (String opid : keys) { 
 			Operation operation = operations.get(opid);
 			if (operation instanceof DescribedOperation) {
-				M.info(" - %s [ %s ]", opid, ((DescribedOperation)operation).getOpsUrl());
+				M.info(" - %s [ %s ]", opid, Urls.decoded(((DescribedOperation)operation).getOpsUrl()));
 			} else {
 				M.info(" - %s [ %s ]", opid, operation.getClass().getName());
 			}
