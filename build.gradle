@@ -10,74 +10,76 @@ buildscript {
 }
 
 allprojects { project ->
-	version = '0.1-SNAPSHOT'
-	group = 'com.atoito.please'
-	isSnapshot = version.endsWith("-SNAPSHOT")
-	
-	repositories {
+    version = '0.1-SNAPSHOT'
+    group = 'com.atoito.please'
+    isSnapshot = version.endsWith("-SNAPSHOT")
+    
+    repositories {
         mavenLocal()
-		mavenCentral()
-	}
-	
-	javaModules = [
-		':modules:core', ':modules:cli', ':modules:acceptance-tests'
-	]
-	
-	acceptanceTests = [':modules:acceptance-tests']
+        mavenCentral()
+    }
+    
+    javaModules = [
+        ':modules:core', ':modules:cli', ':modules:acceptance-tests'
+    ]
+    
+    acceptanceTests = [':modules:acceptance-tests']
 
 }
 
 subprojects {
 
-	if (project.path in javaModules) {
-		apply plugin: 'groovy'
+    if (project.path in javaModules) {
+        apply plugin: 'groovy'
         apply plugin: 'eclipse'
         apply plugin: 'license'
 
-		configurations {
-			compile.transitive = true
-			testCompile.transitive = true
-		}
+        configurations {
+            compile.transitive = true
+            testCompile.transitive = true
+        }
 
-		dependencies {
-			groovy group: 'org.codehaus.groovy', name: 'groovy', version: '1.8.1'
-			testCompile 'org.testng:testng:6.2',
-			            'org.easytesting:fest-assert:1.4'
-		}
-		
-		test {
+        dependencies {
+            groovy group: 'org.codehaus.groovy', name: 'groovy', version: '1.8.1'
+            testCompile 'org.testng:testng:6.2',
+                        'org.easytesting:fest-assert:1.4'
+        }
+        
+        test {
             useTestNG()
         }
         
         archivesBaseName = "please-${project.name}"
-		
-		buildDir = 'target'
+        
+        buildDir = 'target'
 
-		sourceCompatibility = 1.5
-		targetCompatibility = 1.5
-		
-        eclipseProject {
-            projectName = "please-${project.name}"
+        sourceCompatibility = 1.5
+        targetCompatibility = 1.5
+        
+        eclipse {
+            project {
+                name = "please-${project.name}"
+            }
+            classpath {
+                // per mantenere la stessa distanza da project dir tra eclipse e gradle
+                defaultOutputDir = new File("${project.buildDir}/eclipse/classes");
+                downloadJavadoc = true
+            }
         }
-        eclipseClasspath {
-	        // per mantenere la stessa distanza da project dir tra eclipse e gradle
-	        defaultOutputDir = new File("${project.buildDir}/eclipse/classes");
-	        downloadJavadoc = true
+
+    }
+
+    if (project.path in acceptanceTests) {
+        test.enabled = false
+        task sut(    dependsOn: [':modules:core:test', ':modules:cli:test', ':modules:cli:installApp'],
+                    description: 'Builds the system under test (using installApp).') << {
+                    test.enabled = true
+        }    
+        task uat(    dependsOn: [sut, test], 
+                    description: 'Runs the user acceptance tests.') << {
+                    test.enabled = true
         }
-
-	}
-
-	if (project.path in acceptanceTests) {
-		test.enabled = false
-		task sut(	dependsOn: [':modules:core:test', ':modules:cli:test', ':modules:cli:installApp'],
-					description: 'Builds the system under test (using installApp).') << {
-					test.enabled = true
-		}	
-		task uat(	dependsOn: [sut, test], 
-					description: 'Runs the user acceptance tests.') << {
-					test.enabled = true
-		}
-	}
+    }
 }
 
 task wrapper(type: Wrapper) {
