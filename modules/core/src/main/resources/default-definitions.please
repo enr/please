@@ -8,7 +8,8 @@ actions = [ 'copy':'com.atoito.please.core.actions.CopyAction',
             'mkdir':'com.atoito.please.core.actions.MkdirAction',
             'download':'com.atoito.please.core.actions.DownloadAction',
             'setenv':'com.atoito.please.core.actions.SetEnvVariableAction',
-            'delete':'com.atoito.please.core.actions.DeleteAction', ]
+            'delete':'com.atoito.please.core.actions.DeleteAction',
+            'append':'com.atoito.please.core.actions.AppendAction' ]
            
 operations = [  'reports':'com.atoito.please.core.operations.PleaseReportsOperation',
                 'paths':'com.atoito.please.core.operations.PleaseReportsOperation',

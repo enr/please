@@ -27,6 +27,7 @@ import com.atoito.please.core.api.AbstractAction;
 import com.atoito.please.core.exception.PleaseException;
 import com.atoito.please.core.util.Actions;
 import com.atoito.please.core.util.DescriptionBuilder;
+import com.atoito.please.core.util.M;
 import com.atoito.please.core.util.Store;
 import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;
@@ -59,13 +60,15 @@ public class AppendAction extends AbstractAction {
     private File resolveAndValidateFile() {
         Object configured = Preconditions.checkNotNull(store.get("file"));
         File file = Store.toFile(configured);
+        M.info("APPEND file %s", file.getAbsolutePath());
         Preconditions.checkArgument(file.exists(), "file '" + file.getAbsolutePath() + "' not found");
         return file;
     }
 
     private String resolveAndValidateContent() {
         Object configured = Preconditions.checkNotNull(store.get("content"));
-        String content = eol + configured.toString() + eol;
+        String content = eol + eol + configured.toString() + eol + eol;
+        M.info("APPEND content %s", content);
         return content;
     }
     

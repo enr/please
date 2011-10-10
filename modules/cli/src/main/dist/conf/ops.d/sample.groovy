@@ -22,4 +22,12 @@ operation {
 	}
 }
 
+operation {
+	id 'hello-append'
+	append {
+		file = '/tmp/myfile.txt'
+		content = 'append!!'
+	}
+}
+
 
