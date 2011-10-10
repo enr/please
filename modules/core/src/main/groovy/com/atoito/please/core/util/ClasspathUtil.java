@@ -55,11 +55,10 @@ public class ClasspathUtil {
             Throwables.propagate(e);
         }
         if (!location.getScheme().equals("file")) {
-            throw new PleaseException(String.format("Cannot determine classpath for %s from codebase '%s'.", targetClass.getName(), location));
+            throw new PleaseException(String.format("Cannot determine classpath for %s from codebase '%s'.",
+                    targetClass.getName(), location));
         }
         return new File(location.getPath());
     }
 
-
 }
-

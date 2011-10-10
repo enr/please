@@ -33,65 +33,67 @@ import com.google.common.base.Joiner;
 import com.google.common.io.Files;
 
 public class BaseUat {
-	
-	/**
-	 * The home for the please installation used for the tests.
-	 */
-	File installedHome;
-	
-	/**
-	 * The path to tests data, ie files used in tests.
-	 */
-	String testDataPath;
 
-	@BeforeClass
-	public void setUp() throws Exception {
+    /**
+     * The home for the please installation used for the tests.
+     */
+    File installedHome;
 
-		File cc = ClasspathUtil.getClasspathForClass(BasicFunctionalitySmokeUat.class);
-		File modules = cc.getParentFile().getParentFile().getParentFile().getParentFile();
-		String installPath = Joiner.on(File.separatorChar).join(modules.getAbsolutePath(), "cli", "target", "install", "please");
-		installedHome = new File(installPath);
+    /**
+     * The path to tests data, ie files used in tests.
+     */
+    String testDataPath;
 
-		testDataPath = Joiner.on(File.separatorChar).join(modules.getAbsolutePath(), "acceptance-tests", "src", "test", "data");
+    @BeforeClass
+    public void setUp() throws Exception {
 
-		Environment.refreshWithHome(installedHome);
-		Environment environment = Environment.getCurrent();
+        File cc = ClasspathUtil.getClasspathForClass(BasicFunctionalitySmokeUat.class);
+        File modules = cc.getParentFile().getParentFile().getParentFile().getParentFile();
+        String installPath = Joiner.on(File.separatorChar).join(modules.getAbsolutePath(), "cli", "target", "install",
+                "please");
+        installedHome = new File(installPath);
 
-		String installOpsDirPath = environment.distributionOpsFileDirPath();
-		File installOpsDir = new File(installOpsDirPath);
-		Directories.ensureExists(installOpsDir);
+        testDataPath = Joiner.on(File.separatorChar).join(modules.getAbsolutePath(), "acceptance-tests", "src", "test",
+                "data");
 
-		String uatOpsDirectoryPath = Joiner.on(File.separatorChar).join(modules.getAbsolutePath(), "acceptance-tests", "src", "test", "ops");
-		File uatOpsDirectory = new File(uatOpsDirectoryPath);
-		File[] uatOps = uatOpsDirectory.listFiles();
-		for (int i = 0; i < uatOps.length; i++) {
-			copyOpsFile(uatOps[i], installOpsDir);
-		}
-	}
-	
-	@AfterClass
-	public void tearDown() {
-    	M.info("uat tearDown clean()...");
-		Environment.clean();
-	}
-	
-	protected void runApplicationWithArgs(String[] args) {
-		ProcessBootstrap bootstrap = new ProcessBootstrap();
-		bootstrap.useHome(installedHome);
-		bootstrap.runWithExit(false);
-		bootstrap.run("com.atoito.please.cli.launcher.PleaseApp", args);
-	}
-	
-	protected void copyOpsFile(File ops, File installOpsDir) {
-		File dest = new File(installOpsDir, ops.getName());
-		try {
-			if (!dest.exists()) {
-				dest.createNewFile();
-			}
-			Files.copy(ops, dest);
-		} catch(Throwable e) {
-			throw new RuntimeException("error copying ops file '"+ops+"' to "+dest.getAbsolutePath(), e);
-		}
-	}
+        Environment.refreshWithHome(installedHome);
+        Environment environment = Environment.getCurrent();
+
+        String installOpsDirPath = environment.distributionOpsFileDirPath();
+        File installOpsDir = new File(installOpsDirPath);
+        Directories.ensureExists(installOpsDir);
+
+        String uatOpsDirectoryPath = Joiner.on(File.separatorChar).join(modules.getAbsolutePath(), "acceptance-tests",
+                "src", "test", "ops");
+        File uatOpsDirectory = new File(uatOpsDirectoryPath);
+        File[] uatOps = uatOpsDirectory.listFiles();
+        for (int i = 0; i < uatOps.length; i++) {
+            copyOpsFile(uatOps[i], installOpsDir);
+        }
+    }
+
+    @AfterClass
+    public void tearDown() {
+        M.info("uat tearDown clean()...");
+        Environment.clean();
+    }
+
+    protected void runApplicationWithArgs(String[] args) {
+        ProcessBootstrap bootstrap = new ProcessBootstrap();
+        bootstrap.useHome(installedHome);
+        bootstrap.runWithExit(false);
+        bootstrap.run("com.atoito.please.cli.launcher.PleaseApp", args);
+    }
+
+    protected void copyOpsFile(File ops, File installOpsDir) {
+        File dest = new File(installOpsDir, ops.getName());
+        try {
+            if (!dest.exists()) {
+                dest.createNewFile();
+            }
+            Files.copy(ops, dest);
+        } catch (Throwable e) {
+            throw new RuntimeException("error copying ops file '" + ops + "' to " + dest.getAbsolutePath(), e);
+        }
+    }
 }
-

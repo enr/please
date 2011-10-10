@@ -24,19 +24,18 @@ import org.apache.tools.ant.taskdefs.Zip;
 
 public class ZipArchiver extends AbstractArchiver {
 
-	public void execute() {
+    public void execute() {
         Zip zipper = new Zip();
         zipper.setProject(new Project());
         zipper.setBasedir(source);
         if (excludes != null) {
-        	zipper.setExcludes(excludes);
+            zipper.setExcludes(excludes);
         }
         if (includes != null) {
-        	zipper.setIncludes(includes);
+            zipper.setIncludes(includes);
         }
         zipper.setDestFile(destination);
         zipper.execute();
-	}
+    }
 
 }
-

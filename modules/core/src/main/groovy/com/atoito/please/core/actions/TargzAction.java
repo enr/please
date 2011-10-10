@@ -26,10 +26,9 @@ import com.atoito.please.core.components.archives.ArchiveType;
  */
 public class TargzAction extends AbstractArchiveCreationAction {
 
-	@Override
-	protected ArchiveType getArchiveType() {
-		return ArchiveType.TARGZ;
-	}
+    @Override
+    protected ArchiveType getArchiveType() {
+        return ArchiveType.TARGZ;
+    }
 
 }
-

@@ -27,27 +27,27 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * It represents a definition-file:
- * file given from plugins with definitions of the exposed actions and operations.
+ * It represents a definition-file: file given from plugins with definitions of
+ * the exposed actions and operations.
  * 
  */
 public class DefinitionsFile {
-    
-	/**
-	 * The url of the file.
-	 */
+
+    /**
+     * The url of the file.
+     */
     private final URL url;
-    
+
     /**
      * Operations defined in file.
      */
     private Map<String, String> operationDefinitions;
-    
+
     /**
      * Actions defined in file.
      */
     private Map<String, String> actionDefinitions;
-    
+
     public DefinitionsFile(URL definitionsUrl) {
         this.url = definitionsUrl;
         final ConfigObject conf = new ConfigSlurper().parse(url);
@@ -62,7 +62,7 @@ public class DefinitionsFile {
     private Map<String, String> definedOperations(ConfigObject conf) {
         return buildDefinitions(conf.get("operations"));
     }
-    
+
     private Map<String, String> buildDefinitions(Object object) {
         Map<String, String> definitions = new HashMap<String, String>();
         if (object instanceof Map) {
@@ -85,4 +85,3 @@ public class DefinitionsFile {
     }
 
 }
-

@@ -32,16 +32,13 @@ import org.testng.annotations.Test;
 import com.atoito.please.core.util.Directories;
 import com.google.common.io.Files;
 
-
 /**
  * 
  */
-public class DirectoriesTest
-{
+public class DirectoriesTest {
 
     private static FileFilter javaFileFilter = new FileFilter() {
-        public boolean accept(File file)
-        {
+        public boolean accept(File file) {
             return ((file.isFile()) && (file.getAbsolutePath().endsWith(".java")));
         }
     };
@@ -49,21 +46,18 @@ public class DirectoriesTest
     private String thisFile;
 
     @BeforeClass
-    public void initData()
-    {
+    public void initData() {
         thisFile = "." + File.separator + "src" + File.separator + "test" + File.separator + "groovy" + File.separator
                 + this.getClass().getCanonicalName().replace(".", File.separator) + ".java";
     }
 
     @Test
-    public void testFilteredListing()
-    {
+    public void testFilteredListing() {
         File startingDirectory = new File(".");
         List<File> files = Directories.list(startingDirectory, javaFileFilter, true);
 
         List<String> filePaths = new ArrayList<String>();
-        for (File file : files)
-        {
+        for (File file : files) {
             filePaths.add(file.getPath());
         }
         assertThat(filePaths).as("files list").contains(thisFile);
@@ -71,23 +65,20 @@ public class DirectoriesTest
     }
 
     @Test
-    public void testListing()
-    {
+    public void testListing() {
         File startingDirectory = new File(".");
         List<File> files = Directories.list(startingDirectory);
 
         List<String> fileNames = new ArrayList<String>();
-        for (File file : files)
-        {
+        for (File file : files) {
             fileNames.add(file.getName());
         }
         assertThat(fileNames).as("files list").contains("core.gradle");
 
     }
-    
+
     @Test
-    public void testIsEmpty()
-    {
+    public void testIsEmpty() {
         File pwd = new File(".");
         assertThat(Directories.isEmpty(pwd)).isFalse();
         File newDir = Files.createTempDir();
@@ -95,4 +86,3 @@ public class DirectoriesTest
     }
 
 }
-

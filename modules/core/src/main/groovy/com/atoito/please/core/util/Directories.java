@@ -39,8 +39,7 @@ import com.google.common.base.Preconditions;
  * @author Alex Wong
  * @author anonymous user
  */
-public final class Directories
-{
+public final class Directories {
 
     /**
      * Recursively walk a directory tree and return a List of all Files found;
@@ -49,23 +48,19 @@ public final class Directories
      * @param startingDir
      *            is a valid directory, which can be read.
      */
-    static public List<File> list(File startingDir)
-    {
+    static public List<File> list(File startingDir) {
         File dir = validateDirectory(startingDir);
         List<File> result = getFileListingNoSort(dir);
         Collections.sort(result);
         return result;
     }
 
-    static private List<File> getFileListingNoSort(File aStartingDir)
-    {
+    static private List<File> getFileListingNoSort(File aStartingDir) {
         List<File> result = new ArrayList<File>();
         File[] filesAndDirs = aStartingDir.listFiles();
-        for (File file : filesAndDirs)
-        {
+        for (File file : filesAndDirs) {
             result.add(file);
-            if (file.isDirectory())
-            {
+            if (file.isDirectory()) {
                 List<File> deeperList = getFileListingNoSort(file);
                 result.addAll(deeperList);
             }
@@ -77,8 +72,7 @@ public final class Directories
      * Directory is valid if it exists, is actually a directory, and can be
      * read.
      */
-    static private File validateDirectory(File directory)
-    {
+    static private File validateDirectory(File directory) {
         File dir = Preconditions.checkNotNull(directory);
         Preconditions.checkArgument(dir.exists(), "Directory does not exist: %s", dir);
         Preconditions.checkArgument(dir.isDirectory(), "It's not a directory: %s", dir);
@@ -86,83 +80,75 @@ public final class Directories
         return dir;
     }
 
-    public static List<File> list(File directory, FilenameFilter filter, boolean recurse)
-    {
+    public static List<File> list(File directory, FilenameFilter filter, boolean recurse) {
         List<File> files = new ArrayList<File>();
         File[] entries = directory.listFiles();
-        for (File entry : entries)
-        {
-            if (filter == null || filter.accept(directory, entry.getName()))
-            {
+        for (File entry : entries) {
+            if (filter == null || filter.accept(directory, entry.getName())) {
                 files.add(entry);
             }
-            if (recurse && entry.isDirectory())
-            {
+            if (recurse && entry.isDirectory()) {
                 files.addAll(list(entry, filter, recurse));
             }
         }
         return files;
     }
 
-    public static List<File> list(File directory, FileFilter filter, boolean recurse)
-    {
+    public static List<File> list(File directory, FileFilter filter, boolean recurse) {
         List<File> files = new ArrayList<File>();
         File[] entries = directory.listFiles();
-        for (File entry : entries)
-        {
-            if (filter == null || filter.accept(entry))
-            {
+        for (File entry : entries) {
+            if (filter == null || filter.accept(entry)) {
                 files.add(entry);
             }
-            if (recurse && entry.isDirectory())
-            {
+            if (recurse && entry.isDirectory()) {
                 files.addAll(list(entry, filter, recurse));
             }
         }
         return files;
     }
-    
-    public static boolean isEmpty(File directory)
-    {
-    	File subject = validateDirectory(directory);
+
+    public static boolean isEmpty(File directory) {
+        File subject = validateDirectory(directory);
         return (subject.listFiles().length < 1);
     }
 
     /**
-     * Ensure a directory exists.
-     * If the directory not exists, it creates it.
-     * If the expected directory is a normal file a RuntimeException is throwed.
+     * Ensure a directory exists. If the directory not exists, it creates it. If
+     * the expected directory is a normal file a RuntimeException is throwed.
      * NPE if dir is null
      * 
      * @param directory
      */
-    public static void ensureExists(File directory)
-    {
-    	File dir = Preconditions.checkNotNull(directory);
-        if (dir.exists())
-        {
+    public static void ensureExists(File directory) {
+        File dir = Preconditions.checkNotNull(directory);
+        if (dir.exists()) {
             if (!dir.isDirectory()) {
-                throw new RuntimeException("Expected directory '"+dir.getAbsolutePath()+"' exists but it is not a directory");
+                throw new RuntimeException("Expected directory '" + dir.getAbsolutePath()
+                        + "' exists but it is not a directory");
             }
         } else {
             boolean created = dir.mkdirs();
             if (created == false) {
-                throw new RuntimeException("Failed to create directory '"+dir.getAbsolutePath()+"'");
+                throw new RuntimeException("Failed to create directory '" + dir.getAbsolutePath() + "'");
             }
         }
     }
+
     /**
      * Cleans a directory without deleting it.
      * 
      * presa da commons file utils per sostituire guava files delete (deprecata)
-     *
-     * @param directory directory to clean
-     * @throws IOException in case cleaning is unsuccessful
+     * 
+     * @param directory
+     *            directory to clean
+     * @throws IOException
+     *             in case cleaning is unsuccessful
      */
     public static void clean(File directory) throws IOException {
         File cleanable = validateDirectory(directory);
         File[] files = cleanable.listFiles();
-        if (files == null) {  // null if security restricted
+        if (files == null) { // null if security restricted
             String message = String.format("failed to list contents of '%s'.", cleanable);
             throw new PleaseException(message);
         }
@@ -171,16 +157,19 @@ public final class Directories
             file.delete();
         }
     }
+
     /**
      * Deletes a directory recursively.
      * 
      * presa da commons file utils per sostituire guava files delete (deprecata)
-     *
-     * @param directory  directory to delete
-     * @throws IOException in case deletion is unsuccessful
+     * 
+     * @param directory
+     *            directory to delete
+     * @throws IOException
+     *             in case deletion is unsuccessful
      */
     public static void delete(File directory) throws IOException {
-	    File deletable = validateDirectory(directory);
+        File deletable = validateDirectory(directory);
         clean(deletable);
         if (!deletable.delete()) {
             String message = String.format("unable to delete directory '%s'.", deletable);
@@ -188,4 +177,3 @@ public final class Directories
         }
     }
 }
-

@@ -26,10 +26,9 @@ import com.atoito.please.core.components.archives.ArchiveType;
  */
 public class UntargzAction extends AbstractArchiveExpansionAction {
 
-	@Override
-	protected ArchiveType getArchiveType() {
-		return ArchiveType.TARGZ;
-	}
+    @Override
+    protected ArchiveType getArchiveType() {
+        return ArchiveType.TARGZ;
+    }
 
 }
-

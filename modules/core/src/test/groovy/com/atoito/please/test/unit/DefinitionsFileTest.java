@@ -38,14 +38,11 @@ public class DefinitionsFileTest {
         URL simple = Resources.getResource(Constants.PATH_DEF_FILE_SIMPLE);
         DefinitionsFile definitionsFile = new DefinitionsFile(simple);
         Map<String, String> operationDefinitions = definitionsFile.getOperationDefinitions();
-        assertThat(operationDefinitions).as("operations definitions")
-        .isNotNull().hasSize(2)
-        .includes(entry("operation-01", "com.atoito.please.test.stub.StubOperation"))
-        .includes(entry("operation-02", "com.atoito.please.test.stub.StubOperation"));
+        assertThat(operationDefinitions).as("operations definitions").isNotNull().hasSize(2)
+                .includes(entry("operation-01", "com.atoito.please.test.stub.StubOperation"))
+                .includes(entry("operation-02", "com.atoito.please.test.stub.StubOperation"));
         Map<String, String> actionDefinitions = definitionsFile.getActionDefinitions();
         assertThat(actionDefinitions).as("actions definitions").isNotNull().hasSize(2)
-        .includes(entry("action-01", "package.01.Action"))
-        .includes(entry("action-02", "package.02.Action"));
+                .includes(entry("action-01", "package.01.Action")).includes(entry("action-02", "package.02.Action"));
     }
 }
-

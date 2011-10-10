@@ -26,10 +26,9 @@ import com.atoito.please.core.components.archives.ArchiveType;
  */
 public class ZipAction extends AbstractArchiveCreationAction {
 
-	@Override
-	protected ArchiveType getArchiveType() {
-		return ArchiveType.ZIP;
-	}
+    @Override
+    protected ArchiveType getArchiveType() {
+        return ArchiveType.ZIP;
+    }
 
 }
-

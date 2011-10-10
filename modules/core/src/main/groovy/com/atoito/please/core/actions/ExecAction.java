@@ -44,16 +44,15 @@ import com.google.common.io.Files;
 
 public class ExecAction extends AbstractAction {
 
-
     /**
-     * Create accessors for the following, to allow different handling of
-     * the output.
+     * Create accessors for the following, to allow different handling of the
+     * output.
      */
     private ExecuteStreamHandler executeStreamHandler;
     private OutputStream outputStream;
     private OutputStream errorStream;
 
-    /** 
+    /**
      * Whether or not to append stdout/stderr to existing files
      * 
      */
@@ -68,122 +67,129 @@ public class ExecAction extends AbstractAction {
      * The file to direct standard error from the command.
      */
     private File error;
-    
+
     /**
      * The actual arguments for the command execution.
      */
     private String[] commandLine;
-    
+
     /**
      * The actual, non splitted, command line.
      */
     private String originalRequest;
-    
+
     /**
      * The working directory to call the command from.
      */
     private File workingDirectory;
-    
+
     private boolean showOutput = false;
-    
+
     protected void internalExecute() {
 
-		M.info("running %s from wd %s", Arrays.asList(commandLine), workingDirectory);
+        M.info("running %s from wd %s", Arrays.asList(commandLine), workingDirectory);
         // Just call the getExecuteStreamHandler() and let it handle
-        //     the semantics of instantiation or retrieval.
-		Execute executor = new Execute(getExecuteStreamHandler(), null);
+        // the semantics of instantiation or retrieval.
+        Execute executor = new Execute(getExecuteStreamHandler(), null);
         executor.setWorkingDirectory(workingDirectory);
 
-		executor.setCommandline(commandLine);
-		try {
-			executor.execute();
-		} catch (IOException e) {
-			throw new PleaseException("error executing "+Arrays.asList(commandLine)+" .");
-		}
-		int exit = executor.getExitValue();
-		M.info("executed %s , exit value = %d%n", Arrays.asList(commandLine), exit);
-		if (showOutput) /* && (output == null))*/ {
-			M.info("%n---%n%s%n---%n", outputStream);
-		}
-		Closeables.closeQuietly(outputStream);
-		Closeables.closeQuietly(errorStream);
-	}
-	
-	private String[] resolveAndValidateCommandLine() {
-		Object configured = Preconditions.checkNotNull(store.get("command"));
-		// if win, ensure that starts with cmd /c ?
-		originalRequest = configured.toString();
-		String[] commandLine = Commandline.translateCommandline(originalRequest);
-		return commandLine;
-	}
-	
-	private File resolveAndValidateWorkingDirectory() {
-		Object configured = Preconditions.checkNotNull(store.get("workingDirectory"), "working directory cannot be null");
-		String path = configured.toString();
-		File file = new File(path);
-		if (registeredOutputs.contains(file)) {
-			M.info("working directory '%s'. I don't know if it exists, but it's registered as output from a former action...", file.getAbsolutePath());
-		} else {
-			Preconditions.checkArgument(file.exists(), "working directory '%s' not found", file.getAbsolutePath());
-			Preconditions.checkArgument(file.isDirectory(), "working directory '%s' not a directory", file.getAbsolutePath());
-		}
-		return file;
-	}
-	
-	private boolean resolveAndValidateShowOutput() {
-		Object show = store.get("show");
-		return ((show != null) && ("true".equalsIgnoreCase(show.toString().trim())));
-	}
+        executor.setCommandline(commandLine);
+        try {
+            executor.execute();
+        } catch (IOException e) {
+            throw new PleaseException("error executing " + Arrays.asList(commandLine) + " .");
+        }
+        int exit = executor.getExitValue();
+        M.info("executed %s , exit value = %d%n", Arrays.asList(commandLine), exit);
+        if (showOutput) /* && (output == null)) */{
+            M.info("%n---%n%s%n---%n", outputStream);
+        }
+        Closeables.closeQuietly(outputStream);
+        Closeables.closeQuietly(errorStream);
+    }
 
-	private File resolveAndValidateStdOutputFile() {
-		return resolveAndValidateOutputFile(store.get("stdOutputFile"));
-	}
-	
-	private File resolveAndValidateErrOutputFile() {
-		return resolveAndValidateOutputFile(store.get("errOutputFile"));
-	}
+    private String[] resolveAndValidateCommandLine() {
+        Object configured = Preconditions.checkNotNull(store.get("command"));
+        // if win, ensure that starts with cmd /c ?
+        originalRequest = configured.toString();
+        String[] commandLine = Commandline.translateCommandline(originalRequest);
+        return commandLine;
+    }
 
-	private File resolveAndValidateOutputFile(Object configuration) {
-		if (configuration == null) {
-			return null;
-		}
-		String path = configuration.toString();
-		File file = new File(path);
-		try {
-			Files.touch(file);
-		} catch (IOException e) {
-			throw new PleaseException("error creating output file "+file.getAbsolutePath());
-		}
-		return file;
-	}
+    private File resolveAndValidateWorkingDirectory() {
+        Object configured = Preconditions.checkNotNull(store.get("workingDirectory"),
+                "working directory cannot be null");
+        String path = configured.toString();
+        File file = new File(path);
+        if (registeredOutputs.contains(file)) {
+            M.info("working directory '%s'. I don't know if it exists, but it's registered as output from a former action...",
+                    file.getAbsolutePath());
+        } else {
+            Preconditions.checkArgument(file.exists(), "working directory '%s' not found", file.getAbsolutePath());
+            Preconditions.checkArgument(file.isDirectory(), "working directory '%s' not a directory",
+                    file.getAbsolutePath());
+        }
+        return file;
+    }
+
+    private boolean resolveAndValidateShowOutput() {
+        Object show = store.get("show");
+        return ((show != null) && ("true".equalsIgnoreCase(show.toString().trim())));
+    }
+
+    private File resolveAndValidateStdOutputFile() {
+        return resolveAndValidateOutputFile(store.get("stdOutputFile"));
+    }
+
+    private File resolveAndValidateErrOutputFile() {
+        return resolveAndValidateOutputFile(store.get("errOutputFile"));
+    }
+
+    private File resolveAndValidateOutputFile(Object configuration) {
+        if (configuration == null) {
+            return null;
+        }
+        String path = configuration.toString();
+        File file = new File(path);
+        try {
+            Files.touch(file);
+        } catch (IOException e) {
+            throw new PleaseException("error creating output file " + file.getAbsolutePath());
+        }
+        return file;
+    }
 
     /**
      * find the handler and instantiate it if it does not exist yet
+     * 
      * @return handler for output and error streams
      */
     protected ExecuteStreamHandler getExecuteStreamHandler() {
 
         if (this.executeStreamHandler == null) {
-            setExecuteStreamHandler(new PumpStreamHandler(getOutputStream(),
-                                                          getErrorStream()));
+            setExecuteStreamHandler(new PumpStreamHandler(getOutputStream(), getErrorStream()));
         }
 
         return this.executeStreamHandler;
     }
-    
+
     /**
      * sets the handler
-     * @param handler a handler able of processing the output and error streams from the cvs exe
+     * 
+     * @param handler
+     *            a handler able of processing the output and error streams from
+     *            the cvs exe
      */
     public void setExecuteStreamHandler(ExecuteStreamHandler handler) {
         this.executeStreamHandler = handler;
     }
+
     /**
-     * access the stream to which the stdout from cvs should go
-     * if this stream has already been set, it will be returned
-     * if the stream has not yet been set, if the attribute output
-     * has been set, the output stream will go to the output file
-     * otherwise the output will go to ant's logging system
+     * access the stream to which the stdout from cvs should go if this stream
+     * has already been set, it will be returned if the stream has not yet been
+     * set, if the attribute output has been set, the output stream will go to
+     * the output file otherwise the output will go to ant's logging system
+     * 
      * @return output stream to which cvs' stdout should go to
      */
     protected OutputStream getOutputStream() {
@@ -192,28 +198,28 @@ public class ExecAction extends AbstractAction {
 
             if (output != null) {
                 try {
-                    setOutputStream(new PrintStream(
-                                        new BufferedOutputStream(
-                                            new FileOutputStream(output
-                                                                 .getPath(),
-                                                                 append))));
+                    setOutputStream(new PrintStream(new BufferedOutputStream(new FileOutputStream(output.getPath(),
+                            append))));
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
             } else {
-                //setOutputStream(new PrintStream(new BufferedOutputStream(new ByteArrayOutputStream())));
+                // setOutputStream(new PrintStream(new BufferedOutputStream(new
+                // ByteArrayOutputStream())));
                 setOutputStream(new ByteArrayOutputStream());
             }
         }
 
         return this.outputStream;
     }
+
     /**
-     * access the stream to which the stderr from cvs should go
-     * if this stream has already been set, it will be returned
-     * if the stream has not yet been set, if the attribute error
-     * has been set, the output stream will go to the file denoted by the error attribute
-     * otherwise the stderr output will go to ant's logging system
+     * access the stream to which the stderr from cvs should go if this stream
+     * has already been set, it will be returned if the stream has not yet been
+     * set, if the attribute error has been set, the output stream will go to
+     * the file denoted by the error attribute otherwise the stderr output will
+     * go to ant's logging system
+     * 
      * @return output stream to which cvs' stderr should go to
      */
     protected OutputStream getErrorStream() {
@@ -223,16 +229,13 @@ public class ExecAction extends AbstractAction {
             if (error != null) {
 
                 try {
-                    setErrorStream(new PrintStream(
-                                       new BufferedOutputStream(
-                                           new FileOutputStream(error.getPath(),
-                                                                append))));
+                    setErrorStream(new PrintStream(new BufferedOutputStream(new FileOutputStream(error.getPath(),
+                            append))));
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
             } else {
-                setErrorStream(new PrintStream(
-                                new BufferedOutputStream(new ByteArrayOutputStream())));
+                setErrorStream(new PrintStream(new BufferedOutputStream(new ByteArrayOutputStream())));
             }
         }
 
@@ -241,7 +244,9 @@ public class ExecAction extends AbstractAction {
 
     /**
      * sets a stream to which the output from the cvs executable should be sent
-     * @param outputStream stream to which the stdout from cvs should go
+     * 
+     * @param outputStream
+     *            stream to which the stdout from cvs should go
      */
     protected void setOutputStream(OutputStream outputStream) {
 
@@ -250,7 +255,9 @@ public class ExecAction extends AbstractAction {
 
     /**
      * sets a stream to which the stderr from the cvs exe should go
-     * @param errorStream an output stream willing to process stderr
+     * 
+     * @param errorStream
+     *            an output stream willing to process stderr
      */
     protected void setErrorStream(OutputStream errorStream) {
 
@@ -258,27 +265,31 @@ public class ExecAction extends AbstractAction {
     }
 
     protected void internalInitialize() {
-		Preconditions.checkNotNull(store);
-		commandLine = resolveAndValidateCommandLine();
-		workingDirectory = resolveAndValidateWorkingDirectory();
-		output = resolveAndValidateStdOutputFile();
-		error = resolveAndValidateErrOutputFile();
-		showOutput = resolveAndValidateShowOutput();
-	}
-    
+        Preconditions.checkNotNull(store);
+        commandLine = resolveAndValidateCommandLine();
+        workingDirectory = resolveAndValidateWorkingDirectory();
+        output = resolveAndValidateStdOutputFile();
+        error = resolveAndValidateErrOutputFile();
+        showOutput = resolveAndValidateShowOutput();
+    }
+
     @Override
     public String toString() {
-    	return this.getClass().getName()+". "+Actions.dumpStore(store);
+        return this.getClass().getName() + ". " + Actions.dumpStore(store);
     }
-    
-	public String toHuman() {
-		return new DescriptionBuilder().forAction("exec")
-				.humanizedAs("exec '%s' from working directory '%s'", originalRequest, workingDirectory.getAbsolutePath())
-				.appendnl((output == null) ? "no file for std output" : String.format("std output will be redirected to %s", output.getAbsolutePath()))
-				.appendnl((error == null) ? "no file for err output" : String.format("err output will be redirected to %s", error.getAbsolutePath()))
-				.appendnl((showOutput == true) ? "output will be showed" : "output will not be showed")
-				.withUsedFile(workingDirectory, "working directory", registeredOutputs)
-				.toString();
-	}
-}
 
+    public String toHuman() {
+        return new DescriptionBuilder()
+                .forAction("exec")
+                .humanizedAs("exec '%s' from working directory '%s'", originalRequest,
+                        workingDirectory.getAbsolutePath())
+                .appendnl(
+                        (output == null) ? "no file for std output" : String.format(
+                                "std output will be redirected to %s", output.getAbsolutePath()))
+                .appendnl(
+                        (error == null) ? "no file for err output" : String.format(
+                                "err output will be redirected to %s", error.getAbsolutePath()))
+                .appendnl((showOutput == true) ? "output will be showed" : "output will not be showed")
+                .withUsedFile(workingDirectory, "working directory", registeredOutputs).toString();
+    }
+}

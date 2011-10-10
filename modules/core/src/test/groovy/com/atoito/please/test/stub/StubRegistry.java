@@ -30,10 +30,10 @@ import com.atoito.please.core.api.PleaseRegistry;
 import com.beust.jcommander.internal.Maps;
 
 public class StubRegistry implements PleaseRegistry {
-    
+
     Map<String, Operation> operations = Maps.newHashMap();
     Map<String, String> actionsDefinitions = Maps.newHashMap();
-    
+
     public StubRegistry() {
         actionsDefinitions.put("act-test-simple-01", StubAction.class.getName());
         operations.put("ops-test-simple-01", new StubOperation());
@@ -78,24 +78,23 @@ public class StubRegistry implements PleaseRegistry {
         return actionsDefinitions;
     }
 
-	public Map<String, Operation> getRegisteredOperations() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public Map<String, Operation> getRegisteredOperations() {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	public Map<String, String> getActionDefinitions() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public Map<String, String> getActionDefinitions() {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	public Set<OpsFile> getLoadedOpsFiles() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public Set<OpsFile> getLoadedOpsFiles() {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	public void loadDefinitionsUrl(URL definitionsUrl) {
-		// TODO Auto-generated method stub
-		
-	}
+    public void loadDefinitionsUrl(URL definitionsUrl) {
+        // TODO Auto-generated method stub
+
+    }
 }
-

@@ -33,7 +33,7 @@ import com.google.common.base.Preconditions;
 
 /**
  * Utility class pertaining the bootstrap of the CLI application.
- *
+ * 
  */
 public class Bootstrap {
 
@@ -47,18 +47,19 @@ public class Bootstrap {
     }
 
     /**
-     * Returns a list of jars urls to include in Please classpath, using the given file as home.
+     * Returns a list of jars urls to include in Please classpath, using the
+     * given file as home.
      * 
      * @param home
      * @return a list of jars urls to include in Please classpath.
      */
     public static List<URL> getPleaseClasspathUrls(File home) {
-    	List<URL> result = new ArrayList<URL>();
+        List<URL> result = new ArrayList<URL>();
         result.addAll(jarsInSubDirectory(home, "lib"));
         result.addAll(jarsInSubDirectory(home, "plugins"));
         return result;
     }
-    
+
     private static File getPleaseHome() {
         File codeSource = ClasspathUtil.getClasspathForClass(ProcessBootstrap.class);
         File pleaseHome = null;
@@ -66,17 +67,19 @@ public class Bootstrap {
             // Loaded from a JAR - assume we're running from the distribution
             pleaseHome = codeSource.getParentFile().getParentFile();
         } else {
-            // Loaded from a classes dir - assume we're running from the ide or tests
+            // Loaded from a classes dir - assume we're running from the ide or
+            // tests
             pleaseHome = null;
         }
         return pleaseHome;
     }
 
     private static List<URL> jarsInSubDirectory(File parent, String dirName) {
-    	parent = Preconditions.checkNotNull(parent, "asking jars, parent directory cannot be null");
-    	dirName = Preconditions.checkNotNull(dirName, "asking jars, directory cannot be null");
-    	Preconditions.checkArgument(parent.exists(), "parent directory '%s' not found", parent.getAbsolutePath());
-    	Preconditions.checkArgument(parent.isDirectory(), "parent directory '%s' not a directory", parent.getAbsolutePath());
+        parent = Preconditions.checkNotNull(parent, "asking jars, parent directory cannot be null");
+        dirName = Preconditions.checkNotNull(dirName, "asking jars, directory cannot be null");
+        Preconditions.checkArgument(parent.exists(), "parent directory '%s' not found", parent.getAbsolutePath());
+        Preconditions.checkArgument(parent.isDirectory(), "parent directory '%s' not a directory",
+                parent.getAbsolutePath());
         String pleaseHomePath = parent.getAbsolutePath();
         List<URL> plugins = new ArrayList<URL>();
         File subDir = new File(pleaseHomePath, dirName);
@@ -87,16 +90,15 @@ public class Bootstrap {
         }
         for (File file : subDir.listFiles()) {
             if (!file.getName().endsWith(".jar")) {
-            	continue;
+                continue;
             }
             try {
                 URL url = file.toURI().toURL();
                 plugins.add(url);
             } catch (MalformedURLException e) {
-                throw new PleaseException("error loading jar "+file.getAbsolutePath());
+                throw new PleaseException("error loading jar " + file.getAbsolutePath());
             }
         }
         return plugins;
     }
 }
-

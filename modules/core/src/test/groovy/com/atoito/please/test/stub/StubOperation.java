@@ -30,11 +30,10 @@ public class StubOperation implements Operation {
     }
 
     public String toHuman() {
-    	return this.getClass().getName();
+        return this.getClass().getName();
     }
 
-	public void validate() throws IllegalOperationStateException {
-	}
+    public void validate() throws IllegalOperationStateException {
+    }
 
 }
-

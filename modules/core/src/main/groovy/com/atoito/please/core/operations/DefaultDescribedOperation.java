@@ -34,70 +34,68 @@ import com.atoito.please.core.util.Urls;
 import com.google.common.collect.Lists;
 
 public class DefaultDescribedOperation implements DescribedOperation {
-    
+
     private final String id;
-    
+
     private final URL url;
-    
+
     private final String description;
-    
+
     private List<Action> actions = Lists.newArrayList();
 
     public DefaultDescribedOperation(URL url, String id, String description) {
-    	this.url = url;
+        this.url = url;
         this.id = id;
         this.description = description;
     }
-    
+
     public OperationResult perform() {
-    	for (Action action : actions) {
-			action.execute();
-		}
-    	return Operations.successResult();
+        for (Action action : actions) {
+            action.execute();
+        }
+        return Operations.successResult();
     }
 
     public String toHuman() {
-    	return new DescriptionBuilder().forOperation(id)
-    	.humanizedAs((description == null) ? toString() : description)
-    	.withActions(actions)
-    	.toString();
+        return new DescriptionBuilder().forOperation(id).humanizedAs((description == null) ? toString() : description)
+                .withActions(actions).toString();
     }
 
     @Override
     public String toString() {
-    	String decoded = Urls.decoded(url);
+        String decoded = Urls.decoded(url);
         return String.format("operation '%s' described in %s", id, decoded);
     }
 
-	public URL getOpsUrl() {
-		return url;
-	}
+    public URL getOpsUrl() {
+        return url;
+    }
 
-	public String getId() {
-		return this.id;
-	}
+    public String getId() {
+        return this.id;
+    }
 
     public void addAction(Action action) {
         actions.add(action);
     }
 
-	public void validate() throws IllegalOperationStateException {
-		List<File> outputs = Lists.newArrayList();
-		try {
-			for (Action action : actions) {
-				if (action instanceof OutputsAwareAction) {
-					((OutputsAwareAction) action).processOutputs(outputs);
-				}
-				action.initialize();
-			}
-		} catch (Throwable throwable) {
-			throw new IllegalOperationStateException("invalid operation state: error during actions initializing", throwable);
-		}
-	}
+    public void validate() throws IllegalOperationStateException {
+        List<File> outputs = Lists.newArrayList();
+        try {
+            for (Action action : actions) {
+                if (action instanceof OutputsAwareAction) {
+                    ((OutputsAwareAction) action).processOutputs(outputs);
+                }
+                action.initialize();
+            }
+        } catch (Throwable throwable) {
+            throw new IllegalOperationStateException("invalid operation state: error during actions initializing",
+                    throwable);
+        }
+    }
 
-	public String getDescription() {
-		return description;
-	}
+    public String getDescription() {
+        return description;
+    }
 
 }
-

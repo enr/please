@@ -33,15 +33,15 @@ public class Operations {
                 return operation;
             }
         } catch (Exception throwable) {
-            throw new PleaseException(String.format("error creating operation from class '%s': %s", operationClassName, throwable.getMessage()), throwable);
+            throw new PleaseException(String.format("error creating operation from class '%s': %s", operationClassName,
+                    throwable.getMessage()), throwable);
         }
         throw new PleaseException(String.format("error creating operation from class '%s'", operationClassName));
     }
-    
+
     public static OperationResult successResult() {
-    	OperationResult result = new OperationResult();
-    	result.successful();
-    	return result;
+        OperationResult result = new OperationResult();
+        result.successful();
+        return result;
     }
 }
-

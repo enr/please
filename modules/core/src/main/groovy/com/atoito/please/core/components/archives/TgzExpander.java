@@ -24,7 +24,7 @@ import org.apache.tools.ant.taskdefs.Untar;
 
 public class TgzExpander extends AbstractExpander {
 
-	public void execute() {
+    public void execute() {
         Untar untarrer = new Untar();
         untarrer.setProject(new Project());
         untarrer.setSrc(source);
@@ -32,9 +32,8 @@ public class TgzExpander extends AbstractExpander {
         mode.setValue("gzip");
         untarrer.setCompression(mode);
         untarrer.setDest(destination);
-        //untarrer.setOverwrite(b)
+        // untarrer.setOverwrite(b)
         untarrer.execute();
-	}
+    }
 
 }
-

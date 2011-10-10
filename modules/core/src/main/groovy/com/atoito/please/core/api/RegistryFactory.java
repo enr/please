@@ -27,4 +27,3 @@ public class RegistryFactory {
         return DefaultRegistry.INSTANCE;
     }
 }
-
