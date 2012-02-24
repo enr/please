@@ -361,6 +361,11 @@ Special dirs for distribution:
 
 * `modules/cli/src/main/dist` will be copied in `$PLEASE_HOME`
 
+Test results:
+
+* [module core](/please/developers/tests/core/index.html)
+* [module acceptance](/please/developers/tests/uat/index.html)
+
 
 Extending Please
 ----------------
