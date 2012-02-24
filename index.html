@@ -1,0 +1,546 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="/please/css/sh/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="/please/css/sh/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <script src="/please/js/sh/shCore.js" type="text/javascript"></script>
+  <script src="/please/js/sh/shAutoloader.js" type="text/javascript"></script>
+  <link href="/please/css/main.css" media="screen" rel="stylesheet" type="text/css" />
+  <title>Xite</title>
+</head>
+<body>
+ 
+	<div class="fixed-position fixed-n">
+		Please operation performer
+	</div>
+
+    <!-- 
+	<div class="fixed-position fixed-n-e">
+		East
+	</div>
+ 
+	<div class="fixed-position fixed-s-e">
+		South East
+	</div>
+    -->
+ 
+	<div class="fixed-position fixed-s">
+      <a href="/please/index.html">Home</a> | <a href="http://github.com/enr/please">Source code</a>
+	</div>
+ 
+    <!--
+	<div class="fixed-position fixed-s-w">
+		South West
+	</div>
+ 
+	<div class="fixed-position fixed-w">
+		West
+	</div>
+ 
+	<div class="fixed-position fixed-n-w">
+		North West
+	</div>
+    -->
+ 
+	<div id="container">
+		<div id="content">
+<h1>Please</h1>
+
+<p>P.O.C. for an operation performer, usable for:</p>
+
+<ul>
+<li>devops</li>
+<li>common operations in your box (backup etc)</li>
+</ul>
+
+<h2>Why Please?</h2>
+
+<p>To leverage some code and 'cause I'm working in a win based / very close environment...</p>
+
+<p>Please helps me to automate some common operation.</p>
+
+<h2>One minute test</h2>
+
+<pre><code>git clone git://github.com/enr/please.git
+gradle installApp
+./modules/cli/target/install/please/bin/please reports
+</code></pre>
+
+<h2>How it works</h2>
+
+<p>Please works in terms of:</p>
+
+<ul>
+<li>operation: anything to do to achieve a goal</li>
+<li>action: the single step to perform operation</li>
+<li>ops-file: a file written using a DSL containig operations to perform</li>
+</ul>
+
+<p>Actions help user to define operations without need to write actual code.</p>
+
+<p>If you are a *nix guy, think to operation like a simple shell script and action as the single command;
+indeed Please gives you actions like: <code>mkdir</code>, <code>exec</code>, etc. </p>
+
+<p>The standard way to run Please is</p>
+
+<pre><code>please &lt;operation&gt;
+</code></pre>
+
+<p>where <code>&lt;operation&gt;</code> is the identifier for the operation to perform.</p>
+
+<p>Operation is taken from a operation registry containing any operation:</p>
+
+<ul>
+<li>built-in in the main Please distribution</li>
+<li>defined from plugins</li>
+<li>defined in ops-file</li>
+</ul>
+
+<p>Please is runned with:</p>
+
+<pre><code>$ please &lt;opid&gt; [args]
+</code></pre>
+
+<p>this command performs operation 'opid' passing any option.</p>
+
+<pre><code>$ please &lt;ops-file&gt;   # [NOT YET IMPLEMENTED]
+</code></pre>
+
+<p>this command (sorry, not yet implemented) performs the operation defined as 'default' in a given ops file.</p>
+
+<p>Please looks for the required operation, in:</p>
+
+<ul>
+<li>plugins: ie jar files dropped in plugins/ directory, which expose operations as java classes implementing <code>com.atoito.please.core.api.Operation</code> and declared in META-INF/plugin-definitions.please</li>
+<li>ops-file</li>
+</ul>
+
+<h2>Usage</h2>
+
+<p>By default Please offers you some operation, like 'reports' or 'actions'</p>
+
+<p>To define more operations you have to code a new plugin or write a ops-file.</p>
+
+<p>Ops is a file written in Please DSL located in some directory known to Please.</p>
+
+<p>In this file you can define a operation as a sequence of some action, ie a 'install-tomcat' operation will be defined as:</p>
+
+<pre><code>operation {
+    id 'install-tomcat'
+    description = 'this operation installs tomcat in /opt/tomcat'
+    download {
+        url = 'http://...mirror/tomcat.zip'
+        name = 'tomcat.zip'
+    }
+    unzip {
+        file = tomcat.zip
+        destination = '/opt'
+    }
+    setenv {
+        name = 'CATALINA_HOME'
+        value = '/opt/tomcat'
+    }
+    setenv {
+        name = 'PATH'
+        value = '/opt/tomcat/bin'
+        //append = true [NOT YET IMPLEMENTED]
+    }
+}
+</code></pre>
+
+<p>You have some sample file in <code>modules/cli/src/main/dist/conf/ops.d</code></p>
+
+<p>to see which operations you can run:</p>
+
+<pre><code>bin/please operations
+</code></pre>
+
+<p>to have a complete report about your actual Please installation:</p>
+
+<pre><code>bin/please reports
+</code></pre>
+
+<p>This operation gives you a full report about current Please installation:</p>
+
+<ul>
+<li>paths where ops files are loaded from</li>
+<li>executable operations and actions</li>
+<li>loaded ops files</li>
+<li>used classpath (useful for debugging)</li>
+</ul>
+
+<p>To have details:</p>
+
+<pre><code>bin/please operations
+bin/please actions
+bin/please paths
+bin/please ops
+bin/please classpath
+</code></pre>
+
+<p>To try some operation, check paths and run:</p>
+
+<pre><code>bin/please $operation
+</code></pre>
+
+<p>To see what Please would do, without actual perform it, you can run please with <code>--noop</code> (no operation) flag.</p>
+
+<p>A bit more verbose logging will be written in <code>$PLEASE_HOME/logs/</code> directory.</p>
+
+<h2>Ops files</h2>
+
+<p>Ops-file is a configuration file (you can think to an Ant build.xml) written using Please domain specific language.</p>
+
+<p>It contains one or more operations definitions.</p>
+
+<p>Every time Please is runned, it looks for ops files in default locations adn parses them.</p>
+
+<p>Default locations for ops files (in order they are scanned from ops loader):</p>
+
+<ul>
+<li><code>$PLEASE_HOME/conf/ops.d</code> : installation level.</li>
+<li><code>/etc/please/ops.d</code> : system level for unix-like os.</li>
+<li><code>c:\please\ops.d</code> : system level for win os.</li>
+<li><code>$HOME/.please/$version/ops.d</code> : user level.</li>
+</ul>
+
+<h2>Please DSL</h2>
+
+<p>Directory <code>modules/cli/src/main/dist/conf/ops.d</code> contains some sample file.
+Directory <code>modules/acceptance-tests/src/test/ops</code> contains files used in tests.</p>
+
+<p>Utility methods</p>
+
+<p>Other than operations definitions, in ops file you can use some utility method such as:</p>
+
+<ul>
+<li><code>String date(String format)</code>: returns string using SimpleDateFormatter format (default: "yyyyMMddHHmm")</li>
+</ul>
+
+<h2>Sample operations</h2>
+
+<p>A sample operation to create a zip archive for Please sources:</p>
+
+<pre><code>operation {
+    id 'zip-please'
+    description = 'build Please zip archive'
+    zip {
+        source = '/path/to/sources/please'
+        destination = "/tmp/please-sources-${date()}.zip"
+        excludes = '**/gradle.properties,**/.classpath,**/.project,**/.settings/**,**/target/**,**/test-output/**,*.log'
+    }
+}
+</code></pre>
+
+<p>Grails install on win:</p>
+
+<pre><code>operation {
+    id 'install-grails'
+    description = 'installs grails framework on a windows machine'
+    def baseDir = /D:\dev\grails/
+    def zipPath = 'd:/dev/grails-2.0.0.M2.zip'
+    mkdir {
+        directory = "${baseDir}"
+    }
+    download {
+        url = 'http://dist.springframework.org.s3.amazonaws.com/milestone/GRAILS/grails-2.0.0.M2.zip'
+        destination = "${zipPath}"
+    }
+    unzip {
+        archive = "${zipPath}"
+        destination = "${baseDir}"
+    }
+    setenv {
+        name = 'GRAILS_HOME'
+        value = "${baseDir}${File.separator}grails-2.0.0.M2"
+    }
+}
+</code></pre>
+
+<p>You can use variables, and special methods (such as "date()"):</p>
+
+<pre><code>def today = date()
+operation {
+    id 'create-dir-tree-using-date'
+    def baseDir = '/tmp/base/dir'
+    mkdir {
+        directory = "${baseDir}/create-dir-tree-using-a-var-${today}"
+    }
+    mkdir {
+        directory = "${baseDir}/create-dir-tree-using-date-"+date()
+    }
+    mkdir {
+        directory = "${baseDir}/01/02/03/04"
+    }
+}
+</code></pre>
+
+<p>Append content to file:</p>
+
+<pre><code>operation {
+    id 'hello-append'
+    append {
+        file = '/tmp/myfile.txt'
+        content = 'append!!'
+    }
+}
+</code></pre>
+
+<h2>Built in actions</h2>
+
+<p>You can see available actions running</p>
+
+<pre><code>please actions
+</code></pre>
+
+<p>Copy a file or a directory-
+The <code>checkFrom</code> option is to verify if the original file exists when Please starts to perform involved operations;
+as checks are executed before the actual operation, if the file to copy is created from a former action, you should
+set checkFrom to false to avoid validation errors.</p>
+
+<pre><code>copy {
+    from = /C:\path\to\Very-Enterprise-2.0.ear/
+    to = releaseDir
+    checkFrom = false
+}
+</code></pre>
+
+<p>Exec a command:</p>
+
+<pre><code>exec {
+    def desc = 'deploy-weblogic'
+    command = 'cmd /c deploy-weblogic-with-static.bat'
+    workingDirectory = /c:\projects\my/
+    // comment out if you don't want to use files for standard and error output
+    stdOutputFile = "${desc}-output.txt"
+    errOutputFile = "${desc}-output.txt"
+    // show output?
+    show = true
+}
+</code></pre>
+
+<p>Create a directory (Please's mkdir is actually a <code>mkdir -p</code>):</p>
+
+<pre><code>mkdir {
+    directory = "${unzipDir}"
+}
+</code></pre>
+
+<p>Delete file or directory:</p>
+
+<pre><code>delete {
+    path = "${zipDir}/static-zipped.zip"
+}
+</code></pre>
+
+<p>Create an archive file or expand it:</p>
+
+<pre><code>zip {
+    source = 'd:/export'
+    destination = "d:/tmp/export-${date()}.zip"
+    //includes = 'please/**'
+    excludes = '**/.classpath,**/.project,**/.settings/**,**/target/**,**/test-output/**,*.log'
+}
+unzip {
+    archive = "${zipDir}/static-zipped.zip"
+    destination = "${unzipDir}"
+}
+targz {
+    source = 'd:/teamsys/branch_1.0.4.x/webapp-anag/src/main/webapp/static'
+    destination = "${zipDir}/static-tarred.tgz"
+}
+untargz {
+    archive = "${zipDir}/static-tarred.tgz"
+    destination = "${unzipDir}"
+}
+</code></pre>
+
+<p>Download a file:</p>
+
+<pre><code>download {
+    url = 'http://usefuldomain/usefuljar-0.3.jar'
+    destination = 'hello-download-bin.jar'
+}
+</code></pre>
+
+<h2>System properties</h2>
+
+<p>If Please has to work using system properties, you can write a file named please.properties in <code>$(pwd)</code> or in <code>$HOME/.please/$version/</code> .</p>
+
+<p>Properties starting with <code>system.</code> are loaded with <code>System.setProperty</code> using the key without the 'system.' prefix.</p>
+
+<p>A sample setting for proxy usage:</p>
+
+<pre><code>system.http.proxySet    = true
+system.http.proxyHost   = 192.168.1.222
+system.http.proxyPort   = 3128
+system.https.proxySet   = true
+system.https.proxyHost  = 192.168.1.222
+system.https.proxyPort  = 3128
+</code></pre>
+
+<h2>This and that</h2>
+
+<p>Paths:</p>
+
+<p>if you are trapped in a win box, you can use paths normalized to '/', (ie c:/programs/woot) 
+or use backslash in a 'slashed' string (ie <code>/c:\projects\my/</code>).</p>
+
+<h2>Development</h2>
+
+<p>Please uses Gradle as build system;</p>
+
+<p>Tasks to know:</p>
+
+<pre><code>./gradlew installApp      # will create please app in ./modules/cli/target/install/please/
+
+./gradlew distZip         # will create the distribution zip in ./modules/cli/target/distributions/
+
+./gradlew uat             # will build a local install and run user acceptance tests
+</code></pre>
+
+<p>To install the zip, you need only to:</p>
+
+<pre><code>unzip modules/cli/target/distributions/please-$VERSION.zip -d /installation/path
+</code></pre>
+
+<p>To create Eclipse IDE files allowing you to import as "Existing Projects in Workspace" from directory modules/:</p>
+
+<pre><code>./gradlew eclipse
+</code></pre>
+
+<p>To add license headers to new files:</p>
+
+<pre><code>./gradlew license
+</code></pre>
+
+<p>To create website, Please uses Xite <a href="http://enr.github.com/xite/index.html">http://enr.github.com/xite/index.html</a></p>
+
+<pre><code>/opt/xite/bin/xite -s website
+</code></pre>
+
+<p>Special dirs for distribution:</p>
+
+<ul>
+<li><code>modules/cli/src/main/dist</code> will be copied in <code>$PLEASE_HOME</code></li>
+</ul>
+
+<p>Test results:</p>
+
+<ul>
+<li><a href="/please/developers/tests/core/index.html">module core</a></li>
+<li><a href="/please/developers/tests/uat/index.html">module acceptance</a></li>
+</ul>
+
+<h2>Extending Please</h2>
+
+<p>To programmatically extend Please, you can write a plugin.</p>
+
+<p>A plugin is a jar file located in <code>$PLEASE_HOME/plugins</code>.</p>
+
+<p>You can create your operations and actions implementing <code>com.atoito.please.core.api.Operation</code> and <code>com.atoito.please.core.api.Action</code></p>
+
+<p>Please offers you some utility class to extend:</p>
+
+<ul>
+<li><code>com.atoito.please.core.api.AbstractAction</code></li>
+<li><code>com.atoito.please.core.api.AbstractProvidedOperation</code></li>
+</ul>
+
+<p>To define operations and actions (ie tell Please that some new operation/action exists) you have to create a "definition-file" located in <code>META-INF/plugin-definitions.please</code>.</p>
+
+<p>Sample content for a definition file:</p>
+
+<pre><code>actions = [ 'copy':'com.atoito.please.core.actions.CopyAction',
+            'zip':'com.atoito.please.core.actions.ZipAction',
+            'exec':'com.atoito.please.core.actions.ExecAction',
+            'mkdir':'com.atoito.please.core.actions.MkdirAction',
+            'download':'com.atoito.please.core.actions.DownloadAction',
+            'setenv':'com.atoito.please.core.actions.SetEnvVariableAction' ]
+operations = [ 'reports':'com.atoito.please.core.operations.PleaseReportOperation' ]
+</code></pre>
+
+<p>If operation has to know the 'id' operation has been defined in registry (ie the built in Please reports operation that has different 
+behaviour depending on the call is for 'reports' or 'operations' or 'actions') has to implement IdAwareOperation.</p>
+
+<p>If action creates or uses files it can implement OutputsAware; this way, it receives a list of files registered as output from former actions.
+Abstract action already implements it.
+You can look at ZipAction for an output production/consumption example.</p>
+
+<p>If action has to know additional options it has to implement <code>ArgsAwareAction</code>.</p>
+
+<p>When Please is invoked using the <code>--noop</code> option, operation and actions are described using their method <code>String toHuman()</code>;
+You can use the utility class <code>DescriptionBuilder</code> to build the descriptive string.</p>
+
+<h2>Acceptance testing</h2>
+
+<p>Sources for acceptance tests are in acceptance-tests module.</p>
+
+<p>To create acceptance tests for actions and operations you can extend <code>com.atoito.please.uat.BaseUat</code> class.</p>
+
+<p>To run existent user acceptance tests:</p>
+
+<pre><code>./gradlew uat
+</code></pre>
+
+<h2>Extending DSL</h2>
+
+<p>To extend Please DSL you can see at <code>com.atoito.please.dsl.DateAbility</code>, introducing a <code>date()</code> method.</p>
+
+<h2>Download</h2>
+
+<p>Download sources as zip: <a href="https://github.com/enr/please/zipball/master">https://github.com/enr/please/zipball/master</a></p>
+
+<p>Download sources as tgz: <a href="https://github.com/enr/please/tarball/master">https://github.com/enr/please/tarball/master</a></p>
+
+<h2>License</h2>
+
+<p>Licensed under the Apache License, Version 2.0 (the "License");
+you may not use Xite except in compliance with the License.</p>
+
+<p>You may obtain a copy of the License at</p>
+
+<p>   <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</p>
+
+<p>See the License for the specific language governing permissions and
+limitations under the License.</p>
+
+		</div>
+	</div>
+ 
+</body>
+
+<script type="text/javascript">
+function path()
+{
+  var args = arguments,
+      result = []
+      ;
+       
+  for(var i = 0; i < args.length; i++)
+      result.push(args[i].replace('@', '/xite/js/sh/'));
+       
+  return result
+};
+ 
+SyntaxHighlighter.autoloader.apply(null, path(
+  'bash shell             @shBrushBash.js',
+  'css                    @shBrushCss.js',
+  'diff patch pas         @shBrushDiff.js',
+  'groovy                 @shBrushGroovy.js',
+  'java                   @shBrushJava.js',
+  'js jscript javascript  @shBrushJScript.js',
+  'php                    @shBrushPhp.js',
+  'text plain             @shBrushPlain.js',
+  'py python              @shBrushPython.js',
+  'sql                    @shBrushSql.js',
+  'xml xhtml xslt html    @shBrushXml.js'
+));
+SyntaxHighlighter.all();
+</script>
+
+</html>
