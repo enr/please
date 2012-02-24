@@ -1,0 +1,177 @@
+
+
+html,
+body {
+margin: 0px 0px 0px 0px ;
+padding: 0px 0px 0px 0px ;
+font-family: Verdana,Geneva,sans-serif;
+font-size: 0.9em;
+}
+
+#container {
+width: 760px;
+margin: 0 auto; /*Center container on page*/
+border-left: 1px solid #CCCCCC;
+border-right: 1px solid #CCCCCC;
+border-top: 0px;
+border-bottom: 0px;
+}
+
+#content {
+padding: 15px 15px 15px 15px ;
+margin-top: 70px;
+margin-bottom: 70px;
+}
+
+div.fixed-position {
+background-color: #D2D5D1;
+line-height: 50px ;
+position: fixed ;
+text-align: center ;
+width: 148px ;
+z-index: 1000 ;
+}
+
+div.fixed-n {
+width: 100%; /*760px;*/
+height: 48px ;
+/*left: 50% ;
+margin-left: -381px ;*/
+top: 0px ;
+font-family: Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif;
+font-size: 2.2em;
+font-weight: bold;
+border-bottom: 1px solid #ccc;
+}
+
+div.fixed-n-e {
+right: 0px ;
+top: 0px ;
+}
+
+div.fixed-e {
+margin-top: 48px ;
+right: 0px ;
+/*top: 50% ;*/
+}
+
+div.fixed-s-e {
+bottom: 0px ;
+right: 0px ;
+}
+
+div.fixed-s {
+width: 100%; /*760px;*/
+height: 48px ;
+bottom: 0px ;
+/*left: 50% ;
+margin-left: -381px ;*/
+font-size: 0.7em;
+border-top: 1px solid #ccc;
+}
+
+div.fixed-s-w {
+bottom: 0px ;
+left: 0px ;
+}
+
+div.fixed-w {
+margin-top: -25px ;
+left: 0px ;
+top: 50% ;
+}
+
+div.fixed-n-w {
+left: 0px ;
+top: 0px ;
+}
+
+
+/* -------------------------------------------------- */
+/* -- IE 6 FIXED POSITION HACK ---------------------- */
+/* -------------------------------------------------- */
+
+html,
+body,
+#site-body-container {
+_height: 100% ;
+_overflow: hidden ;
+_width: 100% ;
+}
+
+#site-body-container {
+_overflow-y: scroll ;
+_overflow-x: hidden ;
+_position: relative ;
+}
+
+div.fixed-position {
+_position: absolute ;
+}
+
+/* For the scrollbar. */
+div.fixed-n-e,
+div.fixed-e,
+div.fixed-s-e {
+_margin-right: 16px ;
+}
+
+/* For the scrollbar. */
+div.fixed-n,
+div.fixed-s {
+_margin-left: -83px ;
+}
+
+/* --- layout --- */
+
+
+pre {
+    background-color: #E8D775;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    font-family: Courier, monospace;
+    font-size: 99%;
+    line-height: 120%;
+    border-left: solid #A7C270 0.5em;
+}
+
+code {
+    background-color: #E8D775;
+    font-family: Courier, monospace;
+    font-size: 100%;
+}
+
+h1 {
+  color: #A60000;
+  padding: 10px;
+  margin: 25px 20px 25px 20px;
+  border-bottom: 1px dashed #ccc;
+}
+
+h2 {
+  color: #1A1716;
+  margin-top: 10px;
+  margin: 20px 20px 20px 20px; 
+}
+
+.dir-listing-d {
+    font-weight:bold
+}
+
+.dir-listing-f {
+}
+
+a:link {color: #A60000;}      /* unvisited link */
+a:visited {color: #A60000;}   /* visited link */
+a:hover {color: #A60000;}     /* mouse over link */
+a:active {color: #A60000;}    /* selected link */
+/* fix for firefox links' dotted border */
+a:active, a:active * { outline: none !important; -moz-outline-style: none !important; }
+a:focus, a:focus * { outline: none !important; -moz-outline-style: none !important; }
+
+
+
