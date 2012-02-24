@@ -24,7 +24,7 @@ margin-bottom: 70px;
 }
 
 div.fixed-position {
-background-color: #D2D5D1;
+background-color: #E8D775;
 line-height: 50px ;
 position: fixed ;
 text-align: center ;
@@ -38,7 +38,7 @@ height: 48px ;
 /*left: 50% ;
 margin-left: -381px ;*/
 top: 0px ;
-font-family: Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif;
+/*font-family: Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif;*/
 font-size: 2.2em;
 font-weight: bold;
 border-bottom: 1px solid #ccc;
