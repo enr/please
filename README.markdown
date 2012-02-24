@@ -51,17 +51,17 @@ Operation is taken from a operation registry containing any operation:
 
 Please is runned with:
 
-    $ please opid [args]
+    $ please <opid> [args]
 
 this command performs operation 'opid' passing any option.
 
-    $ please ops-file   # [NOT YET IMPLEMENTED]
+    $ please <ops-file>   # [NOT YET IMPLEMENTED]
 
-this command (not yet implemented) performs the operation defined as 'default' in a given ops file.
+this command (sorry, not yet implemented) performs the operation defined as 'default' in a given ops file.
 
 Please looks for the required operation, in:
 
-* plugins: ie jar files dropped in plugins/ directory, which expose operations as java classes implementing `Operation` and declared in META-INF/plugin-definitions.please
+* plugins: ie jar files dropped in plugins/ directory, which expose operations as java classes implementing `com.atoito.please.core.api.Operation` and declared in META-INF/plugin-definitions.please
 * ops-file
 
 
@@ -218,7 +218,17 @@ You can use variables, and special methods (such as "date()"):
             directory = "${baseDir}/01/02/03/04"
         }
     }    
-    
+
+Append content to file:
+
+    operation {
+        id 'hello-append'
+        append {
+            file = '/tmp/myfile.txt'
+            content = 'append!!'
+        }
+    }
+
     
 Built in actions
 ----------------
@@ -227,12 +237,14 @@ You can see available actions running
     
     please actions
 
-Copy a file or a directory:
+Copy a file or a directory-
+The `checkFrom` option is to verify if the original file exists when Please starts to perform involved operations;
+as checks are executed before the actual operation, if the file to copy is created from a former action, you should
+set checkFrom to false to avoid validation errors.
 
     copy {
         from = /C:\path\to\Very-Enterprise-2.0.ear/
         to = releaseDir
-        // Check if 'from' file exists? - Set to false if using a from file created from other actions.
         checkFrom = false
     }
 
@@ -249,7 +261,7 @@ Exec a command:
         show = true
     }
 
-Create a directory:
+Create a directory (Please's mkdir is actually a `mkdir -p`):
     
     mkdir {
         directory = "${unzipDir}"
@@ -285,7 +297,7 @@ Create an archive file or expand it:
 Download a file:
 
     download {
-        url = 'http://repo.fusesource.com/nexus/content/groups/public/activeio/activeio/2.0-r118/activeio-2.0-r118.jar'
+        url = 'http://usefuldomain/usefuljar-0.3.jar'
         destination = 'hello-download-bin.jar'
     }
 
@@ -300,11 +312,11 @@ Properties starting with `system.` are loaded with `System.setProperty` using th
 A sample setting for proxy usage:
 
     system.http.proxySet    = true
-    system.http.proxyHost    = 192.168.1.222
-    system.http.proxyPort    = 3128
-    system.https.proxySet    = true
-    system.https.proxyHost    = 192.168.1.222
-    system.https.proxyPort    = 3128
+    system.http.proxyHost   = 192.168.1.222
+    system.http.proxyPort   = 3128
+    system.https.proxySet   = true
+    system.https.proxyHost  = 192.168.1.222
+    system.https.proxyPort  = 3128
 
 
 This and that
@@ -325,10 +337,13 @@ Tasks to know:
 
     ./gradlew installApp      # will create please app in ./modules/cli/target/install/please/
 
-    ./gradlew distZip          # will create the distribution zip in ./modules/cli/target/distributions/
+    ./gradlew distZip         # will create the distribution zip in ./modules/cli/target/distributions/
 
-    ./gradlew uat              # will build a local install and run user acceptance tests
+    ./gradlew uat             # will build a local install and run user acceptance tests
 
+To install the zip, you need only to:
+
+    unzip modules/cli/target/distributions/please-$VERSION.zip -d /installation/path
 
 To create Eclipse IDE files allowing you to import as "Existing Projects in Workspace" from directory modules/:
 
@@ -341,7 +356,7 @@ To add license headers to new files:
 
 Special dirs for distribution:
 
-* `modules/clisrc/main/dist` will be copied in `$PLEASE_HOME`
+* `modules/cli/src/main/dist` will be copied in `$PLEASE_HOME`
 
 
 Extending Please
@@ -372,7 +387,8 @@ Sample content for a definition file:
     operations = [ 'reports':'com.atoito.please.core.operations.PleaseReportOperation' ]
 
 
-If operation has to know the 'id' operation has been defined in registry (ie the built in Please reports operation that has different behaviour depending on the call is for 'reports' or 'operations' or 'actions') has to implement IdAwareOperation.
+If operation has to know the 'id' operation has been defined in registry (ie the built in Please reports operation that has different 
+behaviour depending on the call is for 'reports' or 'operations' or 'actions') has to implement IdAwareOperation.
 
 If action creates or uses files it can implement OutputsAware; this way, it receives a list of files registered as output from former actions.
 Abstract action already implements it.
@@ -387,6 +403,8 @@ You can use the utility class `DescriptionBuilder` to build the descriptive stri
 Acceptance testing
 ------------------
 
+Sources for acceptance tests are in acceptance-tests module.
+
 To create acceptance tests for actions and operations you can extend `com.atoito.please.uat.BaseUat` class.
 
 To run existent user acceptance tests:
@@ -398,6 +416,14 @@ Extending DSL
 -------------
 
 To extend Please DSL you can see at `com.atoito.please.dsl.DateAbility`, introducing a `date()` method.
+
+
+Download
+--------
+
+Download sources as zip: <https://github.com/enr/please/zipball/master>
+
+Download sources as tgz: <https://github.com/enr/please/tarball/master>
 
 
 License
