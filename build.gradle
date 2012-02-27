@@ -1,6 +1,7 @@
 
 apply plugin: 'release'
 
+
 buildscript {
   repositories {
      flatDir name: 'localRepository', dirs: 'gradle/lib'
@@ -15,7 +16,6 @@ buildscript {
 
 
 allprojects { project ->
-    version = '0.1-SNAPSHOT'
     group = 'com.atoito.please'
     isSnapshot = version.endsWith("-SNAPSHOT")
     
@@ -29,7 +29,6 @@ allprojects { project ->
     ]
     
     acceptanceTests = [':modules:acceptance-tests']
-
 }
 
 
@@ -67,26 +66,26 @@ subprojects {
                 name = "please-${project.name}"
             }
             classpath {
-                // per mantenere la stessa distanza da project dir tra eclipse e gradle
+                // to keep the same depth in the build from in and outside Eclipse
                 defaultOutputDir = new File("${project.buildDir}/eclipse/classes");
                 downloadJavadoc = true
             }
         }
-
     }
 
     if (project.path in acceptanceTests) {
         test.enabled = false
-        task sut(    dependsOn: [':modules:core:test', ':modules:cli:test', ':modules:cli:installApp'],
+        task sut(   dependsOn: [':modules:core:test', ':modules:cli:test', ':modules:cli:installApp'],
                     description: 'Builds the system under test (using installApp).') << {
                     test.enabled = true
         }    
-        task uat(    dependsOn: [sut, test], 
+        task uat(   dependsOn: [sut, test], 
                     description: 'Runs the user acceptance tests.') << {
                     test.enabled = true
         }
     }
 }
+
 
 task wrapper(type: Wrapper) {
     gradleVersion = '1.0-milestone-8a'
