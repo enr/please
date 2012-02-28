@@ -370,6 +370,11 @@ To create website, Please uses Xite <http://enr.github.com/xite/index.html>
 
     /opt/xite/bin/xite -s website
 
+To release, set new version (if needed) in modules/core/src/main/resources/please-app.properties
+and run:
+
+    ./gradlew release
+    
 Special dirs for distribution:
 
 * `modules/cli/src/main/dist` will be copied in `$PLEASE_HOME`
