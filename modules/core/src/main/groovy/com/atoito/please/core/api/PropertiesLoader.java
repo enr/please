@@ -1,7 +1,7 @@
 /* License added by: GRADLE-LICENSE-PLUGIN
  *
  * 
- * Copyright (C) 2011 - https://github.com/enr
+ * Copyright (C) 2012 - https://github.com/enr
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,3 +24,5 @@ public interface PropertiesLoader {
     void loadFromDefaultLocations();
 
 }
+
+

@@ -1,7 +1,7 @@
 /* License added by: GRADLE-LICENSE-PLUGIN
  *
  * 
- * Copyright (C) 2011 - https://github.com/enr
+ * Copyright (C) 2012 - https://github.com/enr
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -71,3 +71,5 @@ public class ActionsSequenceUat extends BaseUat {
         assertThat(actual02).as("data/01/01/another.txt").exists().isFile().hasSameContentAs(expected02);
     }
 }
+
+
