@@ -29,61 +29,50 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Gradle test</td><td class="numi">18</td><td class="numi">18</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Gradle test</td><td class="numi">18</td><td class="numi">18</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Gradle test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.ArchiveActionsTest<td><a href="#m1"><b>zipDirectory</b>  ("the given directory is zipped to the destination file")</a></td><td class="numi">1</td><td class="numi">187</td></tr>
-<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.DefaultRegistryTest<td><a href="#m2"><b>loadOpsFile</b>  ("registry loads ops file")</a></td><td class="numi">1</td><td class="numi">270</td></tr>
-<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.DirectoriesTest<td><a href="#m3"><b>testIsEmpty</b>  </a></td><td class="numi">1</td><td class="numi">5</td></tr>
-<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.DefaultRegistryTest<td><a href="#m4"><b>loadDefinitionsUrl</b>  ("registry loads operations in custom definitions file")</a></td><td class="numi">1</td><td class="numi">406</td></tr>
-<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.AppendActionTest<td><a href="#m5"><b>appendContent</b>  ("content is appended to the file")</a></td><td class="numi">1</td><td class="numi">9</td></tr>
-<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.OpsFileTest<td><a href="#m6"><b>testSimple</b>  ("ops file is loaded")</a></td><td class="numi">1</td><td class="numi">51</td></tr>
-<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.DefaultRegistryTest<td><a href="#m7"><b>loadPluginsDefinitions</b>  ("registry loads operations in META-INF/plugin-definitions.please")</a></td><td class="numi">1</td><td class="numi">25</td></tr>
-<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.OpsDslEngineTest<td><a href="#m8"><b>smokeTestWithStubRegistry</b>  ("smoke test for basic parsing")</a></td><td class="numi">1</td><td class="numi">54</td></tr>
-<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.ArchiveActionsTest<td><a href="#m9"><b>unzipArchive</b>  ("the given archive is unzipped to destination")</a></td><td class="numi">1</td><td class="numi">7</td></tr>
-<tr class="passedeven"><td rowspan="3">com.atoito.please.test.unit.CopySingleFileActionTest<td><a href="#m10"><b>copySingleFileToExistentDirectory</b>  ("if 'to' points to an existent directory, the file is copied with the original's base name")</a></td><td class="numi">1</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m11"><b>overwriteFile</b>  ("if 'to' points to an existent file, this file is overwritten with the original's content")</a></td><td class="numi">1</td><td class="numi">9</td></tr><tr class="passedeven"><td><a href="#m12"><b>copySingleFile</b>  ("if 'to' points to an inexistent file, the original file is copied to this path")</a></td><td class="numi">1</td><td class="numi">49</td></tr>
-<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.DirectoriesTest<td><a href="#m13"><b>testFilteredListing</b>  </a></td><td class="numi">1</td><td class="numi">30</td></tr>
-<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.ArchivesTest<td><a href="#m14"><b>zipAndUnzip</b>  ("zip archiver and expander components test")</a></td><td class="numi">1</td><td class="numi">41</td></tr>
-<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.CopySingleFileActionTest<td><a href="#m15"><b>failsIfFromDoensNotExist</b>  ("if 'from' doesn't exist and it isn't in registered outputs and checkFrom is true, action fails")</a></td><td class="numi">1</td><td class="numi">1</td></tr>
-<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.OperationClosureDelegateTest<td><a href="#m16"><b>operationLoading</b>  ("OperationClosureDelegate loads operation data through missingMethod")</a></td><td class="numi">1</td><td class="numi">28</td></tr>
-<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.DirectoriesTest<td><a href="#m17"><b>testListing</b>  </a></td><td class="numi">1</td><td class="numi">13</td></tr>
-<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.DefinitionsFileTest<td><a href="#m18"><b>definitionsAreCreated</b>  ("DefinitionsFile contains correct mapping for actions and operations")</a></td><td class="numi">1</td><td class="numi">25</td></tr>
+<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.AppendActionTest<td><a href="#m1"><b>appendContent</b>  ("content is appended to the file")</a></td><td class="numi">1</td><td>1330460819533</td><td class="numi">103</td></tr>
+<tr class="passedeven"><td rowspan="2">com.atoito.please.test.unit.CopySingleFileActionTest<td><a href="#m2"><b>copySingleFile</b>  ("if 'to' points to an inexistent file, the original file is copied to this path")</a></td><td class="numi">1</td><td>1330460820636</td><td class="numi">1</td></tr><tr class="passedeven"><td><a href="#m3"><b>copySingleFileToExistentDirectory</b>  ("if 'to' points to an existent directory, the file is copied with the original's base name")</a></td><td class="numi">1</td><td>1330460820632</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.DefinitionsFileTest<td><a href="#m4"><b>definitionsAreCreated</b>  ("DefinitionsFile contains correct mapping for actions and operations")</a></td><td class="numi">1</td><td>1330460820679</td><td class="numi">28</td></tr>
+<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.CopySingleFileActionTest<td><a href="#m5"><b>failsIfFromDoensNotExist</b>  ("if 'from' doesn't exist and it isn't in registered outputs and checkFrom is true, action fails")</a></td><td class="numi">1</td><td>1330460820635</td><td class="numi">1</td></tr>
+<tr class="passedodd"><td rowspan="3">com.atoito.please.test.unit.DefaultRegistryTest<td><a href="#m6"><b>loadDefinitionsUrl</b>  ("registry loads operations in custom definitions file")</a></td><td class="numi">1</td><td>1330460819760</td><td class="numi">395</td></tr><tr class="passedodd"><td><a href="#m7"><b>loadOpsFile</b>  ("registry loads ops file")</a></td><td class="numi">1</td><td>1330460820157</td><td class="numi">241</td></tr><tr class="passedodd"><td><a href="#m8"><b>loadPluginsDefinitions</b>  ("registry loads operations in META-INF/plugin-definitions.please")</a></td><td class="numi">1</td><td>1330460820399</td><td class="numi">24</td></tr>
+<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.OperationClosureDelegateTest<td><a href="#m9"><b>operationLoading</b>  ("OperationClosureDelegate loads operation data through missingMethod")</a></td><td class="numi">1</td><td>1330460820638</td><td class="numi">40</td></tr>
+<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.CopySingleFileActionTest<td><a href="#m10"><b>overwriteFile</b>  ("if 'to' points to an existent file, this file is overwritten with the original's content")</a></td><td class="numi">1</td><td>1330460820613</td><td class="numi">19</td></tr>
+<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.OpsDslEngineTest<td><a href="#m11"><b>smokeTestWithStubRegistry</b>  ("smoke test for basic parsing")</a></td><td class="numi">1</td><td>1330460820457</td><td class="numi">67</td></tr>
+<tr class="passedodd"><td rowspan="3">com.atoito.please.test.unit.DirectoriesTest<td><a href="#m12"><b>testFilteredListing</b>  </a></td><td class="numi">1</td><td>1330460820425</td><td class="numi">13</td></tr><tr class="passedodd"><td><a href="#m13"><b>testIsEmpty</b>  </a></td><td class="numi">1</td><td>1330460820439</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m14"><b>testListing</b>  </a></td><td class="numi">1</td><td>1330460820441</td><td class="numi">11</td></tr>
+<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.OpsFileTest<td><a href="#m15"><b>testSimple</b>  ("ops file is loaded")</a></td><td class="numi">1</td><td>1330460820524</td><td class="numi">51</td></tr>
+<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.ArchiveActionsTest<td><a href="#m16"><b>unzipArchive</b>  ("the given archive is unzipped to destination")</a></td><td class="numi">1</td><td>1330460820712</td><td class="numi">4</td></tr>
+<tr class="passedeven"><td rowspan="1">com.atoito.please.test.unit.ArchivesTest<td><a href="#m17"><b>zipAndUnzip</b>  ("zip archiver and expander components test")</a></td><td class="numi">1</td><td>1330460820577</td><td class="numi">34</td></tr>
+<tr class="passedodd"><td rowspan="1">com.atoito.please.test.unit.ArchiveActionsTest<td><a href="#m18"><b>zipDirectory</b>  ("the given directory is zipped to the destination file")</a></td><td class="numi">1</td><td>1330460819638</td><td class="numi">111</td></tr>
 </table>
 <h1>Gradle test</h1>
-<a id="m1"></a><h2>com.atoito.please.test.unit.ArchiveActionsTest:zipDirectory</h2>
+<a id="m1"></a><h2>com.atoito.please.test.unit.ArchivesTest:zipAndUnzip</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>com.atoito.please.test.unit.DefaultRegistryTest:loadOpsFile</h2>
+<a id="m2"></a><h2>com.atoito.please.test.unit.CopySingleFileActionTest:copySingleFileToExistentDirectory</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m3"></a><h2>com.atoito.please.test.unit.DirectoriesTest:testIsEmpty</h2>
+<a id="m3"></a><h2>com.atoito.please.test.unit.AppendActionTest:appendContent</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m4"></a><h2>com.atoito.please.test.unit.DefaultRegistryTest:loadDefinitionsUrl</h2>
+<a id="m4"></a><h2>com.atoito.please.test.unit.OpsDslEngineTest:smokeTestWithStubRegistry</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m5"></a><h2>com.atoito.please.test.unit.AppendActionTest:appendContent</h2>
+<a id="m5"></a><h2>com.atoito.please.test.unit.OpsFileTest:testSimple</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m6"></a><h2>com.atoito.please.test.unit.OpsFileTest:testSimple</h2>
+<a id="m6"></a><h2>com.atoito.please.test.unit.ArchiveActionsTest:unzipArchive</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m7"></a><h2>com.atoito.please.test.unit.DefaultRegistryTest:loadPluginsDefinitions</h2>
+<a id="m7"></a><h2>com.atoito.please.test.unit.DefaultRegistryTest:loadDefinitionsUrl</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m8"></a><h2>com.atoito.please.test.unit.OpsDslEngineTest:smokeTestWithStubRegistry</h2>
+<a id="m8"></a><h2>com.atoito.please.test.unit.DefaultRegistryTest:loadPluginsDefinitions</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m9"></a><h2>com.atoito.please.test.unit.ArchiveActionsTest:unzipArchive</h2>
+<a id="m9"></a><h2>com.atoito.please.test.unit.DefinitionsFileTest:definitionsAreCreated</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m10"></a><h2>com.atoito.please.test.unit.CopySingleFileActionTest:copySingleFileToExistentDirectory</h2>
+<a id="m10"></a><h2>com.atoito.please.test.unit.DirectoriesTest:testListing</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m11"></a><h2>com.atoito.please.test.unit.CopySingleFileActionTest:overwriteFile</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m12"></a><h2>com.atoito.please.test.unit.CopySingleFileActionTest:copySingleFile</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m13"></a><h2>com.atoito.please.test.unit.DirectoriesTest:testFilteredListing</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m14"></a><h2>com.atoito.please.test.unit.ArchivesTest:zipAndUnzip</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m15"></a><h2>com.atoito.please.test.unit.CopySingleFileActionTest:failsIfFromDoensNotExist</h2>
+<a id="m11"></a><h2>com.atoito.please.test.unit.CopySingleFileActionTest:failsIfFromDoensNotExist</h2>
 <div style="padding-left:3em">
-<p>file to copy &apos;/home/enrico/Projects/please/modules/core/file-1330116397200&apos; not found. fail</p>
+<p>file to copy &apos;/home/enrico/Projects/please/modules/core/file-1330460820635&apos; not found. fail</p>
 com.google.common.base.Preconditions.checkArgument(Preconditions.java:115)
 <br/>at com.atoito.please.core.actions.CopyAction.resolveAndValidateFrom(CopyAction.java:99)
 <br/>at com.atoito.please.core.actions.CopyAction.internalInitialize(CopyAction.java:123)
@@ -92,10 +81,18 @@ com.google.common.base.Preconditions.checkArgument(Preconditions.java:115)
 <br/>55 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>com.atoito.please.test.unit.DirectoriesTest:testFilteredListing</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>com.atoito.please.test.unit.DefaultRegistryTest:loadOpsFile</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>com.atoito.please.test.unit.CopySingleFileActionTest:overwriteFile</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>com.atoito.please.test.unit.DirectoriesTest:testIsEmpty</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
 <a id="m16"></a><h2>com.atoito.please.test.unit.OperationClosureDelegateTest:operationLoading</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m17"></a><h2>com.atoito.please.test.unit.DirectoriesTest:testListing</h2>
+<a id="m17"></a><h2>com.atoito.please.test.unit.CopySingleFileActionTest:copySingleFile</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m18"></a><h2>com.atoito.please.test.unit.DefinitionsFileTest:definitionsAreCreated</h2>
+<a id="m18"></a><h2>com.atoito.please.test.unit.ArchiveActionsTest:zipDirectory</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

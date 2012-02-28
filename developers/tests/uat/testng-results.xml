@@ -2,72 +2,72 @@
 <testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Gradle suite" duration-ms="6957" started-at="2012-02-24T21:46:40Z" finished-at="2012-02-24T21:46:47Z">
+  <suite name="Gradle suite" duration-ms="6607" started-at="2012-02-28T21:27:02Z" finished-at="2012-02-28T21:27:09Z">
     <groups>
     </groups>
-    <test name="Gradle test" duration-ms="6957" started-at="2012-02-24T21:46:40Z" finished-at="2012-02-24T21:46:47Z">
+    <test name="Gradle test" duration-ms="6607" started-at="2012-02-28T21:27:02Z" finished-at="2012-02-28T21:27:09Z">
       <class name="com.atoito.please.uat.CreateDeleteDirectoryUat">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@12a73d9]" name="setUp" is-config="true" duration-ms="1" started-at="2012-02-24T21:46:45Z" finished-at="2012-02-24T21:46:45Z">
-        </test-method>
-        <test-method status="PASS" signature="init()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@12a73d9]" name="init" is-config="true" duration-ms="1" started-at="2012-02-24T21:46:45Z" finished-at="2012-02-24T21:46:45Z">
-        </test-method>
-        <test-method status="PASS" signature="createDirectory()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@12a73d9]" name="createDirectory" duration-ms="1282" started-at="2012-02-24T21:46:45Z" description="uat for operation &#039;create-dir&#039;" finished-at="2012-02-24T21:46:46Z">
-        </test-method>
-        <test-method status="PASS" signature="deleteDirectory()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@12a73d9]" name="deleteDirectory" duration-ms="923" started-at="2012-02-24T21:46:46Z" description="uat for operation &#039;delete-dir&#039;" depends-on-methods="com.atoito.please.uat.CreateDeleteDirectoryUat.createDirectory" finished-at="2012-02-24T21:46:47Z">
-        </test-method>
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@12a73d9]" name="tearDown" is-config="true" duration-ms="1" started-at="2012-02-24T21:46:47Z" finished-at="2012-02-24T21:46:47Z">
-        </test-method>
-      </class>
-      <class name="com.atoito.please.uat.BasicFunctionalitySmokeUat">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@dd75a4]" name="setUp" is-config="true" duration-ms="1" started-at="2012-02-24T21:46:41Z" finished-at="2012-02-24T21:46:41Z">
-        </test-method>
-        <test-method status="PASS" signature="basicFunctionsAreWorking([Ljava.lang.String;)[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@dd75a4]" name="basicFunctionsAreWorking" duration-ms="97" started-at="2012-02-24T21:46:41Z" description="base functionality is working" finished-at="2012-02-24T21:46:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@12d49e7]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="basicFunctionsAreWorking([Ljava.lang.String;)[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@dd75a4]" name="basicFunctionsAreWorking" duration-ms="1122" started-at="2012-02-24T21:46:41Z" description="base functionality is working" finished-at="2012-02-24T21:46:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@4f14b0]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="basicFunctionsAreWorking([Ljava.lang.String;)[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@dd75a4]" name="basicFunctionsAreWorking" duration-ms="1192" started-at="2012-02-24T21:46:42Z" description="base functionality is working" finished-at="2012-02-24T21:46:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@1d74bb1]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="basicFunctionsAreWorking([Ljava.lang.String;)[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@dd75a4]" name="basicFunctionsAreWorking" duration-ms="928" started-at="2012-02-24T21:46:44Z" description="base functionality is working" finished-at="2012-02-24T21:46:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.String;@1aa7a6a]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@dd75a4]" name="tearDown" is-config="true" duration-ms="1" started-at="2012-02-24T21:46:45Z" finished-at="2012-02-24T21:46:45Z">
-        </test-method>
-      </class>
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@ad2c30]" name="setUp" is-config="true" duration-ms="1" started-at="2012-02-28T21:27:06Z" finished-at="2012-02-28T21:27:06Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@ad2c30]" name="init" is-config="true" duration-ms="7" started-at="2012-02-28T21:27:06Z" finished-at="2012-02-28T21:27:06Z">
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="createDirectory()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@ad2c30]" name="createDirectory" duration-ms="930" started-at="2012-02-28T21:27:06Z" description="uat for operation &#039;create-dir&#039;" finished-at="2012-02-28T21:27:07Z">
+        </test-method> <!-- createDirectory -->
+        <test-method status="PASS" signature="deleteDirectory()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@ad2c30]" name="deleteDirectory" duration-ms="1070" started-at="2012-02-28T21:27:08Z" description="uat for operation &#039;delete-dir&#039;" depends-on-methods="com.atoito.please.uat.CreateDeleteDirectoryUat.createDirectory" finished-at="2012-02-28T21:27:09Z">
+        </test-method> <!-- deleteDirectory -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.atoito.please.uat.CreateDeleteDirectoryUat@ad2c30]" name="tearDown" is-config="true" duration-ms="1" started-at="2012-02-28T21:27:09Z" finished-at="2012-02-28T21:27:09Z">
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.atoito.please.uat.CreateDeleteDirectoryUat -->
       <class name="com.atoito.please.uat.ActionsSequenceUat">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.uat.ActionsSequenceUat@1568654]" name="setUp" is-config="true" duration-ms="19" started-at="2012-02-24T21:46:40Z" finished-at="2012-02-24T21:46:40Z">
-        </test-method>
-        <test-method status="PASS" signature="directoryCreation()[pri:0, instance:com.atoito.please.uat.ActionsSequenceUat@1568654]" name="directoryCreation" duration-ms="1274" started-at="2012-02-24T21:46:40Z" description="uat for operation &#039;sequence-operation&#039;" finished-at="2012-02-24T21:46:41Z">
-        </test-method>
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.atoito.please.uat.ActionsSequenceUat@1568654]" name="tearDown" is-config="true" duration-ms="95" started-at="2012-02-24T21:46:41Z" finished-at="2012-02-24T21:46:41Z">
-        </test-method>
-      </class>
-    </test>
-  </suite>
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.uat.ActionsSequenceUat@82d210]" name="setUp" is-config="true" duration-ms="0" started-at="2012-02-28T21:27:07Z" finished-at="2012-02-28T21:27:07Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="directoryCreation()[pri:0, instance:com.atoito.please.uat.ActionsSequenceUat@82d210]" name="directoryCreation" duration-ms="1142" started-at="2012-02-28T21:27:07Z" description="uat for operation &#039;sequence-operation&#039;" finished-at="2012-02-28T21:27:08Z">
+        </test-method> <!-- directoryCreation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.atoito.please.uat.ActionsSequenceUat@82d210]" name="tearDown" is-config="true" duration-ms="1" started-at="2012-02-28T21:27:08Z" finished-at="2012-02-28T21:27:08Z">
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.atoito.please.uat.ActionsSequenceUat -->
+      <class name="com.atoito.please.uat.BasicFunctionalitySmokeUat">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@903025]" name="setUp" is-config="true" duration-ms="16" started-at="2012-02-28T21:27:02Z" finished-at="2012-02-28T21:27:02Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="basicFunctionsAreWorking([Ljava.lang.String;)[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@903025]" name="basicFunctionsAreWorking" duration-ms="138" started-at="2012-02-28T21:27:02Z" description="base functionality is working" finished-at="2012-02-28T21:27:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@169bc15]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- basicFunctionsAreWorking -->
+        <test-method status="PASS" signature="basicFunctionsAreWorking([Ljava.lang.String;)[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@903025]" name="basicFunctionsAreWorking" duration-ms="1097" started-at="2012-02-28T21:27:03Z" description="base functionality is working" finished-at="2012-02-28T21:27:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@bb2f6e]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- basicFunctionsAreWorking -->
+        <test-method status="PASS" signature="basicFunctionsAreWorking([Ljava.lang.String;)[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@903025]" name="basicFunctionsAreWorking" duration-ms="1162" started-at="2012-02-28T21:27:04Z" description="base functionality is working" finished-at="2012-02-28T21:27:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@126f29f]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- basicFunctionsAreWorking -->
+        <test-method status="PASS" signature="basicFunctionsAreWorking([Ljava.lang.String;)[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@903025]" name="basicFunctionsAreWorking" duration-ms="1020" started-at="2012-02-28T21:27:05Z" description="base functionality is working" finished-at="2012-02-28T21:27:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@2cb44]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- basicFunctionsAreWorking -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.atoito.please.uat.BasicFunctionalitySmokeUat@903025]" name="tearDown" is-config="true" duration-ms="2" started-at="2012-02-28T21:27:06Z" finished-at="2012-02-28T21:27:06Z">
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.atoito.please.uat.BasicFunctionalitySmokeUat -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
 </testng-results>

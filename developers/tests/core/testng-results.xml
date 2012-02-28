@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="0" total="18" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Gradle suite" duration-ms="1303" started-at="2012-02-24T21:46:36Z" finished-at="2012-02-24T21:46:38Z">
+  <suite name="Gradle suite" duration-ms="1212" started-at="2012-02-28T21:26:59Z" finished-at="2012-02-28T21:27:00Z">
     <groups>
     </groups>
-    <test name="Gradle test" duration-ms="1303" started-at="2012-02-24T21:46:36Z" finished-at="2012-02-24T21:46:38Z">
+    <test name="Gradle test" duration-ms="1212" started-at="2012-02-28T21:26:59Z" finished-at="2012-02-28T21:27:00Z">
       <class name="com.atoito.please.test.unit.OpsFileTest">
-        <test-method status="PASS" signature="testSimple()[pri:0, instance:com.atoito.please.test.unit.OpsFileTest@ed5d9d]" name="testSimple" duration-ms="51" started-at="2012-02-24T21:46:38Z" description="ops file is loaded" finished-at="2012-02-24T21:46:38Z">
-        </test-method>
-      </class>
+        <test-method status="PASS" signature="testSimple()[pri:0, instance:com.atoito.please.test.unit.OpsFileTest@16fdac]" name="testSimple" duration-ms="51" started-at="2012-02-28T21:27:00Z" description="ops file is loaded" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- testSimple -->
+      </class> <!-- com.atoito.please.test.unit.OpsFileTest -->
       <class name="com.atoito.please.test.unit.DefaultRegistryTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="setUp" is-config="true" duration-ms="2" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="loadDefinitionsUrl()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="loadDefinitionsUrl" duration-ms="406" started-at="2012-02-24T21:46:37Z" description="registry loads operations in custom definitions file" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="afterMethod" is-config="true" duration-ms="0" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="loadOpsFile()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="loadOpsFile" duration-ms="270" started-at="2012-02-24T21:46:37Z" description="registry loads ops file" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="loadPluginsDefinitions()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="loadPluginsDefinitions" duration-ms="25" started-at="2012-02-24T21:46:37Z" description="registry loads operations in META-INF/plugin-definitions.please" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@bb2bc3]" name="tearDown" is-config="true" duration-ms="0" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-      </class>
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="setUp" is-config="true" duration-ms="3" started-at="2012-02-28T21:26:59Z" finished-at="2012-02-28T21:26:59Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2012-02-28T21:26:59Z" finished-at="2012-02-28T21:26:59Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loadDefinitionsUrl()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="loadDefinitionsUrl" duration-ms="395" started-at="2012-02-28T21:26:59Z" description="registry loads operations in custom definitions file" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- loadDefinitionsUrl -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="afterMethod" is-config="true" duration-ms="0" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loadOpsFile()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="loadOpsFile" duration-ms="241" started-at="2012-02-28T21:27:00Z" description="registry loads ops file" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- loadOpsFile -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="afterMethod" is-config="true" duration-ms="0" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loadPluginsDefinitions()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="loadPluginsDefinitions" duration-ms="24" started-at="2012-02-28T21:27:00Z" description="registry loads operations in META-INF/plugin-definitions.please" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- loadPluginsDefinitions -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="tearDown" is-config="true" duration-ms="0" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.atoito.please.test.unit.DefaultRegistryTest@fdfc58]" name="afterMethod" is-config="true" duration-ms="0" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.atoito.please.test.unit.DefaultRegistryTest -->
       <class name="com.atoito.please.test.unit.CopySingleFileActionTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@19b4748]" name="setUp" is-config="true" duration-ms="2" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="copySingleFile()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@19b4748]" name="copySingleFile" duration-ms="49" started-at="2012-02-24T21:46:37Z" description="if &#039;to&#039; points to an inexistent file, the original file is copied to this path" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="copySingleFileToExistentDirectory()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@19b4748]" name="copySingleFileToExistentDirectory" duration-ms="2" started-at="2012-02-24T21:46:37Z" description="if &#039;to&#039; points to an existent directory, the file is copied with the original&#039;s base name" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="failsIfFromDoensNotExist()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@19b4748]" name="failsIfFromDoensNotExist" duration-ms="1" started-at="2012-02-24T21:46:37Z" description="if &#039;from&#039; doesn&#039;t exist and it isn&#039;t in registered outputs and checkFrom is true, action fails" finished-at="2012-02-24T21:46:37Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@1b2d7df]" name="setUp" is-config="true" duration-ms="2" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="overwriteFile()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@1b2d7df]" name="overwriteFile" duration-ms="19" started-at="2012-02-28T21:27:00Z" description="if &#039;to&#039; points to an existent file, this file is overwritten with the original&#039;s content" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- overwriteFile -->
+        <test-method status="PASS" signature="copySingleFileToExistentDirectory()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@1b2d7df]" name="copySingleFileToExistentDirectory" duration-ms="2" started-at="2012-02-28T21:27:00Z" description="if &#039;to&#039; points to an existent directory, the file is copied with the original&#039;s base name" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- copySingleFileToExistentDirectory -->
+        <test-method status="PASS" signature="failsIfFromDoensNotExist()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@1b2d7df]" name="failsIfFromDoensNotExist" duration-ms="1" started-at="2012-02-28T21:27:00Z" description="if &#039;from&#039; doesn&#039;t exist and it isn&#039;t in registered outputs and checkFrom is true, action fails" finished-at="2012-02-28T21:27:00Z">
           <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[file to copy '/home/enrico/Projects/please/modules/core/file-1330116397200' not found. fail]]>
+              <![CDATA[file to copy '/home/enrico/Projects/please/modules/core/file-1330460820635' not found. fail]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: file to copy '/home/enrico/Projects/please/modules/core/file-1330116397200' not found. fail
+              <![CDATA[java.lang.IllegalArgumentException: file to copy '/home/enrico/Projects/please/modules/core/file-1330460820635' not found. fail
 	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:115)
 	at com.atoito.please.core.actions.CopyAction.resolveAndValidateFrom(CopyAction.java:99)
 	at com.atoito.please.core.actions.CopyAction.internalInitialize(CopyAction.java:123)
@@ -58,22 +58,22 @@
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
 	at java.lang.reflect.Method.invoke(Method.java:597)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:691)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:701)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:893)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1218)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:754)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:241)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1169)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1094)
-	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.testng.TestRunner.privateRun(TestRunner.java:758)
+	at org.testng.TestRunner.run(TestRunner.java:613)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1170)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1095)
+	at org.testng.TestNG.run(TestNG.java:1007)
 	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:103)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -109,57 +109,57 @@
 	at java.lang.Thread.run(Thread.java:662)
 ]]>
             </full-stacktrace>
-          </exception>
-        </test-method>
-        <test-method status="PASS" signature="overwriteFile()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@19b4748]" name="overwriteFile" duration-ms="9" started-at="2012-02-24T21:46:37Z" description="if &#039;to&#039; points to an existent file, this file is overwritten with the original&#039;s content" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-      </class>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+        </test-method> <!-- failsIfFromDoensNotExist -->
+        <test-method status="PASS" signature="copySingleFile()[pri:0, instance:com.atoito.please.test.unit.CopySingleFileActionTest@1b2d7df]" name="copySingleFile" duration-ms="1" started-at="2012-02-28T21:27:00Z" description="if &#039;to&#039; points to an inexistent file, the original file is copied to this path" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- copySingleFile -->
+      </class> <!-- com.atoito.please.test.unit.CopySingleFileActionTest -->
       <class name="com.atoito.please.test.unit.DefinitionsFileTest">
-        <test-method status="PASS" signature="definitionsAreCreated()[pri:0, instance:com.atoito.please.test.unit.DefinitionsFileTest@1a41cc7]" name="definitionsAreCreated" duration-ms="25" started-at="2012-02-24T21:46:37Z" description="DefinitionsFile contains correct mapping for actions and operations" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-      </class>
+        <test-method status="PASS" signature="definitionsAreCreated()[pri:0, instance:com.atoito.please.test.unit.DefinitionsFileTest@7a9224]" name="definitionsAreCreated" duration-ms="28" started-at="2012-02-28T21:27:00Z" description="DefinitionsFile contains correct mapping for actions and operations" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- definitionsAreCreated -->
+      </class> <!-- com.atoito.please.test.unit.DefinitionsFileTest -->
       <class name="com.atoito.please.test.unit.AppendActionTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.AppendActionTest@9b688e]" name="setUp" is-config="true" duration-ms="6" started-at="2012-02-24T21:46:38Z" finished-at="2012-02-24T21:46:38Z">
-        </test-method>
-        <test-method status="PASS" signature="appendContent()[pri:0, instance:com.atoito.please.test.unit.AppendActionTest@9b688e]" name="appendContent" duration-ms="9" started-at="2012-02-24T21:46:38Z" description="content is appended to the file" finished-at="2012-02-24T21:46:38Z">
-        </test-method>
-      </class>
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.AppendActionTest@b914b3]" name="setUp" is-config="true" duration-ms="18" started-at="2012-02-28T21:26:59Z" finished-at="2012-02-28T21:26:59Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="appendContent()[pri:0, instance:com.atoito.please.test.unit.AppendActionTest@b914b3]" name="appendContent" duration-ms="103" started-at="2012-02-28T21:26:59Z" description="content is appended to the file" finished-at="2012-02-28T21:26:59Z">
+        </test-method> <!-- appendContent -->
+      </class> <!-- com.atoito.please.test.unit.AppendActionTest -->
       <class name="com.atoito.please.test.unit.OpsDslEngineTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.OpsDslEngineTest@19d12cc]" name="setUp" is-config="true" duration-ms="5" started-at="2012-02-24T21:46:38Z" finished-at="2012-02-24T21:46:38Z">
-        </test-method>
-        <test-method status="PASS" signature="smokeTestWithStubRegistry()[pri:0, instance:com.atoito.please.test.unit.OpsDslEngineTest@19d12cc]" name="smokeTestWithStubRegistry" duration-ms="54" started-at="2012-02-24T21:46:38Z" description="smoke test for basic parsing" finished-at="2012-02-24T21:46:38Z">
-        </test-method>
-      </class>
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.OpsDslEngineTest@1629e71]" name="setUp" is-config="true" duration-ms="5" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="smokeTestWithStubRegistry()[pri:0, instance:com.atoito.please.test.unit.OpsDslEngineTest@1629e71]" name="smokeTestWithStubRegistry" duration-ms="67" started-at="2012-02-28T21:27:00Z" description="smoke test for basic parsing" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- smokeTestWithStubRegistry -->
+      </class> <!-- com.atoito.please.test.unit.OpsDslEngineTest -->
       <class name="com.atoito.please.test.unit.ArchivesTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.ArchivesTest@848ecc]" name="setUp" is-config="true" duration-ms="2" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.atoito.please.test.unit.ArchivesTest@848ecc]" name="initMethod" is-config="true" duration-ms="1" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="zipAndUnzip()[pri:0, instance:com.atoito.please.test.unit.ArchivesTest@848ecc]" name="zipAndUnzip" duration-ms="41" started-at="2012-02-24T21:46:37Z" description="zip archiver and expander components test" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-      </class>
-      <class name="com.atoito.please.test.unit.ArchiveActionsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.ArchiveActionsTest@13d1402]" name="setUp" is-config="true" duration-ms="16" started-at="2012-02-24T21:46:36Z" finished-at="2012-02-24T21:46:36Z">
-        </test-method>
-        <test-method status="PASS" signature="zipDirectory()[pri:0, instance:com.atoito.please.test.unit.ArchiveActionsTest@13d1402]" name="zipDirectory" duration-ms="187" started-at="2012-02-24T21:46:36Z" description="the given directory is zipped to the destination file" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="unzipArchive()[pri:0, instance:com.atoito.please.test.unit.ArchiveActionsTest@13d1402]" name="unzipArchive" duration-ms="7" started-at="2012-02-24T21:46:38Z" description="the given archive is unzipped to destination" depends-on-methods="com.atoito.please.test.unit.ArchiveActionsTest.zipDirectory" finished-at="2012-02-24T21:46:38Z">
-        </test-method>
-      </class>
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.ArchivesTest@19fdbcb]" name="setUp" is-config="true" duration-ms="1" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.atoito.please.test.unit.ArchivesTest@19fdbcb]" name="initMethod" is-config="true" duration-ms="1" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- initMethod -->
+        <test-method status="PASS" signature="zipAndUnzip()[pri:0, instance:com.atoito.please.test.unit.ArchivesTest@19fdbcb]" name="zipAndUnzip" duration-ms="34" started-at="2012-02-28T21:27:00Z" description="zip archiver and expander components test" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- zipAndUnzip -->
+      </class> <!-- com.atoito.please.test.unit.ArchivesTest -->
       <class name="com.atoito.please.test.unit.DirectoriesTest">
-        <test-method status="PASS" signature="initData()[pri:0, instance:com.atoito.please.test.unit.DirectoriesTest@363068]" name="initData" is-config="true" duration-ms="0" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="testFilteredListing()[pri:0, instance:com.atoito.please.test.unit.DirectoriesTest@363068]" name="testFilteredListing" duration-ms="30" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:com.atoito.please.test.unit.DirectoriesTest@363068]" name="testIsEmpty" duration-ms="5" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:37Z">
-        </test-method>
-        <test-method status="PASS" signature="testListing()[pri:0, instance:com.atoito.please.test.unit.DirectoriesTest@363068]" name="testListing" duration-ms="13" started-at="2012-02-24T21:46:37Z" finished-at="2012-02-24T21:46:38Z">
-        </test-method>
-      </class>
+        <test-method status="PASS" signature="initData()[pri:0, instance:com.atoito.please.test.unit.DirectoriesTest@c22a3b]" name="initData" is-config="true" duration-ms="1" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- initData -->
+        <test-method status="PASS" signature="testFilteredListing()[pri:0, instance:com.atoito.please.test.unit.DirectoriesTest@c22a3b]" name="testFilteredListing" duration-ms="13" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- testFilteredListing -->
+        <test-method status="PASS" signature="testIsEmpty()[pri:0, instance:com.atoito.please.test.unit.DirectoriesTest@c22a3b]" name="testIsEmpty" duration-ms="2" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- testIsEmpty -->
+        <test-method status="PASS" signature="testListing()[pri:0, instance:com.atoito.please.test.unit.DirectoriesTest@c22a3b]" name="testListing" duration-ms="11" started-at="2012-02-28T21:27:00Z" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- testListing -->
+      </class> <!-- com.atoito.please.test.unit.DirectoriesTest -->
+      <class name="com.atoito.please.test.unit.ArchiveActionsTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.atoito.please.test.unit.ArchiveActionsTest@110b640]" name="setUp" is-config="true" duration-ms="2" started-at="2012-02-28T21:26:59Z" finished-at="2012-02-28T21:26:59Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="zipDirectory()[pri:0, instance:com.atoito.please.test.unit.ArchiveActionsTest@110b640]" name="zipDirectory" duration-ms="111" started-at="2012-02-28T21:26:59Z" description="the given directory is zipped to the destination file" finished-at="2012-02-28T21:26:59Z">
+        </test-method> <!-- zipDirectory -->
+        <test-method status="PASS" signature="unzipArchive()[pri:0, instance:com.atoito.please.test.unit.ArchiveActionsTest@110b640]" name="unzipArchive" duration-ms="4" started-at="2012-02-28T21:27:00Z" description="the given archive is unzipped to destination" depends-on-methods="com.atoito.please.test.unit.ArchiveActionsTest.zipDirectory" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- unzipArchive -->
+      </class> <!-- com.atoito.please.test.unit.ArchiveActionsTest -->
       <class name="com.atoito.please.test.unit.OperationClosureDelegateTest">
-        <test-method status="PASS" signature="operationLoading()[pri:0, instance:com.atoito.please.test.unit.OperationClosureDelegateTest@164cbde]" name="operationLoading" duration-ms="28" started-at="2012-02-24T21:46:38Z" description="OperationClosureDelegate loads operation data through missingMethod" finished-at="2012-02-24T21:46:38Z">
-        </test-method>
-      </class>
-    </test>
-  </suite>
+        <test-method status="PASS" signature="operationLoading()[pri:0, instance:com.atoito.please.test.unit.OperationClosureDelegateTest@1682a53]" name="operationLoading" duration-ms="40" started-at="2012-02-28T21:27:00Z" description="OperationClosureDelegate loads operation data through missingMethod" finished-at="2012-02-28T21:27:00Z">
+        </test-method> <!-- operationLoading -->
+      </class> <!-- com.atoito.please.test.unit.OperationClosureDelegateTest -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
 </testng-results>

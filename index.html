@@ -6,12 +6,12 @@
   <script src="/please/js/sh/shCore.js" type="text/javascript"></script>
   <script src="/please/js/sh/shAutoloader.js" type="text/javascript"></script>
   <link href="/please/css/main.css" media="screen" rel="stylesheet" type="text/css" />
-  <title>Xite</title>
+  <title>Please</title>
 </head>
 <body>
  
 	<div class="fixed-position fixed-n">
-		Please operation performer
+		Please Operation performer
 	</div>
 
     <!-- 
@@ -275,17 +275,6 @@ operation {
 }
 </code></pre>
 
-<p>Append content to file:</p>
-
-<pre><code>operation {
-    id 'hello-append'
-    append {
-        file = '/tmp/myfile.txt'
-        content = 'append!!'
-    }
-}
-</code></pre>
-
 <h2>Built in actions</h2>
 
 <p>You can see available actions running</p>
@@ -293,8 +282,17 @@ operation {
 <pre><code>please actions
 </code></pre>
 
-<p>Copy a file or a directory-
-The <code>checkFrom</code> option is to verify if the original file exists when Please starts to perform involved operations;
+<p>Append content to a file:</p>
+
+<pre><code>append {
+    file = '/tmp/myfile.txt'
+    content = 'append!!'
+}
+</code></pre>
+
+<p>Copy a file or a directory</p>
+
+<p>The <code>checkFrom</code> option is to verify if the original file exists when Please starts to perform involved operations;
 as checks are executed before the actual operation, if the file to copy is created from a former action, you should
 set checkFrom to false to avoid validation errors.</p>
 
@@ -302,6 +300,21 @@ set checkFrom to false to avoid validation errors.</p>
     from = /C:\path\to\Very-Enterprise-2.0.ear/
     to = releaseDir
     checkFrom = false
+}
+</code></pre>
+
+<p>Delete file or directory:</p>
+
+<pre><code>delete {
+    path = "${zipDir}/static-zipped.zip"
+}
+</code></pre>
+
+<p>Download a file:</p>
+
+<pre><code>download {
+    url = 'http://usefuldomain/usefuljar-0.3.jar'
+    destination = 'hello-download-bin.jar'
 }
 </code></pre>
 
@@ -326,10 +339,11 @@ set checkFrom to false to avoid validation errors.</p>
 }
 </code></pre>
 
-<p>Delete file or directory:</p>
+<p>Set environment variable:</p>
 
-<pre><code>delete {
-    path = "${zipDir}/static-zipped.zip"
+<pre><code>setenv {
+    name = 'GRAILS_HOME'
+    value = "${baseDir}${File.separator}grails-2.0.1"
 }
 </code></pre>
 
@@ -339,7 +353,7 @@ set checkFrom to false to avoid validation errors.</p>
     source = 'd:/export'
     destination = "d:/tmp/export-${date()}.zip"
     //includes = 'please/**'
-    excludes = '**/.classpath,**/.project,**/.settings/**,**/target/**,**/test-output/**,*.log'
+    excludes = '**/.classpath,**/.project,**/.settings/**,*.log'
 }
 unzip {
     archive = "${zipDir}/static-zipped.zip"
@@ -352,14 +366,6 @@ targz {
 untargz {
     archive = "${zipDir}/static-tarred.tgz"
     destination = "${unzipDir}"
-}
-</code></pre>
-
-<p>Download a file:</p>
-
-<pre><code>download {
-    url = 'http://usefuldomain/usefuljar-0.3.jar'
-    destination = 'hello-download-bin.jar'
 }
 </code></pre>
 
@@ -390,13 +396,19 @@ or use backslash in a 'slashed' string (ie <code>/c:\projects\my/</code>).</p>
 
 <p>Please uses Gradle as build system;</p>
 
-<p>Tasks to know:</p>
+<p>To create Please app in ./modules/cli/target/install/please/:</p>
 
-<pre><code>./gradlew installApp      # will create please app in ./modules/cli/target/install/please/
+<pre><code>./gradlew installApp
+</code></pre>
 
-./gradlew distZip         # will create the distribution zip in ./modules/cli/target/distributions/
+<p>To create the distribution zip in ./modules/cli/target/distributions/:</p>
 
-./gradlew uat             # will build a local install and run user acceptance tests
+<pre><code>./gradlew distZip
+</code></pre>
+
+<p>To build a local install and run user acceptance tests:</p>
+
+<pre><code>./gradlew uat
 </code></pre>
 
 <p>To install the zip, you need only to:</p>
@@ -417,6 +429,12 @@ or use backslash in a 'slashed' string (ie <code>/c:\projects\my/</code>).</p>
 <p>To create website, Please uses Xite <a href="http://enr.github.com/xite/index.html">http://enr.github.com/xite/index.html</a></p>
 
 <pre><code>/opt/xite/bin/xite -s website
+</code></pre>
+
+<p>To release, set new version (if needed) in modules/core/src/main/resources/please-app.properties
+and run:</p>
+
+<pre><code>./gradlew release
 </code></pre>
 
 <p>Special dirs for distribution:</p>
