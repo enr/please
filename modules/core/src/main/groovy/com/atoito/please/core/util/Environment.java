@@ -20,13 +20,37 @@
 package com.atoito.please.core.util;
 
 import java.io.File;
+import java.net.URL;
+import java.util.Properties;
 
 import com.atoito.please.core.exception.PleaseException;
 import com.google.common.base.Preconditions;
+import com.google.common.io.Resources;
 
 public class Environment {
 
-    public static final String PLEASE_VERSION = "0.1";
+    public static final String PLEASE_VERSION;
+
+    private static final String PLEASE_APP_PROPERTIES_RESOURCE = "please-app.properties";
+    private static final String PLEASE_VERSION_PROPERTY_KEY = "please.version";
+    private static final String PLEASE_VERSION_DEFAULT_VALUE = "0.1";
+    
+    static {
+		Properties props = new Properties();
+		try {
+			URL url = Resources.getResource(PLEASE_APP_PROPERTIES_RESOURCE);
+			props.load(url.openStream());
+		} catch (Exception e) {
+			M.info("error looking for please property %s", PLEASE_VERSION_PROPERTY_KEY);
+		}
+		String propertyValue = props.getProperty(PLEASE_VERSION_PROPERTY_KEY);
+		if (propertyValue == null) {
+			PLEASE_VERSION = PLEASE_VERSION_DEFAULT_VALUE;
+		} else {
+			PLEASE_VERSION = propertyValue;
+		}
+    }
+    
     private static final Object OPS_DIR_BASENAME = "ops.d";
     private final File home;
     private final String os = System.getProperty("os.name").toLowerCase();
@@ -38,7 +62,6 @@ public class Environment {
     }
 
     public static void initializeWithHome(File home) {
-        // M.info("=========  initializeWithHome '%s'", home.getAbsolutePath());
         if (current != null) {
             throw new PleaseException("environment already initialized");
         }
@@ -57,18 +80,15 @@ public class Environment {
      *            the directory to use as Please home.
      */
     public static void refreshWithHome(File home) {
-        // M.info("=========  refreshWithHome '%s'", home.getAbsolutePath());
         clean();
         initializeWithHome(home);
     }
 
     public static void clean() {
-        // M.info("=========  clean current = '%s'", current);
         current = null;
     }
 
     public static Environment getCurrent() {
-        // M.info("=========  getCurrent current = '%s'", current);
         if (current == null) {
             throw new PleaseException("environment not yet initialized");
         }
@@ -122,4 +142,5 @@ public class Environment {
         StringBuilder sb = new StringBuilder().append(home.getAbsolutePath()).append(File.separator).append("logs");
         return sb.toString();
     }
+
 }

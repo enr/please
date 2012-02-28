@@ -38,8 +38,6 @@ public class DefaultPropertiesLoader implements PropertiesLoader {
      */
     private static final String SYSTEM_KEY_PREFIX = "system.";
 
-    Environment environment = Environment.getCurrent();
-
     public void loadFromDefaultLocations() {
         loadFromUserSettingsDirectory();
         loadFromCurrentDirectory();
@@ -71,7 +69,7 @@ public class DefaultPropertiesLoader implements PropertiesLoader {
     }
 
     private void loadFromUserSettingsDirectory() {
-        String userSettingPath = environment.userSettingsPath();
+        String userSettingPath = Environment.getCurrent().userSettingsPath();
         File userSettingsDir = new File(userSettingPath);
         File propertiesFile = new File(userSettingsDir, "please.properties");
         if (!propertiesFile.exists()) {
@@ -79,19 +77,6 @@ public class DefaultPropertiesLoader implements PropertiesLoader {
         }
         loadProperties(propertiesFile);
     }
-
-    /**
-     * Load a properties file from the classpath
-     * 
-     * @param propsName
-     * @return Properties
-     * @throws Exception
-     * 
-     *             private Properties propertiesInResource(String propsName)
-     *             throws Exception { Properties props = new Properties(); URL
-     *             url = ClassLoader.getSystemResource(propsName);
-     *             props.load(url.openStream()); return props; }
-     */
 
     /**
      * Load a Properties File
