@@ -12,7 +12,7 @@ distributionArchiveDir = "${distZip.baseName}-${distZip.version}"
 
 dependencies {
     compile     project(':modules:core')
-    compile     'com.google.guava:guava:10.0'
+    compile     'com.google.guava:guava:11.0.1'
     
 }
 
