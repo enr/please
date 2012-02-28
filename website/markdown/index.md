@@ -294,7 +294,7 @@ Create an archive file or expand it:
         source = 'd:/export'
         destination = "d:/tmp/export-${date()}.zip"
         //includes = 'please/**'
-        excludes = '**/.classpath,**/.project,**/.settings/**,**/target/**,**/test-output/**,*.log'
+        excludes = '**/.classpath,**/.project,**/.settings/**,*.log'
     }
     unzip {
         archive = "${zipDir}/static-zipped.zip"
@@ -342,13 +342,17 @@ Development
 
 Please uses Gradle as build system;
 
-Tasks to know:
+To create Please app in ./modules/cli/target/install/please/:
 
-    ./gradlew installApp      # will create please app in ./modules/cli/target/install/please/
+    ./gradlew installApp
 
-    ./gradlew distZip         # will create the distribution zip in ./modules/cli/target/distributions/
+To create the distribution zip in ./modules/cli/target/distributions/:
 
-    ./gradlew uat             # will build a local install and run user acceptance tests
+    ./gradlew distZip
+
+To build a local install and run user acceptance tests:
+
+    ./gradlew uat
 
 To install the zip, you need only to:
 
