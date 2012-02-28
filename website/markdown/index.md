@@ -219,15 +219,6 @@ You can use variables, and special methods (such as "date()"):
         }
     }    
 
-Append content to file:
-
-    operation {
-        id 'hello-append'
-        append {
-            file = '/tmp/myfile.txt'
-            content = 'append!!'
-        }
-    }
 
     
 Built in actions
@@ -237,7 +228,16 @@ You can see available actions running
     
     please actions
 
-Copy a file or a directory-
+Append content to a file:
+
+    append {
+        file = '/tmp/myfile.txt'
+        content = 'append!!'
+    }
+
+
+Copy a file or a directory
+
 The `checkFrom` option is to verify if the original file exists when Please starts to perform involved operations;
 as checks are executed before the actual operation, if the file to copy is created from a former action, you should
 set checkFrom to false to avoid validation errors.
@@ -246,6 +246,19 @@ set checkFrom to false to avoid validation errors.
         from = /C:\path\to\Very-Enterprise-2.0.ear/
         to = releaseDir
         checkFrom = false
+    }
+
+Delete file or directory:
+    
+    delete {
+        path = "${zipDir}/static-zipped.zip"
+    }
+
+Download a file:
+
+    download {
+        url = 'http://usefuldomain/usefuljar-0.3.jar'
+        destination = 'hello-download-bin.jar'
     }
 
 Exec a command:
@@ -267,10 +280,12 @@ Create a directory (Please's mkdir is actually a `mkdir -p`):
         directory = "${unzipDir}"
     }
 
-Delete file or directory:
-    
-    delete {
-        path = "${zipDir}/static-zipped.zip"
+Set environment variable:
+
+
+    setenv {
+        name = 'GRAILS_HOME'
+        value = "${baseDir}${File.separator}grails-2.0.1"
     }
 
 Create an archive file or expand it:
@@ -294,12 +309,6 @@ Create an archive file or expand it:
         destination = "${unzipDir}"
     }
 
-Download a file:
-
-    download {
-        url = 'http://usefuldomain/usefuljar-0.3.jar'
-        destination = 'hello-download-bin.jar'
-    }
 
 
 System properties
