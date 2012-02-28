@@ -153,6 +153,7 @@ public class DefaultDownloader implements Downloader {
         } finally {
             // maybe something gone wrong
             Closeables.closeQuietly(downloadOutputStream);
+            client.close();
         }
         return downloaded;
     }
