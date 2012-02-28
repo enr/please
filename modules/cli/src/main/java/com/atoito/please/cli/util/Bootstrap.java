@@ -56,7 +56,8 @@ public class Bootstrap {
     public static List<URL> getPleaseClasspathUrls(File home) {
         List<URL> result = new ArrayList<URL>();
         result.addAll(jarsInSubDirectory(home, "lib"));
-        result.addAll(jarsInSubDirectory(home, "plugins"));
+        // plugins not yet implemented
+        //result.addAll(jarsInSubDirectory(home, "plugins"));
         return result;
     }
 
