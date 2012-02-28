@@ -123,7 +123,7 @@ public class Environment {
     }
 
     public String systemOpsFileDirPath() {
-        return systemSettingsPath() + File.separator + Environment.OPS_DIR_BASENAME;
+        return systemSettingsPath() + "/" + Environment.OPS_DIR_BASENAME;
     }
 
     public boolean isWindows() {
