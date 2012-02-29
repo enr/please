@@ -438,8 +438,36 @@ To run existent user acceptance tests:
     ./gradlew uat
 
 
-Extending DSL
--------------
+Extending Please
+----------------
+
+You can extend Please:
+
+- Writing custom Actions
+
+- Writing custom Operations
+
+- Writing custom Plugins
+
+- Writing custom Ability to extend DSL
+
+
+**Writing custom Actions**
+
+Lorem ipsum ...
+
+
+**Writing custom Operations**
+
+Lorem ipsum ...
+
+
+**Writing custom Plugins**
+
+Lorem ipsum ...
+
+
+**Writing custom Ability to extend DSL**
 
 To extend Please DSL you can see at `com.atoito.please.dsl.DateAbility`, introducing a `date()` method.
 
