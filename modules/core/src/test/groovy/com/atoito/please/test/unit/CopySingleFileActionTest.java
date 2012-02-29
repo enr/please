@@ -29,32 +29,25 @@ import org.testng.annotations.Test;
 import com.atoito.please.core.actions.CopyAction;
 import com.atoito.please.core.api.Action;
 import com.atoito.please.core.util.Directories;
-import com.atoito.please.test.util.Paths;
 import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.io.Files;
 
-public class CopySingleFileActionTest {
+public class CopySingleFileActionTest extends ActionTestBase {
 
     String testDataPath;
-    File baseOutputDir;
     File from;
 
     @BeforeClass
     public void setUp() throws Exception {
-        testDataPath = Paths.testDataDir(CopySingleFileActionTest.class).getAbsolutePath() + File.separator;
-        baseOutputDir = Paths.outputDir(CopySingleFileActionTest.class);
-        Directories.ensureExists(baseOutputDir);
+    	init();
+        testDataPath = testDataDir.getAbsolutePath() + File.separator;
+        //baseOutputDir = Paths.outputDir(CopySingleFileActionTest.class);
+        //Directories.ensureExists(baseOutputDir);
         // outputPath = outputDir.getAbsolutePath() + File.separator;
-        Directories.clean(baseOutputDir);
+        //Directories.clean(baseOutputDir);
         String fromPath = Joiner.on(File.separatorChar).join(testDataPath, "01", "01.txt");
         from = new File(fromPath);
-    }
-
-    private File resolveDestination(String baseDir, String fileName) {
-        String toPath = Joiner.on(File.separatorChar).join(baseOutputDir.getAbsolutePath(), baseDir, fileName);
-        File to = new File(toPath);
-        return to;
     }
 
     @Test(description = "if 'to' points to an inexistent file, the original file is copied to this path")

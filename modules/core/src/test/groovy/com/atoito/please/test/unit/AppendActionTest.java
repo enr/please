@@ -35,15 +35,15 @@ import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.io.Files;
 
-public class AppendActionTest {
+public class AppendActionTest extends ActionTestBase {
 
     String testDataPath;
-    File baseOutputDir;
     File from;
 
     @BeforeClass
     public void setUp() throws Exception {
-        testDataPath = Paths.testDataDir(AppendActionTest.class).getAbsolutePath() + File.separator;
+    	init();
+        testDataPath = testDataDir.getAbsolutePath() + File.separator;
         baseOutputDir = Paths.outputDir(AppendActionTest.class);
         Directories.ensureExists(baseOutputDir);
         Directories.clean(baseOutputDir);
@@ -51,6 +51,7 @@ public class AppendActionTest {
         from = new File(fromPath);
     }
 
+    /*
     private File resolveDestination(String baseDir, String fileName) throws Exception {
         String toDir = Joiner.on(File.separatorChar).join(baseOutputDir.getAbsolutePath(), baseDir);
         Directories.ensureExists(new File(toDir));
@@ -59,6 +60,7 @@ public class AppendActionTest {
         File to = new File(toPath);
         return to;
     }
+    */
 
     @Test(description = "content is appended to the file")
     public void appendContent() throws Exception {

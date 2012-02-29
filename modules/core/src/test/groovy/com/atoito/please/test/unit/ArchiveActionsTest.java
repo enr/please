@@ -32,7 +32,7 @@ import com.atoito.please.core.api.Action;
 import com.atoito.please.core.util.Directories;
 import com.atoito.please.test.util.Paths;
 
-public class ArchiveActionsTest {
+public class ArchiveActionsTest extends ActionTestBase {
 
     private String testDataPath;
     private String outputPath;
@@ -41,7 +41,8 @@ public class ArchiveActionsTest {
 
     @BeforeClass
     public void setUp() throws Exception {
-        testDataPath = Paths.testDataDir(ArchiveActionsTest.class).getAbsolutePath() + File.separator;
+    	init();
+        testDataPath = testDataDir.getAbsolutePath() + File.separator;
         File outputDir = Paths.outputDir(ArchiveActionsTest.class);
         Directories.ensureExists(outputDir);
         outputPath = outputDir.getAbsolutePath() + File.separator;
