@@ -4,12 +4,9 @@ dependencies {
 	
     compile 'com.google.guava:guava:11.0.1',
 			'org.apache.ant:ant:1.8.2',
-			//'org.slf4j:slf4j-api:1.6.2',
 			'ch.qos.logback:logback-classic:1.0.0',
-			'com.ning:async-http-client:1.7.1'
-            //'org.fusesource.jansi:jansi:1.2.1',
-			//'org.apache.httpcomponents:httpclient:4.1.2',
-			//'org.sonatype.spice:jersey-ahc-client:1.0.0',
+			'com.ning:async-http-client:1.7.1',
+            'org.antlr:stringtemplate:4.0.2'
 
 }
 

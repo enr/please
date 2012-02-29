@@ -47,7 +47,7 @@ public abstract class AbstractAction implements Action, OutputsAwareAction {
     protected boolean initialized = false;
 
     public void setProperty(String key, Object value) {
-    	M.info("key=%s value=%s %s", key, value, value.getClass());
+    	M.info("key=%s value=%s", key, value);
         store.put(key, value);
     }
 

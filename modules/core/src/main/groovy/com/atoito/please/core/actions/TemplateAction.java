@@ -22,6 +22,8 @@ package com.atoito.please.core.actions;
 import java.io.File;
 import java.util.Map;
 
+import org.stringtemplate.v4.ST;
+
 import com.atoito.please.core.api.AbstractAction;
 import com.atoito.please.core.util.Actions;
 import com.atoito.please.core.util.M;
@@ -37,7 +39,12 @@ public class TemplateAction extends AbstractAction {
 	private Map<String, String> tokens;
 
     protected void internalExecute() {
-
+    	ST hello = new ST("Hello, <name>");
+    	for (Map.Entry<String, String>token : tokens.entrySet()) {
+    		hello.add(token.getKey(), token.getValue());
+    	}
+    	String result = hello.render();
+    	M.info(result);
     }
 
     protected void internalInitialize() {

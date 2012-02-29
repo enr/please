@@ -45,11 +45,16 @@ public class Store {
         Object checked = Preconditions.checkNotNull(configured);
         Map<String, String> map = Maps.newHashMap();
         if (! (checked instanceof Map)) {
+        	M.info("no a map...");
         	return map;
         }
         Map<?, ?> raw = (Map<?, ?>) checked;        
         for (Map.Entry<?, ?>entry : raw.entrySet()) {
-        	M.info("%s %s %s", entry.getKey(), entry.getValue(), entry.getValue().getClass());
+        	if (entry == null) {
+        		continue;
+        	}
+        	M.info("%s %s", entry.getKey(), entry.getValue());
+        	
         	String key = entry.getKey().toString();
         	String value = (entry.getValue() == null) ? null : entry.getValue().toString();
         	map.put(key, value);

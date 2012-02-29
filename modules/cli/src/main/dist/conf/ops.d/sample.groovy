@@ -35,6 +35,6 @@ operation {
 	template {
 		source = '/path/to/template'
 		destination = '/path/to/destination'
-        tokens = [a:1, b:2]
+        tokens = [name:'Please']
 	}
 }
