@@ -9,7 +9,8 @@ actions = [ 'copy':'com.atoito.please.core.actions.CopyAction',
             'download':'com.atoito.please.core.actions.DownloadAction',
             'setenv':'com.atoito.please.core.actions.SetEnvVariableAction',
             'delete':'com.atoito.please.core.actions.DeleteAction',
-            'append':'com.atoito.please.core.actions.AppendAction' ]
+            'append':'com.atoito.please.core.actions.AppendAction',
+            'template':'com.atoito.please.core.actions.TemplateAction' ]
            
 operations = [  'reports':'com.atoito.please.core.operations.PleaseReportsOperation',
                 'paths':'com.atoito.please.core.operations.PleaseReportsOperation',

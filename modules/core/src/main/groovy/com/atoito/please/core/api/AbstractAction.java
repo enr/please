@@ -23,6 +23,7 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 
+import com.atoito.please.core.util.M;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -46,6 +47,7 @@ public abstract class AbstractAction implements Action, OutputsAwareAction {
     protected boolean initialized = false;
 
     public void setProperty(String key, Object value) {
+    	M.info("key=%s value=%s %s", key, value, value.getClass());
         store.put(key, value);
     }
 

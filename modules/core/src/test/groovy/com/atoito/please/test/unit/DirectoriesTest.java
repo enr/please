@@ -61,7 +61,6 @@ public class DirectoriesTest {
             filePaths.add(file.getPath());
         }
         assertThat(filePaths).as("files list").contains(thisFile);
-
     }
 
     @Test
