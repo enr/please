@@ -379,28 +379,31 @@ Special dirs for distribution:
 
 * `modules/cli/src/main/dist` will be copied in `$PLEASE_HOME`
 
-Test results:
-
-* [module core](/please/developers/tests/core/index.html)
-* [module acceptance](/please/developers/tests/uat/index.html)
-
 
 Extending Please
 ----------------
 
-To programmatically extend Please, you can write a plugin.
+To programmatically extend Please, you can develop:
 
-A plugin is a jar file located in `$PLEASE_HOME/plugins`.
+- Custom Actions and Operations
 
-You can create your operations and actions implementing `com.atoito.please.core.api.Operation` and `com.atoito.please.core.api.Action`
+- Custom Plugins
+
+- Custom Ability to extend DSL
+
+
+**Writing custom Actions and Operations**
+
+You can create your operations and actions implementing `com.atoito.please.core.api.Operation` 
+and `com.atoito.please.core.api.Action`.
 
 Please offers you some utility class to extend:
 
 * `com.atoito.please.core.api.AbstractAction`
 * `com.atoito.please.core.api.AbstractProvidedOperation`
 
-To define operations and actions (ie tell Please that some new operation/action exists) you have to create a "definition-file" located in `META-INF/plugin-definitions.please`.
-
+To define operations and actions (ie tell Please that some new operation/action exists) you have 
+to create a "definition-file" located in `META-INF/plugin-definitions.please`.
 
 Sample content for a definition file:
 
@@ -413,17 +416,33 @@ Sample content for a definition file:
     operations = [ 'reports':'com.atoito.please.core.operations.PleaseReportOperation' ]
 
 
-If operation has to know the 'id' operation has been defined in registry (ie the built in Please reports operation that has different 
-behaviour depending on the call is for 'reports' or 'operations' or 'actions') has to implement IdAwareOperation.
+If operation has to know the 'id' operation has been defined in registry (ie the built in Please 
+reports operation that has different behaviour depending on the call is for 'reports' or 
+'operations' or 'actions') has to implement IdAwareOperation.
 
-If action creates or uses files it can implement OutputsAware; this way, it receives a list of files registered as output from former actions.
+If action creates or uses files it can implement OutputsAware; this way, it receives a list of 
+files registered as output from former actions.
+
 Abstract action already implements it.
+
 You can look at ZipAction for an output production/consumption example.
 
 If action has to know additional options it has to implement `ArgsAwareAction`.
 
 When Please is invoked using the `--noop` option, operation and actions are described using their method `String toHuman()`;
 You can use the utility class `DescriptionBuilder` to build the descriptive string.
+
+
+**Writing custom Plugins**
+
+A plugin is a jar file located in `$PLEASE_HOME/plugins`.
+
+It can contain custom actions and operations, and of course a definition-file describing them.
+
+
+**Writing custom Ability to extend DSL**
+
+To extend Please DSL you can see at `com.atoito.please.dsl.DateAbility`, introducing a `date()` method.
 
 
 Acceptance testing
@@ -438,39 +457,13 @@ To run existent user acceptance tests:
     ./gradlew uat
 
 
-Extending Please
-----------------
+Reports
+-------
 
-You can extend Please:
+Test results:
 
-- Writing custom Actions
-
-- Writing custom Operations
-
-- Writing custom Plugins
-
-- Writing custom Ability to extend DSL
-
-
-**Writing custom Actions**
-
-Lorem ipsum ...
-
-
-**Writing custom Operations**
-
-Lorem ipsum ...
-
-
-**Writing custom Plugins**
-
-Lorem ipsum ...
-
-
-**Writing custom Ability to extend DSL**
-
-To extend Please DSL you can see at `com.atoito.please.dsl.DateAbility`, introducing a `date()` method.
-
+* [module core](/please/developers/tests/core/index.html)
+* [module acceptance](/please/developers/tests/uat/index.html)
 
 Download
 --------
