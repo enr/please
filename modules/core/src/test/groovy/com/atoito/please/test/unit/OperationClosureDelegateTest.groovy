@@ -29,10 +29,7 @@ import com.atoito.please.core.api.Operation
 import com.atoito.please.core.dsl.OperationClosureDelegate
 import com.atoito.please.core.util.M
 
-@Test(suiteName="Components and Api")
 public class OperationClosureDelegateTest {
-	
-
 
     @Test(description = "OperationClosureDelegate loads operation data through missingMethod")
     public void operationLoading() {
