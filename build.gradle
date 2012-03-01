@@ -71,6 +71,11 @@ subprojects {
                 downloadJavadoc = true
             }
         }
+        
+        task clean(type: Delete, overwrite: true) { task ->
+            delete buildDir
+            delete "build"
+        }
     }
 
     if (project.path in acceptanceTests) {
@@ -85,7 +90,6 @@ subprojects {
         }
     }
 }
-
 
 task wrapper(type: Wrapper) {
     gradleVersion = '1.0-milestone-8a'
