@@ -95,3 +95,52 @@ Write a test checking that validation works:
         action.setProperty("tokens", null);
         action.initialize;
     }
+    
+Add UAT:
+
+Basic implementation:
+
+public class TemplateActionUat extends BaseUat {
+
+    @BeforeClass
+    public void init() throws Exception {
+
+    }
+
+    @Test(description = "uat for operation 'template-operation'")
+    public void createDirectory() {
+        String[] args = new String[] { "template-operation" };
+        runApplicationWithArgs(args);
+    }
+}
+
+Add the action under test to the ops file used in UAT (acceptance-tests/src/test/ops):
+
+
+    operation {
+        id 'template-operation'
+        def dataSrcDir = "${projectDir.getAbsolutePath()}/src/test/data/01"
+        template {
+            source = "${dataSrcDir}/template-01.txt"
+            destination = "${buildDir.getAbsolutePath()}/template-01-result.txt"
+            tokens = [name:'Please', site:'GitHub.com']
+        }
+    }
+
+Add used files, in this case template-01.txt
+
+    Hello from <name>!
+    Fork me on <site>
+
+Write down the actual test:
+
+    @Test(description = "uat for operation 'template-operation'")
+    public void createDirectory() throws Exception {
+        String[] args = new String[] { "template-operation" };
+        runApplicationWithArgs(args);
+        File resultFile = new File(getBuildDir(), "template-01-result.txt");
+        assertThat(resultFile).as("result file").exists();
+        String content = Files.toString(resultFile, Charsets.UTF_8);
+        assertThat(content).as("result content").isEqualTo("Hello from n!\nFork me on s");
+    }
+

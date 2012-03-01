@@ -19,12 +19,20 @@
 
 package com.atoito.please.test.unit;
 
+import static org.fest.assertions.Assertions.assertThat;
+
+import java.io.File;
+import java.util.Map;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.atoito.please.core.actions.TemplateAction;
 import com.atoito.please.core.api.Action;
+import com.google.common.base.Joiner;
+import com.google.common.collect.Maps;
 
+@Test(suiteName="Actions Unit")
 public class TemplateActionTest extends ActionTestBase {
 
     @BeforeClass
@@ -39,6 +47,31 @@ public class TemplateActionTest extends ActionTestBase {
         action.setProperty("destination", null);
         action.setProperty("tokens", null);
         action.initialize();
+    }
+    
+    @Test
+    public void testTemplateProcess() throws Exception {
+    	String sourcePath = Joiner.on(File.separatorChar).join(testDataDir.getAbsolutePath(), "template", "tpl-01-src.txt");
+        File sourceFile = new File(sourcePath);
+        assertThat(sourceFile).as("source file").exists();
+
+    	String expectedPath = Joiner.on(File.separatorChar).join(testDataDir.getAbsolutePath(), "template", "tpl-01-expected.txt");
+        File expectedFile = new File(expectedPath);
+        assertThat(expectedFile).as("expected file").exists();
+
+        File resultFile = resolveFileBuildingBaseInOutputDir(this.getClass().getName(), "tpl-01-result.txt");
+        
+        Action action = new TemplateAction();
+        action.setProperty("source", sourceFile.getAbsolutePath());
+        action.setProperty("destination", resultFile.getAbsolutePath());
+        
+        Map<String, String> tokens = Maps.newHashMap();
+        tokens.put("sentiment", "love");
+        action.setProperty("tokens", tokens);
+        action.initialize();
+        action.execute();
+
+        assertThat(resultFile).as("result file").exists().hasSameContentAs(expectedFile);
     }
 
 }

@@ -66,3 +66,13 @@ operation {
 		destination = "${expandedDir}"
 	}
 }
+
+operation {
+	id 'template-operation'
+	def dataSrcDir = "${projectDir.getAbsolutePath()}/src/test/data/01"
+    template {
+        source = "${dataSrcDir}/template-01.txt"
+        destination = "${buildDir.getAbsolutePath()}/template-01-result.txt"
+        tokens = [name:'Please', site:'GitHub.com']
+    }
+}
