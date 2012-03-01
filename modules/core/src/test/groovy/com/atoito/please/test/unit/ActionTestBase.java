@@ -22,14 +22,14 @@ public class ActionTestBase {
     /*
      * Gets file named fileName, in baseDir which is in baseOutputDir.
      */
-    protected File resolveFile(String baseDir, String fileName) {
+    protected File resolveFileInOutputDir(String baseDir, String fileName) {
         String toPath = Joiner.on(File.separatorChar).join(baseOutputDir.getAbsolutePath(), baseDir, fileName);
         File to = new File(toPath);
         return to;
     }
     
 
-    protected File resolveFileBuildingBaseDir(String baseDir, String fileName) throws Exception {
+    protected File resolveFileBuildingBaseInOutputDir(String baseDir, String fileName) throws Exception {
         String toDir = Joiner.on(File.separatorChar).join(baseOutputDir.getAbsolutePath(), baseDir);
         Directories.ensureExists(new File(toDir));
         Directories.clean(new File(toDir));

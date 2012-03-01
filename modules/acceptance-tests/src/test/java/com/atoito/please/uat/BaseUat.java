@@ -46,9 +46,7 @@ public class BaseUat {
 
     @BeforeClass
     public void setUp() throws Exception {
-
-        File cc = ClasspathUtil.getClasspathForClass(BasicFunctionalitySmokeUat.class);
-        File modules = cc.getParentFile().getParentFile().getParentFile().getParentFile();
+    	File modules = getModulesDir();
         String installPath = Joiner.on(File.separatorChar).join(modules.getAbsolutePath(), "cli", "target", "install",
                 "please");
         installedHome = new File(installPath);
@@ -95,6 +93,15 @@ public class BaseUat {
         } catch (Throwable e) {
             throw new RuntimeException("error copying ops file '" + ops + "' to " + dest.getAbsolutePath(), e);
         }
+    }
+    
+    protected File getBuildDir() {
+    	return new File("target");
+    }
+    
+    protected File getModulesDir() {
+        File cc = ClasspathUtil.getClasspathForClass(BaseUat.class);
+        return cc.getParentFile().getParentFile().getParentFile().getParentFile();
     }
 }
 

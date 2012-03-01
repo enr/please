@@ -29,14 +29,14 @@ import org.testng.annotations.Test;
 import com.atoito.please.core.util.Directories;
 import com.atoito.please.core.util.M;
 
+@Test(suiteName="User Acceptance")
 public class CreateDeleteDirectoryUat extends BaseUat {
 
     File directoryUnderTest;
 
     @BeforeClass
     public void init() throws Exception {
-        // setup
-        File buildDir = new File("target");
+        File buildDir = getBuildDir();
         String basePath = "dir-01";
         directoryUnderTest = new File(buildDir, basePath);
         if (directoryUnderTest.exists()) {

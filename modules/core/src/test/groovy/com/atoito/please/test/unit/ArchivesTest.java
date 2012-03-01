@@ -40,6 +40,7 @@ import com.google.common.io.Files;
 /*
  * tests for .archives. package
  */
+@Test(suiteName="Components and Api")
 public class ArchivesTest {
 
     private File targetDirectory;

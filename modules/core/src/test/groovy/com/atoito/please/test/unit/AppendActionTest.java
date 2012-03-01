@@ -35,6 +35,7 @@ import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.io.Files;
 
+@Test(suiteName="Actions Unit")
 public class AppendActionTest extends ActionTestBase {
 
     String testDataPath;
@@ -53,7 +54,7 @@ public class AppendActionTest extends ActionTestBase {
 
     @Test(description = "content is appended to the file")
     public void appendContent() throws Exception {
-        File to = resolveFileBuildingBaseDir("append", "01.final.txt");
+        File to = resolveFileBuildingBaseInOutputDir("append", "01.final.txt");
         if (to.exists()) {
             to.delete();
         }

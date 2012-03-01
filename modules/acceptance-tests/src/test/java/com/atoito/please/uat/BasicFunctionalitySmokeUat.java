@@ -29,6 +29,7 @@ import com.atoito.please.core.util.M;
 /**
  * A very simple smoke test which fails if any exception is throwed.
  */
+@Test(suiteName="User Acceptance")
 public class BasicFunctionalitySmokeUat extends BaseUat {
 
     @Test(dataProvider = "basic-functions", description = "base functionality is working")

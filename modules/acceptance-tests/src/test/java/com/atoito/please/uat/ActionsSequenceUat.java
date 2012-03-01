@@ -25,15 +25,13 @@ import java.io.File;
 
 import org.testng.annotations.Test;
 
-/**
- *
- */
+
+@Test(suiteName="User Acceptance")
 public class ActionsSequenceUat extends BaseUat {
 
     @Test(description = "uat for operation 'sequence-operation'")
     public void directoryCreation() throws Exception {
-        // setup
-        File buildDir = new File("target");
+        File buildDir = getBuildDir();
         File dataDir = new File(buildDir, "sequence-operation-data");
         File archiveDir = new File(buildDir, "sequence-operation-arch");
         File expandedDir = new File(buildDir, "sequence-operation-exp");

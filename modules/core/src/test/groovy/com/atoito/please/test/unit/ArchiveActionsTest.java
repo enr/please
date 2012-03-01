@@ -32,6 +32,7 @@ import com.atoito.please.core.api.Action;
 import com.atoito.please.core.util.Directories;
 import com.atoito.please.test.util.Paths;
 
+@Test(suiteName="Actions Unit")
 public class ArchiveActionsTest extends ActionTestBase {
 
     private String testDataPath;
