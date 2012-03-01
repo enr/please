@@ -33,6 +33,7 @@ import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.io.Files;
 
+@Test(suiteName="Actions Unit")
 public class CopySingleFileActionTest extends ActionTestBase {
 
     String testDataPath;
@@ -52,7 +53,7 @@ public class CopySingleFileActionTest extends ActionTestBase {
 
     @Test(description = "if 'to' points to an inexistent file, the original file is copied to this path")
     public void copySingleFile() throws Exception {
-        File to = resolveFile("copySingleFile", "01.copy.txt");
+        File to = resolveFileInOutputDir("copySingleFile", "01.copy.txt");
         if (to.exists()) {
             to.delete();
         }
@@ -68,7 +69,7 @@ public class CopySingleFileActionTest extends ActionTestBase {
 
     @Test(description = "if 'to' points to an existent directory, the file is copied with the original's base name")
     public void copySingleFileToExistentDirectory() throws Exception {
-        File to = resolveFile("copySingleFileToExistentDirectory", "dest");
+        File to = resolveFileInOutputDir("copySingleFileToExistentDirectory", "dest");
         Directories.ensureExists(to);
         assertThat(from).as("original file").exists();
         assertThat(to).as("destination directory").exists().isDirectory();
@@ -83,7 +84,7 @@ public class CopySingleFileActionTest extends ActionTestBase {
 
     @Test(description = "if 'to' points to an existent file, this file is overwritten with the original's content")
     public void overwriteFile() throws Exception {
-        File to = resolveFile("overwriteFile", "01.overwriteFile.txt");
+        File to = resolveFileInOutputDir("overwriteFile", "01.overwriteFile.txt");
         File toDir = to.getParentFile();
         Directories.ensureExists(toDir);
         assertThat(from).as("original file").exists();

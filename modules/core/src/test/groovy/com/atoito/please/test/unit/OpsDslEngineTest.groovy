@@ -43,6 +43,7 @@ import com.google.common.base.Charsets
 import com.google.common.base.Joiner
 import com.google.common.io.Resources
 
+@Test(suiteName="Components and Api")
 public class OpsDslEngineTest {
 
 	/*

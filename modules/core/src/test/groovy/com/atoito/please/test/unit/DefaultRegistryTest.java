@@ -44,6 +44,7 @@ import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
 import com.google.common.io.Resources;
 
+@Test(suiteName="Components and Api")
 public class DefaultRegistryTest {
 
     PleaseRegistry registry;

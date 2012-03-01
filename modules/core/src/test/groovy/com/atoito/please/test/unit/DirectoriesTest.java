@@ -32,9 +32,7 @@ import org.testng.annotations.Test;
 import com.atoito.please.core.util.Directories;
 import com.google.common.io.Files;
 
-/**
- * 
- */
+@Test(suiteName="Components and Api")
 public class DirectoriesTest {
 
     private static FileFilter javaFileFilter = new FileFilter() {

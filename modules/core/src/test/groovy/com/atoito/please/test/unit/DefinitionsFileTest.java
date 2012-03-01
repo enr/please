@@ -31,6 +31,7 @@ import com.atoito.please.core.api.DefinitionsFile;
 import com.atoito.please.test.util.Constants;
 import com.google.common.io.Resources;
 
+@Test(suiteName="Components and Api")
 public class DefinitionsFileTest {
 
     @Test(description = "DefinitionsFile contains correct mapping for actions and operations")

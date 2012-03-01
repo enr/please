@@ -32,6 +32,7 @@ import com.atoito.please.test.stub.StubRegistry;
 import com.atoito.please.test.util.Constants;
 import com.google.common.io.Resources;
 
+@Test(suiteName="Components and Api")
 public class OpsFileTest {
 
     @Test(description = "ops file is loaded")
