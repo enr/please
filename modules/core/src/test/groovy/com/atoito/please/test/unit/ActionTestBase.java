@@ -22,7 +22,17 @@ public class ActionTestBase {
     /*
      * Gets file named fileName, in baseDir which is in baseOutputDir.
      */
-    protected File resolveDestination(String baseDir, String fileName) {
+    protected File resolveFile(String baseDir, String fileName) {
+        String toPath = Joiner.on(File.separatorChar).join(baseOutputDir.getAbsolutePath(), baseDir, fileName);
+        File to = new File(toPath);
+        return to;
+    }
+    
+
+    protected File resolveFileBuildingBaseDir(String baseDir, String fileName) throws Exception {
+        String toDir = Joiner.on(File.separatorChar).join(baseOutputDir.getAbsolutePath(), baseDir);
+        Directories.ensureExists(new File(toDir));
+        Directories.clean(new File(toDir));
         String toPath = Joiner.on(File.separatorChar).join(baseOutputDir.getAbsolutePath(), baseDir, fileName);
         File to = new File(toPath);
         return to;

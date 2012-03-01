@@ -51,20 +51,9 @@ public class AppendActionTest extends ActionTestBase {
         from = new File(fromPath);
     }
 
-    /*
-    private File resolveDestination(String baseDir, String fileName) throws Exception {
-        String toDir = Joiner.on(File.separatorChar).join(baseOutputDir.getAbsolutePath(), baseDir);
-        Directories.ensureExists(new File(toDir));
-        Directories.clean(new File(toDir));
-        String toPath = Joiner.on(File.separatorChar).join(baseOutputDir.getAbsolutePath(), baseDir, fileName);
-        File to = new File(toPath);
-        return to;
-    }
-    */
-
     @Test(description = "content is appended to the file")
     public void appendContent() throws Exception {
-        File to = resolveDestination("append", "01.final.txt");
+        File to = resolveFileBuildingBaseDir("append", "01.final.txt");
         if (to.exists()) {
             to.delete();
         }
