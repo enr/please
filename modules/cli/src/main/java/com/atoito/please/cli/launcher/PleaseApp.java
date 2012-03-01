@@ -146,7 +146,7 @@ public class PleaseApp {
         // args parsing
         List<String> argsList = new ArrayList<String>(Arrays.asList(args));
         if (argsList.size() == 0) {
-            M.info("Please operation performer %s", Environment.PLEASE_VERSION);
+            M.info("Please operation performer"); // %s", Environment.PLEASE_VERSION);
             M.emptyLine();
             M.info("to perform an operation, run please <operation> ...");
             M.info("to see a list of available operations, run please reports");

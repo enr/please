@@ -29,28 +29,28 @@ import com.google.common.io.Resources;
 
 public class Environment {
 
-    public static final String PLEASE_VERSION;
-
     private static final String PLEASE_APP_PROPERTIES_RESOURCE = "please-app.properties";
-    private static final String PLEASE_VERSION_PROPERTY_KEY = "please.version";
-    private static final String PLEASE_VERSION_DEFAULT_VALUE = "0.1";
+
+    private static final String PLEASE_API_VERSION;
+    private static final String PLEASE_API_VERSION_PROPERTY_KEY = "please.api.version";
+    private static final String PLEASE_API_VERSION_DEFAULT_VALUE = "0.1";
     
     static {
 		Properties props = new Properties();
 		try {
 			URL url = Resources.getResource(PLEASE_APP_PROPERTIES_RESOURCE);
-			props.load(url.openStream());
+            props.load(url.openStream());
 		} catch (Exception e) {
-			M.info("error looking for please property %s", PLEASE_VERSION_PROPERTY_KEY);
+			M.info("error looking for please property %s", PLEASE_API_VERSION_PROPERTY_KEY);
 		}
-		String propertyValue = props.getProperty(PLEASE_VERSION_PROPERTY_KEY);
+		String propertyValue = props.getProperty(PLEASE_API_VERSION_PROPERTY_KEY);
 		if (propertyValue == null) {
-			PLEASE_VERSION = PLEASE_VERSION_DEFAULT_VALUE;
+			PLEASE_API_VERSION = PLEASE_API_VERSION_DEFAULT_VALUE;
 		} else {
-			PLEASE_VERSION = propertyValue;
+			PLEASE_API_VERSION = propertyValue;
 		}
     }
-    
+
     private static final Object OPS_DIR_BASENAME = "ops.d";
     private final File home;
     private final String os = System.getProperty("os.name").toLowerCase();
@@ -107,7 +107,7 @@ public class Environment {
 
     public String userSettingsPath() {
         StringBuilder sb = new StringBuilder().append(System.getProperty("user.home")).append(File.separator)
-                .append(".please").append(File.separator).append(Environment.PLEASE_VERSION);
+                .append(".please").append(File.separator).append(Environment.PLEASE_API_VERSION);
         return sb.toString();
     }
 
@@ -117,9 +117,9 @@ public class Environment {
 
     public String systemSettingsPath() {
         if (isWindows()) {
-            return "c:/please/" + Environment.PLEASE_VERSION;
+            return "c:/please/" + Environment.PLEASE_API_VERSION;
         }
-        return "/etc/please/" + Environment.PLEASE_VERSION;
+        return "/etc/please/" + Environment.PLEASE_API_VERSION;
     }
 
     public String systemOpsFileDirPath() {
