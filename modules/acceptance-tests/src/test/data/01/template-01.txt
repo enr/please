@@ -1,2 +1,2 @@
-Hello from <name>!
-Fork me on <site>
+Hi from #name#!
+Fork me on #site#

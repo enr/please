@@ -73,6 +73,8 @@ operation {
     template {
         source = "${dataSrcDir}/template-01.txt"
         destination = "${buildDir.getAbsolutePath()}/template-01-result.txt"
+		startchar = '#'
+		stopchar = '#'
         tokens = [name:'Please', site:'GitHub.com']
     }
 }

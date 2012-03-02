@@ -59,7 +59,7 @@ public class TemplateActionTest extends ActionTestBase {
         File expectedFile = new File(expectedPath);
         assertThat(expectedFile).as("expected file").exists();
 
-        File resultFile = resolveFileBuildingBaseInOutputDir(this.getClass().getName(), "tpl-01-result.txt");
+        File resultFile = resolveFileBuildingBaseInOutputDir(this.getClass().getName(), "tpl-01-result-00.txt");
         
         Action action = new TemplateAction();
         action.setProperty("source", sourceFile.getAbsolutePath());
@@ -73,7 +73,59 @@ public class TemplateActionTest extends ActionTestBase {
 
         assertThat(resultFile).as("result file").exists().hasSameContentAs(expectedFile);
     }
+    
+    @Test
+    public void testCustomDelimiters() throws Exception {
+    	String sourcePath = Joiner.on(File.separatorChar).join(testDataDir.getAbsolutePath(), "template", "tpl-01-src-custom-del.txt");
+        File sourceFile = new File(sourcePath);
+        assertThat(sourceFile).as("source file").exists();
 
+    	String expectedPath = Joiner.on(File.separatorChar).join(testDataDir.getAbsolutePath(), "template", "tpl-01-expected.txt");
+        File expectedFile = new File(expectedPath);
+        assertThat(expectedFile).as("expected file").exists();
+
+        File resultFile = resolveFileBuildingBaseInOutputDir(this.getClass().getName(), "tpl-01-result-01.txt");
+        
+        Action action = new TemplateAction();
+        action.setProperty("source", sourceFile.getAbsolutePath());
+        action.setProperty("destination", resultFile.getAbsolutePath());
+        
+        Map<String, String> tokens = Maps.newHashMap();
+        tokens.put("sentiment", "love");
+        action.setProperty("tokens", tokens);
+        action.setProperty("startchar", '?');
+        action.setProperty("stopchar", '?');
+        action.initialize();
+        action.execute();
+
+        assertThat(resultFile).as("result file").exists().hasSameContentAs(expectedFile);
+    }
+
+    
+    @Test
+    public void testEdgeCaseDelimiters() throws Exception {
+    	String sourcePath = Joiner.on(File.separatorChar).join(testDataDir.getAbsolutePath(), "template", "tpl-01-src-edge-del.txt");
+        File sourceFile = new File(sourcePath);
+        assertThat(sourceFile).as("source file").exists();
+
+    	String expectedPath = Joiner.on(File.separatorChar).join(testDataDir.getAbsolutePath(), "template", "tpl-01-expected-edge-del.txt");
+        File expectedFile = new File(expectedPath);
+        assertThat(expectedFile).as("expected file").exists();
+
+        File resultFile = resolveFileBuildingBaseInOutputDir(this.getClass().getName(), "tpl-01-result-02.txt");
+        
+        Action action = new TemplateAction();
+        action.setProperty("source", sourceFile.getAbsolutePath());
+        action.setProperty("destination", resultFile.getAbsolutePath());
+        
+        Map<String, String> tokens = Maps.newHashMap();
+        tokens.put("sentiment", "love");
+        action.setProperty("tokens", tokens);
+        action.initialize();
+        action.execute();
+
+        assertThat(resultFile).as("result file").exists().hasSameContentAs(expectedFile);
+    }
 }
 
 

@@ -33,8 +33,22 @@ operation {
 operation {
 	id 'hello-template'
 	template {
-		source = '/path/to/template'
-		destination = '/path/to/destination'
+		source = 'modules/core/src/test/data/template/tpl-01-src-edge-del.txt'
+		destination = 'modules/core/target/tpl-01-edge-del.txt'
+		//startchar = '?'
+		//stopchar = '?'
         tokens = [name:'Please']
+	}
+}
+
+operation {
+	id 'template-operation'
+	def dataSrcDir = "modules/acceptance-tests/src/test/data/01"
+	template {
+		source = "${dataSrcDir}/template-01.txt"
+		destination = "modules/cli/target/template-01-result.txt"
+		startchar = '#'
+		stopchar = '#'
+		tokens = [name:'Please', site:'GitHub.com']
 	}
 }

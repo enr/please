@@ -1,4 +1,4 @@
  
- I <sentiment> Please
+ I $sentiment$ Please
  
 . 
