@@ -19,7 +19,7 @@
 
 package com.atoito.please.uat;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.fest.assertions.api.Assertions.assertThat;
 
 import java.io.File;
 
@@ -67,7 +67,7 @@ public class ActionsSequenceUat extends BaseUat {
         File expected01 = new File(testDataDirRoot, "a_file.txt");
         File actual02 = new File(sub, "another.txt");
         File expected02 = new File(testDataDirSub, "another.txt");
-        assertThat(actual01).as("data/01/a_file.txt").exists().isFile().hasSameContentAs(expected01);
-        assertThat(actual02).as("data/01/01/another.txt").exists().isFile().hasSameContentAs(expected02);
+        assertThat(actual01).as("data/01/a_file.txt").exists().isFile().hasContentEqualTo(expected01);
+        assertThat(actual02).as("data/01/01/another.txt").exists().isFile().hasContentEqualTo(expected02);
     }
 }

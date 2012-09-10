@@ -19,7 +19,7 @@
 
 package com.atoito.please.test.unit;
 
-import static org.fest.assertions.Assertions.assertThat
+import static org.fest.assertions.api.Assertions.assertThat;
 import groovy.lang.Closure;
 
 import org.testng.annotations.Test

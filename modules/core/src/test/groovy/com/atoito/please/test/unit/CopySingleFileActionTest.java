@@ -19,7 +19,7 @@
 
 package com.atoito.please.test.unit;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.fest.assertions.api.Assertions.assertThat;
 
 import java.io.File;
 
@@ -70,7 +70,7 @@ public class CopySingleFileActionTest {
         action.setProperty("to", to.getAbsolutePath());
         action.initialize();
         action.execute();
-        assertThat(to).as("copied file").exists().hasSameContentAs(from);
+        assertThat(to).as("copied file").exists().hasContentEqualTo(from);
     }
 
     @Test(description = "if 'to' points to an existent directory, the file is copied with the original's base name")
@@ -85,7 +85,7 @@ public class CopySingleFileActionTest {
         action.initialize();
         action.execute();
         File expected = new File(to, from.getName());
-        assertThat(expected).as("copied file").exists().hasSameContentAs(from);
+        assertThat(expected).as("copied file").exists().hasContentEqualTo(from);
     }
 
     @Test(description = "if 'to' points to an existent file, this file is overwritten with the original's content")
@@ -106,7 +106,7 @@ public class CopySingleFileActionTest {
         action.setProperty("to", to.getAbsolutePath());
         action.initialize();
         action.execute();
-        assertThat(to).as("copied file").exists().hasSameContentAs(from);
+        assertThat(to).as("copied file").exists().hasContentEqualTo(from);
     }
 
     @Test(description = "if 'from' doesn't exist and it isn't in registered outputs and checkFrom is true, action fails", expectedExceptions = { IllegalArgumentException.class })

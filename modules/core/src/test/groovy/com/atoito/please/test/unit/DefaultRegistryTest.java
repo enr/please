@@ -19,8 +19,8 @@
 
 package com.atoito.please.test.unit;
 
-import static org.fest.assertions.Assertions.assertThat;
-import static org.fest.assertions.MapAssert.entry;
+import static org.fest.assertions.api.Assertions.assertThat;
+import static org.fest.assertions.data.MapEntry.entry;
 
 import java.io.File;
 import java.util.List;
@@ -104,7 +104,6 @@ public class DefaultRegistryTest {
         assertThat(describedOperation.getId()).as("operation id").isEqualTo("ops-test-01");
         assertThat(describedOperation.getDescription()).as("operation description").isEqualTo("a simple description");
         Map<String, String> actions = registry.getActionDefinitions();
-        assertThat(actions).as("actions definitions").isNotNull().hasSize(1)
-                .includes(entry("action-01", "com.atoito.please.test.stub.StubAction"));
+        assertThat(actions).as("actions definitions").isNotNull().hasSize(1).contains(entry("action-01", "com.atoito.please.test.stub.StubAction"));
     }
 }

@@ -4,15 +4,14 @@ apply plugin: 'application'
 applicationName = 'please'
 mainClassName = 'com.atoito.please.cli.launcher.PleaseMain'
 
-
-appBuildDir = "${buildDir}/app"
-
-// nome della directory creata in distZip
-distributionArchiveDir = "${distZip.baseName}-${distZip.version}"
+ext {
+    appBuildDir = "${buildDir}/app"
+    distributionArchiveDir = "${distZip.baseName}-${distZip.version}"
+}
 
 dependencies {
     compile     project(':modules:core')
-    compile     'com.google.guava:guava:10.0'
+    compile     'com.google.guava:guava:13.0'
     
 }
 

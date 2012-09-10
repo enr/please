@@ -19,7 +19,7 @@
 
 package com.atoito.please.test.unit;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.fest.assertions.api.Assertions.assertThat;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -93,7 +93,7 @@ public class ArchivesTest {
             System.out.printf("found file %s%n", file.getAbsolutePath());
             fileNames.add(file.getName());
         }
-        Object[] expectedFileNames = new Object[] { "00001", "00002", "00003", "00004", "00005", "00006", "00007",
+        String[] expectedFileNames = new String[] { "00001", "00002", "00003", "00004", "00005", "00006", "00007",
                 "00008", "00009", "00010" };
         assertThat(fileNames).as("unzipped files").containsExactly(expectedFileNames);
     }
